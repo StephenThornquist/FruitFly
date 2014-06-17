@@ -8,4 +8,6 @@ Original design on bottom of schematic
 
 "Hole layer" is cut out of a thick sheet of dark acrylic and houses the behaving fly
 
-"Bottom layer" is carved out to allow the insertion of the collimated LED light
+"Base layer" serves the bottom of the holes (MUST BE TRANSPARENT)
+
+"Light layer" is carved out to allow the insertion of the collimated LED light
