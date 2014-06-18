@@ -73,13 +73,13 @@
      inkscape:window-height="958"
      id="namedview2987"
      showgrid="false"
-     inkscape:zoom="1"
-     inkscape:cx="1516.7233"
-     inkscape:cy="1503.3833"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="1614.1013"
+     inkscape:cy="1205.2032"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer7" /><g
+     inkscape:current-layer="layer6" /><g
      id="g2993"
      inkscape:groupmode="layer"
      inkscape:label="32 Fly Arena"
@@ -936,6 +936,7 @@
      y="25.200001"
      sodipodi:role="line"
      id="tspan3561">PPI: 500</tspan></text>
+
 
 <path
    d="m 1348.137,615.54 -453.543,0 0,255.118 453.543,0 0,-255.118 z"
@@ -2284,6 +2285,7 @@
      sodipodi:role="line"
      id="tspan4497">HMS Instrumentation Core</tspan></text>
 
+
 <text
    transform="matrix(1,0,0,-1,908.7666,839.2646)"
    id="text4499"><tspan
@@ -2315,6 +2317,7 @@
      y="158.52"
      sodipodi:role="line"
      id="tspan4511">122016242832</tspan></text>
+
 
 <path
    d="m 1348.137,615.54 -453.543,0 0,255.118 453.543,0 0,-255.118 z"
@@ -2547,7 +2550,7 @@
        inkscape:groupmode="layer"
        id="layer3"
        inkscape:label="Top Layer"
-       style="display:inline"><path
+       style="display:none"><path
          d="m 1685.5358,499.55336 -566.9288,0 0,-318.89761 566.9288,0 0,318.89761 z"
          style="fill:none;stroke:#ff0000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4513-1-0-5"
@@ -2716,7 +2719,7 @@
        inkscape:groupmode="layer"
        id="layer4"
        inkscape:label="Etch Layer"
-       style="display:inline"><path
+       style="display:none"><path
    sodipodi:type="arc"
    style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
    id="path4859"
@@ -2766,6 +2769,7 @@
      y="477.33624"
      sodipodi:role="line"
      id="tspan4497-3">Crickmore Lab            HMS Instrumentation Core</tspan></text>
+
 
 <g
    id="g4236"
@@ -3022,7 +3026,7 @@
        inkscape:groupmode="layer"
        id="layer5"
        inkscape:label="Hole Layer"
-       style="display:inline"><rect
+       style="display:none"><rect
          style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="rect5720"
          width="113.38583"
@@ -3137,13 +3141,14 @@
          transform="matrix(0.63679894,0,0,0.77697609,88.050482,349.60803)" /></g><g
        inkscape:groupmode="layer"
        id="layer7"
-       inkscape:label="Base Layer"><path
+       inkscape:label="Base Layer"
+       style="display:none"><path
          d="m 1685.4804,499.58553 -566.9288,0 0,-318.89761 566.9288,0 0,318.89761 z"
-         style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.09000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:none;stroke:#ff0000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4513-1-0-8-3-9"
          inkscape:connector-curvature="0" /><path
          sodipodi:type="arc"
-         style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.10000000000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4859-4-8-2-0"
          sodipodi:cx="1647.0231"
          sodipodi:cy="168.37468"
@@ -3161,7 +3166,7 @@
          d="m 1654.7989,168.37468 a 7.775877,6.3900771 0 1 1 -15.5517,0 7.775877,6.3900771 0 1 1 15.5517,0 z"
          transform="matrix(0.63679894,0,0,0.77697609,619.52847,349.57021)" /><path
          sodipodi:type="arc"
-         style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.10000000000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4859-2-8-8"
          sodipodi:cx="1647.0231"
          sodipodi:cy="168.37468"
@@ -3578,11 +3583,11 @@
            style="fill:none;stroke:#ff0000;stroke-width:0.05487654;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
            sodipodi:type="star" /></g><path
          d="m 1685.4955,499.55475 -566.9288,0 0,-318.89761 566.9288,0 0,318.89761 z"
-         style="fill:none;stroke:#ff0000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         style="fill:none;stroke:#ff0000;stroke-width:0.09000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4513-1-0-8-3"
          inkscape:connector-curvature="0" /><path
          sodipodi:type="arc"
-         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         style="fill:none;stroke:#ff0000;stroke-width:0.10000000000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4859-5-9-7"
          sodipodi:cx="1647.0231"
          sodipodi:cy="168.37468"
@@ -3591,7 +3596,7 @@
          d="m 1654.7989,168.37468 a 7.775877,6.3900771 0 1 1 -15.5517,0 7.775877,6.3900771 0 1 1 15.5517,0 z"
          transform="matrix(0.63679894,0,0,0.77697609,619.50752,349.58593)" /><path
          sodipodi:type="arc"
-         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         style="fill:none;stroke:#ff0000;stroke-width:0.10000000000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4859-4-8-2"
          sodipodi:cx="1647.0231"
          sodipodi:cy="168.37468"
@@ -3600,7 +3605,7 @@
          d="m 1654.7989,168.37468 a 7.775877,6.3900771 0 1 1 -15.5517,0 7.775877,6.3900771 0 1 1 15.5517,0 z"
          transform="matrix(0.63679894,0,0,0.77697609,619.5997,66.146596)" /><path
          sodipodi:type="arc"
-         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         style="fill:none;stroke:#ff0000;stroke-width:0.10000000000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4859-52-2-8"
          sodipodi:cx="1647.0231"
          sodipodi:cy="168.37468"
@@ -3609,7 +3614,7 @@
          d="m 1654.7989,168.37468 a 7.775877,6.3900771 0 1 1 -15.5517,0 7.775877,6.3900771 0 1 1 15.5517,0 z"
          transform="matrix(0.63679894,0,0,0.77697609,88.036832,66.145646)" /><path
          sodipodi:type="arc"
-         style="fill:none;stroke:#ff0000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+         style="fill:none;stroke:#ff0000;stroke-width:0.10000000000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
          id="path4859-2-8"
          sodipodi:cx="1647.0231"
          sodipodi:cy="168.37468"
