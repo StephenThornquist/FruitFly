@@ -323,15 +323,16 @@
    style="fill:none;stroke:#ff0000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.60900545;stroke-opacity:1;stroke-dasharray:none;display:inline"
    id="path4513-1-0"
    inkscape:connector-curvature="0" /><text
-   y="481.83624"
-   x="1202.4927"
+   y="483.95755"
+   x="1242.0906"
    style="font-size:15px;font-weight:bold;stroke-width:0.09;stroke-miterlimit:4.60900545;stroke-dasharray:none;display:inline;-inkscape-font-specification:Sans Bold"
    id="text4495-9"><tspan
      style="font-size:17.5px;font-variant:normal;font-weight:bold;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:Sans Bold"
-     x="1202.4927"
-     y="481.83624"
+     x="1242.0906"
+     y="483.95755"
      sodipodi:role="line"
-     id="tspan4497-3">Crickmore Lab                     HMS Instrumentation Core</tspan></text>
+     id="tspan4497-3">Crickmore Lab  </tspan></text>
+
 
 
 
@@ -589,7 +590,7 @@
      style="fill:none;stroke:#ff0000;stroke-width:0.12827832;stroke-miterlimit:4.60900545;stroke-opacity:1;stroke-dasharray:none;display:inline"
      sodipodi:type="arc" /></g><g
    id="g75266"
-   transform="translate(178,3)"><path
+   transform="translate(-0.8980109,1.5857864)"><path
      id="path37253"
      d="m 1181.694,490.985 c 0.2099,-0.016 0.3004,-0.0743 0.3343,-0.28651 -0.2255,0.007 -0.3161,0.053 -0.3343,0.28651 z"
      style="fill:none;stroke:#000000;stroke-width:0.02723383;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
@@ -1113,7 +1114,17 @@
      id="path72978"
      d="m 1188.6552,482.37643 c -0.1495,0.0786 -0.046,0.33373 0.097,0.22891 0.1057,-0.0772 0.048,-0.30523 -0.097,-0.22891 m -0.7373,0.47458 c 0.584,-0.0951 0.039,-0.74465 0,0 m 24.7799,-0.43473 c 0.021,0.18491 0.059,0.28064 0.2415,0.33813 l 0,-0.33813 -0.2415,0 m -4.3473,0.72456 0.483,0.0483 c -0.067,-0.22872 -0.412,-0.31658 -0.483,-0.0483 m -20.7225,0.43473 0.145,0 0,-0.53134 c -0.25,0.0832 -0.1542,0.31455 -0.145,0.53134 m -0.4347,0.33813 0,0.14491 0.1449,0 0,-0.14491 -0.1449,0 m 0.1932,0.43474 c 0.062,0.18568 0.1799,0.18568 0.2415,0 l -0.2415,0 m -0.6279,0.14491 c 0.01,0.17834 0.015,0.27905 0.1932,0.33813 l 0.1449,-0.33813 -0.3381,0 m 0.483,0.62795 c 0.1955,-0.063 0.2849,-0.19167 0.3381,-0.38643 -0.1738,0.0889 -0.2547,0.21171 -0.3381,0.38643 m -0.048,0.14491 0,-0.14491 c -0.2645,-0.0209 -0.49,-0.0751 -0.7217,0.0963 -0.1071,0.0792 -0.3073,0.38092 -0.046,0.41256 0.1791,0.0217 0.2379,-0.19621 0.3519,-0.28649 0.1173,-0.0929 0.2754,-0.077 0.4159,-0.0774 m 18.1623,0.33813 0.5797,0.0966 c -0.052,-0.45966 -0.5517,-0.69867 -0.5797,-0.0966 m -19.5631,0.67625 c 0.2169,-0.0163 0.3395,-0.0924 0.4347,-0.28982 -0.1983,0.0431 -0.3377,0.10782 -0.4347,0.28982 m 0.7729,-0.24152 -0.048,0.24152 0.097,0 -0.048,-0.24152 m 19.08,0 c 0.065,0.25756 0.2251,0.35977 0.4831,0.38644 -0.07,-0.24437 -0.2358,-0.3534 -0.4831,-0.38644 m -20.6741,0.91778 0.4348,-0.14491 0,-0.19322 c -0.2425,0.0163 -0.3827,0.0923 -0.4348,0.33813 m 21.93,-0.24152 -0.097,0.33813 0.4348,0.14491 0.048,-0.43474 -0.3865,-0.0483 m -23.041,0.72456 c 0.3008,0.0579 0.5088,-0.0742 0.7729,-0.19322 l 0,-0.14491 c -0.312,-0.0568 -0.653,0.0109 -0.7729,0.33813 m 24.5868,-0.0966 c -0.1145,-0.0992 -0.4391,-0.29639 -0.5922,-0.18925 -0.1213,0.0849 -0.093,0.33967 0.066,0.36001 l 0.5261,-0.17076 m 0.1449,0.0483 c 0.01,0.60896 0.8941,0.85415 1.4008,0.86947 -0.025,-0.45097 -0.3275,-0.3531 -0.6763,-0.33813 l -0.1449,-0.38643 -0.5796,-0.14491 m 2.705,1.2559 0,0.0966 0.1449,0 0,-0.0966 -0.1449,0 m 1.594,0.48304 0.1932,0.0483 -0.1932,-0.0483 z"
      style="fill:none;stroke:#000000;stroke-width:0.57031608;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-     inkscape:connector-curvature="0" /></g></g><g
+     inkscape:connector-curvature="0" /></g><text
+   y="483.57889"
+   x="1408.1091"
+   style="font-size:15px;font-weight:bold;stroke-width:0.09;stroke-miterlimit:4.60900545;stroke-dasharray:none;display:inline;-inkscape-font-specification:Sans Bold"
+   id="text4495-9-1"><tspan
+     style="font-size:17.5px;font-variant:normal;font-weight:bold;font-stretch:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Minion Pro;-inkscape-font-specification:Sans Bold"
+     x="1408.1091"
+     y="483.57889"
+     sodipodi:role="line"
+     id="tspan4497-3-7">HMS Instrumentation Core</tspan></text>
+</g><g
        inkscape:groupmode="layer"
        id="layer5"
        inkscape:label="Hole Layer"
