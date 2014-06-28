@@ -11,3 +11,48 @@
 
 - Ordered 26 Carclo frosted square optics and 26 Luxeon Rebels
 
+06/23/2014
+
+- Practiced dissection of mating flies
+
+06/24/2014
+
+- Flies are really reluctant to do any mating
+- Returned Carclo frosted square optics in favor of Carclo 20 mm narrow beams
+- Purchased: 5 700 mA non-adjustable BuckPucks, 12"x12" aluminum sheet
+- Made a pretty fruit fly
+
+06/25/2014
+
+- Ordered deep red Luxeon LEDs premounted on Endor Star 1-UP mounts
+- Practiced abdominal ganglion dissection
+
+06/26/2014
+
+- Mounted Luxeon LEDs arrived with Carclo lens holders (no lenses or sink yet)
+- Adjusted LightChamber.svg (.svg file with schematic of optogenetics chamber)
+  to accomodate the Carclo lenses
+- Practiced abdominal ganglion prep
+
+06/27/2014
+
+- Lenses and aluminum arrived from LEDSupply. BuckPucks were not dimmable
+  so I took 4 750 mA dimmable BuckPucks from Ofer and Pavel.
+
+- Cut aluminum heat sink from aluminum sheet, glued mounted lenses to mounted
+  LEDs using Loctite instant adhesive, affixed LEDs/lenses to aluminum heat
+  sink using thermal epoxy after wiring LEDs together.
+
+- LEDs are connected 6 in series to a BuckPuck
+
+- Practiced abdominal ganglion dissection
+
+06/28/2014
+
+- Fly food for UAS-ReaChR stock was wet and I didn't notice any eggs or larva
+  so I transfered most of the surviving flies to a new food vial
+
+- Crossed UAS-mCherry-ReaChR (II) to TH-C'-GAL4, DDC-GAL4, and TH-GAL4 lines
+
+- Wrote code to operate LED array (titled FlashingLights contained in this
+  github repository)
