@@ -36,11 +36,11 @@ unsigned long duration = 7200000;
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {2, 5, 7, 1};
+double freq[numPins] = {0, 10, 0, 10};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-int pulseWidth[numPins] = {1000, 100, 150, 500};
+int pulseWidth[numPins] = {0, 50, 0, 50};
 
 unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
@@ -51,7 +51,7 @@ void setup() {
   Serial.begin(9600);
   for(int pin = pinStart; pin < pinEnd; pin++){
     pinMode(pin,OUTPUT);
-    if(freq[pin-pinStart]==0) {
+    if(freq[pin-pinStart] == 0) {
       digitalWrite(pin,HIGH);
     }
   }
@@ -68,27 +68,21 @@ void loop() {
         // Now make sure the pin is supposed to be on (not yet implemented, was buggy)
           // If it has been the pulse width since the last time the LED
           // was turned on, turn it off.
-          if((currentTime-lastOn[pinScan]) - pulseWidth[pinScan]>=0) {
-            int blah = random(0,5000);
-            if(blah > 4950) {
-              digitalWrite(pinScan+pinStart, HIGH);
-            }
+          if((currentTime-lastOn[pinScan]) > pulseWidth[pinScan]) {
+            Serial.write('Off');  
+            digitalWrite(pinScan+pinStart, HIGH);
           }
            
-          // If it's been 1000/frequency milliseconds since the LED
+          // If it's been timescale/frequency units of time since the LED
           // was last turned on, turn it on again. Then annotate 
           // having done so by updating the lastOn array.
           if((double(currentTime - lastOn[pinScan])*freq[pinScan])>=timescale){
             digitalWrite(pinScan + pinStart, LOW);
+            Serial.write('On');
             lastOn[pinScan] = currentTime; 
           }
       }
     }
-  }
-  else{
-      for(int pinScan = 0; pinScan < numPins; pinScan++){
-         digitalWrite(pinScan+pinStart, HIGH); 
-      }
   }
 }
 

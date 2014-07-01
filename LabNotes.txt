@@ -56,3 +56,10 @@
 
 - Wrote code to operate LED array (titled FlashingLights contained in this
   github repository)
+
+07/01/2014
+
+- Soldered together Buckpuck inputs for LED array (should be completely ready)
+
+- Practiced abd. gang. prep
+
