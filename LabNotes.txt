@@ -63,3 +63,14 @@
 
 - Practiced abd. gang. prep
 
+07/02/2014
+
+- Attempted imaging NP5270 > UAS-GCaMP3.0 - UAS-tdTomato in abd. gangl. of an isolated male glued to a slide. Green visible but
+  no obvious dynamics. Will reattempt
+
+- Two Elav-C155; UAS-Dicer2/Cy0 x UAS-ReaChR offspring placed in optogenetics chamber. No obvious response from very superficial examination. 
+  Notes: Need to change sheet under the doors so that flies can't crawl between chambers. Chambers are maybe too tall (allow flies  climb on walls). Should try again when I receive the higher power supply. Also consider refitting chamber with higher power LED   arrays (e.g. 3UP deep reds from Luxeon). Also keep in mind that ReaChR is less red-shifted than Chrimson and I bought LEDs        spec'd for Chrimson. When I have more than two flies I'll try this experiment again (hopefully tomorrow?? possibly later today)
+
+- Wilson lab has Chrimson flies; maybe I'll try those?
+
+- Reattempted abdominal ganglion imaging in isolated male fly. Expression pattern appeared to be normal. Will re-do with more spec  ific GAL4 driver tomorrow.
