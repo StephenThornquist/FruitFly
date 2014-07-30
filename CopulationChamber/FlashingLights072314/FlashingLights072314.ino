@@ -31,18 +31,18 @@ const int numPins = pinEnd - pinStart;
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
 // startTime is how long until it should start
-unsigned long startTime = 0;
+unsigned long startTime = 10000;
 // duration is how long the Arduino should run its protocol.
-unsigned long duration = 7200000;
+unsigned long duration = 1200000; // 20 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {0, 20, 0, 20};
+double freq[numPins] = {0, 2, 0, 2};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-int pulseWidth[numPins] = {0, 30, 0, 30};
+int pulseWidth[numPins] = {0, 10, 0, 10};
 
 unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
@@ -53,14 +53,12 @@ void setup() {
   Serial.begin(9600);
   for(int pin = pinStart; pin < pinEnd; pin++){
     pinMode(pin,OUTPUT);
-    if(freq[pin-pinStart] == 0) {
-      digitalWrite(pin,HIGH);
-    }
+    digitalWrite(pin,HIGH);
+  }
     pinMode(indicator,OUTPUT);
     digitalWrite(indicator,HIGH);
     delay(1000);
     digitalWrite(indicator,LOW);
-  }
 }
 
 // Run this loop ad electrical nauseum

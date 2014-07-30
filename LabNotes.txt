@@ -74,3 +74,67 @@
 - Wilson lab has Chrimson flies; maybe I'll try those?
 
 - Reattempted abdominal ganglion imaging in isolated male fly. Expression pattern appeared to be normal. Will re-do with more spec  ific GAL4 driver tomorrow.
+
+07/03/2014
+
+- Reimaged NP5270 > UAS-GCaMP 3.0 male during mating (attempted). Dismounted during prep. Unable to see much fluoresence??? Bizarre
+
+- UAS-ReaChR flies also unsuccessful again. Hard to say, though, since flies could use the aforementioned design flaw to escape the box entirely (and seemed very interested in doing so).
+
+07/04/2014
+
+- Power cable for LED array set up (3 A, >18V are minimum requirements)
+
+- Dissection of NP5270 > UAS-GCaMP 3.0 isolated male. Fluoresence looked fine.
+
+07/08/2014
+
+- Relative dearth of fluorescent male flies lately for abd. gang. prep
+
+- Inspected mCherry fluoresence in ddc-GAL4>UAS-ReaChR-mCherry stocks; some fluorescent cells but not as many as I expect. I'll check the other GAL4-driven ReaChR stocks too
+
+- Chrimson-mVenus lines arrived (UAS and LexAop2)
+
+07/13/2014
+
+- Realized a few days ago that I forgot to feed the ReaChR flies retinal
+
+- ReaChR offspring put on all-trans-retinal on the 11th. Will attempt experiment again on the 14th
+
+- Crossed Chrimson lines to various dopaminergic GAL4 lines (TH-D', TH-C', ddc, TH)
+
+- Elav-Chrimson cross on the 11th
+
+07/14/2014
+
+- No fluoresence visible now in the NP2719 > GCamP3.0 - mCherry males??
+
+- ddc>ReaChR flies tested again under red LEDs. Possible response? Needs to be quantitatively analyzed
+
+- Possible hurdles:
+	Hard to see flies on LEDs in video (change camera settings?? do post-processing?)
+	Not clear if expression is good (will do brain dissection on flies shortly)
+
+- Crossed NP5xxx to TH-GAL4. Intend to drive TrpA1 in both sets of neurons simultaneously to see whether they "compete" or if they're organized hierarchically (in DECAPITATED flies; in Crickmore/Vosshall they did this in normal flies and saw that the GABAergic line wins out but the cop. dur. seems to more closely resemble WT than either individually).	
+
+07/15/2014
+
+- Set up crosses of both GABAergic lines to all 3 types of GCaMP6 (F,M,S)
+
+- Try to do simultaneous TrpA1 / Chrimson? Maybe Chrimson + ReaChR (use separable LED spectra)?
+
+- Maybe we can try QuaSaR too??
+
+07/21/2014
+
+- Thorlabs shortpass 550 nm? filter affixed to front of camera, blocks all LED light so we can see the flies moving around
+
+07/22/2014
+
+- TH>Chrimson 20 Hz 30 ms pulse width successfully drives retinal-fed flies into seizures but does not appear to affect non-retinal-fed flies. Video file MVI_0057.MP4 on 07/22/2014
+
+07/23/2014
+
+- ddc>Chrimson 20 Hz 30 ms run (fill in results when done)
+
+
