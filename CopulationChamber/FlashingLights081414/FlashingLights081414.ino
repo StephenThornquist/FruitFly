@@ -33,19 +33,26 @@ const int timescale = 1000;
 // startTime is how long until it should start
 unsigned long startTime = 0;
 // duration is how long the Arduino should run its protocol.
-unsigned long duration = 7200000;
+unsigned long duration = 1200000; // 20 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {0, 20, 0, 20};
+double freqSet[numPins] = {0, 10, 0, 10};
+double freq[numPins] = {};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-int pulseWidth[numPins] = {0, 1, 0, 1};
+int pulseWidthSet[numPins] = {0, 10, 0, 10};
+double pulseWidth[numPins] = {};
 
 unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
+// flipTime tells you how long to run a pulse pattern before switching
+// to its inverse.
+unsigned long flipTime = 1000*60*5;
+// the int flip keeps track of whether or not the state is flipped
+int flip = 1;
 /* Load setup and initialize every pin as an output.
    Further, if the pin is set to be constant, initialize that.
 */   
@@ -53,19 +60,39 @@ void setup() {
   Serial.begin(9600);
   for(int pin = pinStart; pin < pinEnd; pin++){
     pinMode(pin,OUTPUT);
-    if(freq[pin-pinStart] == 0) {
-      digitalWrite(pin,HIGH);
-    }
+    digitalWrite(pin,HIGH);
+  }
     pinMode(indicator,OUTPUT);
     digitalWrite(indicator,HIGH);
     delay(1000);
     digitalWrite(indicator,LOW);
-  }
 }
 
 // Run this loop ad electrical nauseum
 void loop() {
   unsigned long currentTime = millis();
+  // check to see if it's time to flip
+  if( ( (currentTime/flipTime)%2 == 0 ) && flip == 1 ) {
+    digitalWrite(indicator,HIGH);
+    delay(100);
+    for(int pinScan = 0; pinScan < numPins; pinScan++) {
+      freq[pinScan] = freqSet[pinScan];
+    }
+    flip = 0;
+    digitalWrite(indicator,LOW);
+  }
+  if( ((currentTime/flipTime)%2 == 1) && flip == 0 ) {
+    digitalWrite(indicator,HIGH);
+    delay(100);
+    for(int pinScan = 0; pinScan < numPins; pinScan=pinScan + 2) {
+      freq[pinScan] = freqSet[pinScan+1];
+    }
+    for(int pinScan = 1; pinScan < numPins; pinScan=pinScan + 2) {
+      freq[pinScan] = freqSet[pinScan-1];
+    }
+    flip = 1;
+    digitalWrite(indicator,LOW);
+  }
   if(currentTime > startTime && currentTime<endOfDays) {
     // Step through each pin, indexed from 0
     for(int pinScan = 0; pinScan < numPins; pinScan++){

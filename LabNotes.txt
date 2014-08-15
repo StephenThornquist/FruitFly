@@ -137,4 +137,12 @@
 
 - ddc>Chrimson 20 Hz 30 ms run (fill in results when done)
 
+08/14/2014
+
+- Finally back from Alaska
+
+- NP5270 > UAS-GCaMP6M produces visible green fluoresence in abd. gang. in dissected non-mating male. Green washes out after a while. Unsuccessful dissections so far trying to get mating males I can image
+
+- Peltier units arrived; will begin prototype heating exp. environment shortly.
+
 
