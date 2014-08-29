@@ -115,7 +115,7 @@
 	Hard to see flies on LEDs in video (change camera settings?? do post-processing?)
 	Not clear if expression is good (will do brain dissection on flies shortly)
 
-- Crossed NP5xxx to TH-GAL4. Intend to drive TrpA1 in both sets of neurons simultaneously to see whether they "compete" or if they're organized hierarchically (in DECAPITATED flies; in Crickmore/Vosshall they did this in normal flies and saw that the GABAergic line wins out but the cop. dur. seems to more closely resemble WT than either individually).	
+- Crossed NP5270 to TH-GAL4. Intend to drive TrpA1 in both sets of neurons simultaneously to see whether they "compete" or if they're organized hierarchically (in DECAPITATED flies; in Crickmore/Vosshall they did this in normal flies and saw that the GABAergic line wins out but the cop. dur. seems to more closely resemble WT than either individually).	
 
 07/15/2014
 
@@ -145,4 +145,108 @@
 
 - Peltier units arrived; will begin prototype heating exp. environment shortly.
 
+08/19/2014
 
+- I've been pretty bad about keeping a good lab notebook. Hopefully I can change that here.
+
+- Remember to keep track of Chrimson + double balancer crosses! Goal: produce Chrimson/Cy0 stock and Chrimson/Sb stock.
+
+- ddc and TH > Chrimson experiments stored in the last several days. 10 Hz 10 ms pulses and 5 Hz 5 ms pulses both seem sufficient to induce behavior without causing seizing. Need to do controls for paralysis!! Behaviors which could be induced during red light to demonstrate lack of paralysis include courtship or a fear response to an aversive stimulus (e.g. heat from Peltier units or a visual loom stimulus).
+
+- ddc > Chrimson induces rapid place preference, apparently. But the memory is not retained when the red light is shut off, so maybe place preference isn't the right word; rather, it's just a sense of enjoying the sensation (10 hz 10 ms)
+
+- TH>Chrimson causes an apparent aversive reaction at both 10 hz 10 ms and 5 hz 5 ms. Flies scuttle about frantically whenever they enter the red light until they manage to exit it (and sometimes continue panicking for a bit). They learn fairly quickly not to stand where the light is.
+
+- Do the flies have a sense of where they are in space? Are there even sufficient visual cues to guide them?
+
+- Apparent green fluoresence in a FEW abd. gang. cells driving GCaMP6M with NP5270 repoGal80 (the driver with more broad expression across the whole VNC)
+
+- Need to work on Peltier device!!
+
+TODO:
+-Peltier + light environment
+-IR cam for monitoring flies (receive with Raspberry Pi, talk to Ofer)
+-ddc and TH subsets driving Chrimson activity
+-tourtship and Chrimson
+-Ttink HARD about the real questions we can ask with these systems
+-Papers (always and forever)
+-ID for Sebastian / MATLAB pay
+
+08/21/2014
+
+- Okay, I guess I forgot yesterday.
+- from 08/20/2014:
+    Fixed IR cam with RasPi, yet to test it though
+    drove TH>Chrimson with 5 hz 5 ms stimulus in the presence of females: not much mating
+
+TODO:
+-Peltier + light environment
+-Fix IR cam
+-ddc > Chrimson + courtship
+-ddc and TH subsets + other neurotransmitters
+-NSF / Hertz / NDSEG
+
+08/22/2014
+
+-MATLAB bootcamp is OVER
+
+-IR cam fried? Or maybe driving raspis with wrong amount of current.
+
+-w;TH-C'/+;UAS-Chrimson-mVenus/+ experiment with 10 Hz 10 ms stimulation, alternating at 10 min (accidentally set the right half to 19 Hz, 10 ms! Let's see how that turns out)
+-Above expt: 19 Hz, 10 ms causes seizures (no surprise). 10 hz 10 ms is still evidently quite negative.
+
+-TH-C' > Chrimson expt. with SAME FLIES at 5 Hz, 5 ms. Light stimulus again alternates. The flies go bonkers!
+
+-TODO:
+-Investigate Tango-trace (e.g. VGAT-FLP > (>DR-Tangotrace>) > UAS-GCaMP6  +  (DA-subset)-LexA > LexAop-Chrimson-mVenus to label GABAergic neurons receiving DA input from cells I care about and control their input)
+-Peltier + light environment
+-Fix IR cam
+-More TH subsets
+-NSF / Hertz / NDSEG
+
+08/25/2014
+
+-w;;TH-F'>Chrimson-mVenus expt. with 5 Hz 5 ms, alternating at 10 min
+-Same genotype as above, 10 Hz 5 ms (NOTE: accidental bug in code I just wrote meant that the startup of the light flashing went a little weird, so I paused the video to fix it. Thus there's a jump at ~10:10 in the video)
+
+08/26/2014
+
+-ddc>Chrimson NO RETINAL 10 hz 5 ms alternating at 10 min. First expt. done by manually turning on lights. Second round done with new Arduino script which turns on lights on its own (so I don't startle the flies) 
+
+TODO:
+-LAB MEETING
+-Crosses
+-NSF/NDSEG/Hertz
+-TEST OTHER TH Subsets (G, etc.)
+-Fix IR Cam
+-Peltier etc.
+
+08/27/2014
+
+-Things for lab meeting:
+    TH seems aversive
+    ddc seems attractive (though expt. has thus far only been done at 10 Hz 10 ms)
+    TH-C' and TH-F' not yet evaluated by me
+    Weak TH stimulus (2 hz 10 ms) seems to induce courtship
+
+
+- !!!
+    When I did the TH dissection for the most recent TH experiment, I didn't see fluoresence?? Strange. I should investigate this again tomorrow!!
+
+08/28/2014
+
+-Think about the manifolds on which neural networks can live (certainly not linear, Euclidean ones!)
+-don't forget about ddc and th courtship controls
+
+08/29/2014
+
+-Crosses between Chrimson and several GAL4 DA lines
+-IR cam set up in behavior room
+-UAS-GCaMP6M fluoresence in only one abd. gang. neuron (in fluoresence scope)
+
+TODO:
+-Abd. gang. dissections with GCaMP6
+-Peltier device
+-Analyze videos of TH-C' etc.
+-w;TH-D'-Gal80/Cy0;TH would be really useful to try
+-Stephen also gave me some other TH-subset GAL80s
