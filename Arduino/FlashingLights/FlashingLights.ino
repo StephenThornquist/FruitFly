@@ -42,7 +42,7 @@ double freq[numPins] = {0, 20, 0, 20};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-int pulseWidth[numPins] = {0, 30, 0, 30};
+int pulseWidth[numPins] = {0, 1, 0, 1};
 
 unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
