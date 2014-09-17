@@ -227,7 +227,7 @@ TODO:
     TH seems aversive
     ddc seems attractive (though expt. has thus far only been done at 10 Hz 10 ms)
     TH-C' and TH-F' not yet evaluated by me
-    Weak TH stimulus (2 hz 10 ms) seems to induce courtship
+    Weak TH stimulus (2 hz 10 ms) seems to induce courtship??
 
 
 - !!!
@@ -250,3 +250,63 @@ TODO:
 -Analyze videos of TH-C' etc.
 -w;TH-D'-Gal80/Cy0;TH would be really useful to try
 -Stephen also gave me some other TH-subset GAL80s
+
+09/02/2014
+
+-Fluoresence imaging of GCaMP6M driven by NP2719 in abd. gang. over the span of ~ 1 minute about 15 minutes into mating. Mostly uninteresting data.
+-TH-F1 line becomes hyperactive in constant red light and minorly averse to 5 Hz 5 ms stimulus (seems to be consistent with Zhihua's 31 degree phenotype)
+-Alterations to MATLAB analysis to try color coding sleep stages using HMMs
+
+TODO:
+-Courtship in TH>Chrimson flies
+-Abd. gang.
+-Make LexAop2-Chrimson, GAL4>UAS-GCaMP flies
+-Analyze remaining TH videos
+-IR cam
+-Peltier
+-NSF / NDSEG / Hertz / NIH F31??
+
+09/03/2014
+
+-Replaced bottom of behavior arena with an opaque white sheet, maybe will improve fly visibility
+-10 Hz, 5 ms TH>Chrimson stimulus in presence of Elav females AFTER > 1 hour of exposure to the females (results difficult to interpret: old cross, possibly non-TH>Chrimson flies in there, WILL REDO)
+
+TODO:
+-Abd. gang.
+-Make LexAop2-Chrimson, GAL4>UAS-GCaMP flies
+-Analyze remaining TH videos
+-IR cam
+-Peltier
+-NSF / NDSEG / Hertz / F31 / PQE
+-Repeat TH>Chrimson and ddc>Chrimson courting expts.
+
+09/04/2014
+
+-TH-D'>Chrimson expts at 10 Hz 5 ms and 5 Hz 5 ms, but I didn't see any clear fluoresence under the scope and they didn't seem to notice the lights being left on, so take it with a grain of salt (REPEAT ME)
+
+09/10/2014
+
+- Ordered thermistors
+- Prepped crosses for TH, ddc, TH-D1, TH-G', TH-F', TH-D1-GAL80 ; TH-GAL4, UAS-GCaMP6 + LexAop2Chrimson lines
+- Table for RasPiCams + IR longpass filter (NEEDS WORK)
+- Set up wireless streaming or wired streaming with static IP on RasPiCams
+
+TODO:
+-Abd. gang.
+-Analyze videos
+-Wait for Peltier stuff to come in, set everything else up!!
+-FELLOWSHIPS!
+
+09/16/2014
+
+-Built heat-regulation circuit sans thermistor
+-2P scope in Enhanced NeuroDiscovery core doesn't do a good job with our fly samples, will try BCH's 2P set-up (if they reply)
+-Wireless streaming of flies in a box using Raspberry Pi
+-Set up Raspberry Pi <--> Arduino USB communication using Nanpy. (NOTE: Arduino code for RasPis should be written in Python using Nanpy; importing other code onto the Arduino will remove the firmware and its ability to communicate with the RasPi via USB)
+
+TODO:
+-Wire up thermistors (when they arrive!)
+-Follow up on BCH imaging facility info
+-Practice abd. gang. dissection so that it's perfect by the time BCH replies
+-FELLOWSHIPS
+-Set up analysis pipeline for RasPi videos
