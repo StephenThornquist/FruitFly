@@ -35,16 +35,16 @@ const int timescale = 1000;
 // startTime is how long until it should start
 unsigned long startTime = 00000;
 // duration is how long the Arduino should run its protocol.
-unsigned long duration = 1200000; // 20 minutes
+unsigned long duration = 120000000; // 2000 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {5, 0, 5, 0};
+double freq[numPins] = {.00033, .00033, .00033, .00033};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-double pulseWidth[numPins] = { 5, 0, 5, 0};
+double pulseWidth[numPins] = { 30000, 30000, 30000, 30000};
 
 unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 

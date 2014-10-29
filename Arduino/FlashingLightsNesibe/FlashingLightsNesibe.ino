@@ -40,11 +40,11 @@ unsigned long duration = 1200000; // 20 minutes
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {5, 0, 5, 0};
+double freq[numPins] = {1, 1, 1, 1};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-double pulseWidth[numPins] = { 5, 0, 5, 0};
+double pulseWidth[numPins] = { 1, 1, 1, 1};
 
 unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 

@@ -310,3 +310,44 @@ TODO:
 -Practice abd. gang. dissection so that it's perfect by the time BCH replies
 -FELLOWSHIPS
 -Set up analysis pipeline for RasPi videos
+
+09/25/2014
+
+-Thermistor + heat complex works but the current through the Peltiers (700 mA) is insufficient to dramatically heat the chamber. Will need higher current loads with better parts
+-Imaging facility response (FINALLY), will need to wait for Tony Hill to come back from vacation (October 7th)
+-New box: Pavel ran out of black acrylic, will order more from McMaster-Carr
+-Analysis pipeline: Can do streaming for Raspi videos but have not done motion tracking (yet).
+-Lots of GAL4 > Chrimson lines are ready to go; just need the camera set-up to be available too. Should prioritize that until the new parts come in
+
+-Dopamine <--> GABA interplay in abd. gang.: Can I knock down GABARs or dopamine receptors to change the clock timing?
+
+TODO:
+-Dissection prep
+-Fellowships
+-IRIS chamber
+-Analysis pipeline
+
+09/26/2014
+
+- TH > Chrimson experiment performed (file name is THTrialRun.h264), 5 Hz 5 ms stimulus (purportedly; needs to be tested better)
+- Upon revision, it apparently takes approximately 200 ms for the Python script to cycle through all the lights (REALLY?) That explains the seizing. So I guess I should rewrite everything to be a bit more pythonic
+TODO:
+As above
+
+10/01/2014
+
+- TH>Chrimson experiment (5 Hz 5 ms stim with 5 minute switch time) saved as THChrimsonOct1.h264
+
+- Lots of script editing lately to make the RasPi <--> Arduino interaction easy to do with a lot of options but retain the speed of the Arduino. Current state: write to the serial port to change stimulation settings which are interpreted within the Arduino code as they come up (and as state transitions)
+
+TODO:
+-Still fellowships
+-IRIS
+-Analysis pipeline
+-Hammer out Arduino <--> RasPi serial comm.
+-MAKE VIDEOS FOR MIKE
+
+10/02/2014
+
+- ddc>Chrimson 5 hz 5 ms nice phenotype! Not analyzed but looks good, could use for Mike (saved as ddcChrimson5Hz5ms.h264)
+

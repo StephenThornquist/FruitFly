@@ -16,7 +16,7 @@ It can also flip the array of flashing lights if desired
  
  
  NOTE: The Buckpuck interpets a high control voltage as
- of and a low control voltage as on. It's stupid, but it
+ off and a low control voltage as on. It's stupid, but it
  probably made life easier for the guy who designed it. Oh
  well. Anyways, that explains why the digital write commands
  seem backwards.
@@ -35,7 +35,7 @@ const int timescale = 1000;
 // startTime is how long until it should start
 unsigned long startTime = 00000;
 // duration is how long the Arduino should run its protocol.
-unsigned long duration = 1200000; // 20 minutes
+unsigned long duration = 12000000; // 200 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
@@ -74,9 +74,6 @@ void setup() {
 
 // Run this loop ad electrical nauseum
 void loop() {
-  if(Serial.available() > 0) {
-    Serial.println(Serial.readString());
-  }
   unsigned long currentTime = millis();
   // Check to see if it's time to start or not and then turn on the light
   if((currentTime > startTime) && hasStarted == 0) {
@@ -140,4 +137,25 @@ void flip(int wellNum) {
   freq[2*wellNum + 1] = dummyFreq[0];
   pulseWidth[2*wellNum] = dummyPulse[1];
   pulseWidth[2*wellNum + 1] = dummyPulse[0];  
+}
+// For when something gets written to serial port
+void serialEvent() {
+  char editType = Serial.peek();
+  if(editType == 'f') {
+    Serial.println(editType);
+    double inFloat = Serial.parseFloat();
+    for(int i = 0; i < numPins; i++) {
+      freq[i] = inFloat;
+    }
+    Serial.println(freq[0]);
+  }
+  if(editType == 'p') {
+    Serial.println(editType);
+    double inFloat = Serial.parseFloat();
+    for(int i = 0; i < numPins; i++) {
+      pulseWidth[i] = inFloat;
+    }
+    Serial.println(pulseWidth[0]);
+  }
+    Serial.read();
 }

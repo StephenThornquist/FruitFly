@@ -33,7 +33,7 @@ const int numPins = pinEnd - pinStart;
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
 // startTime is how long until it should start
-unsigned long startTime = 600000;
+unsigned long startTime = 0;
 // duration is how long the Arduino should run its protocol.
 unsigned long duration = 1200000; // 20 minutes
 // endOfDays is when the protocol should end
@@ -52,7 +52,7 @@ unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
 // flipTime tells you how long to run a pulse pattern before switching
 // to its inverse (in milliseconds).
-unsigned long flipTime = 600000;
+unsigned long flipTime = 6000;
 // the int flip keeps track of whether or not the state is flipped
 int flip = 1;
 int hasStarted = 0;
@@ -89,7 +89,6 @@ void loop() {
   if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 0 ) && flip == 1 ) {
     Serial.write("flip!");
     digitalWrite(indicator,HIGH);
-    delay(2000);
     for(int pinScan = 0; pinScan < numPins; pinScan++) {
       freq[pinScan] = freqSet[pinScan];
     }
@@ -99,7 +98,6 @@ void loop() {
   if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 1) && flip == 0 ) {
     Serial.write("flip!");
     digitalWrite(indicator,HIGH);
-    delay(2000);
     for(int pinScan = 0; pinScan < numPins; pinScan=pinScan + 2) {
       freq[pinScan] = freqSet[pinScan+1];
     }
