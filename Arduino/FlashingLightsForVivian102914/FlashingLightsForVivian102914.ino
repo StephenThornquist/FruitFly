@@ -6,7 +6,7 @@ It can also flip the array of flashing lights if desired
  Frequencies are in Hz
  Pulse widths are in milliseconds
  
- The LED array is indexed  as follows:
+ The LED array is indexed as follows:
   _________________________________
  |  2   1   2   1   4   3   4   3  |
  |  2   1   2   1   4   3   4   3  |
@@ -33,9 +33,9 @@ const int numPins = pinEnd - pinStart;
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
 // startTime is how long until it should start
-unsigned long startTime = 000000;
+unsigned long startTime = 00000;
 // duration is how long the Arduino should run its protocol.
-unsigned long duration = 12000000; // 200 minutes
+unsigned long duration = 1200000; // 20 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
@@ -50,7 +50,7 @@ unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
 // flipTime tells you how long to run a pulse pattern before switching
 // to its inverse (in milliseconds).
-unsigned long flipTime = 300000;
+unsigned long flipTime = 6000;
 // the int flip keeps track of whether or not the state is flipped
 int flipBit = 0;
 int hasStarted = 0;
@@ -140,16 +140,4 @@ void flip(int wellNum) {
   freq[2*wellNum + 1] = dummyFreq[0];
   pulseWidth[2*wellNum] = dummyPulse[1];
   pulseWidth[2*wellNum + 1] = dummyPulse[0];  
-}
-
-// Function for when something gets written to the serial port
-void serialEvent() {  
-  byte inNum = Serial.read();
-  for(int pinScan = 0; pinScan < numPins; pinScan++) {
-    digitalWrite(pinScan+pinStart,LOW);
-  }
-  delay(inNum);
-  for(int pinScan = 0; pinScan < numPins; pinScan++) {
-    digitalWrite(pinScan+pinStart,HIGH);
-  }
 }
