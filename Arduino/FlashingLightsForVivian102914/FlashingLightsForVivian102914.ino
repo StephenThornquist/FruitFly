@@ -8,9 +8,9 @@ It can also flip the array of flashing lights if desired
  
  The LED array is indexed as follows:
   _________________________________
- |  2   1   2   1   4   3   4   3  |
- |  2   1   2   1   4   3   4   3  |
- |  2   1   2   1   4   3   4   3  |
+ |  3   4   3   4   1   2   1   2  |
+ |  3   4   3   4   1   2   1   2  |
+ |  3   4   3   4   1   2   1   2  |
  | Crickmore Lab / HMS Instr.      |
  |_________________________________|
  
@@ -50,7 +50,7 @@ unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
 // flipTime tells you how long to run a pulse pattern before switching
 // to its inverse (in milliseconds).
-unsigned long flipTime = 6000;
+unsigned long flipTime = 3600000;
 // the int flip keeps track of whether or not the state is flipped
 int flipBit = 0;
 int hasStarted = 0;

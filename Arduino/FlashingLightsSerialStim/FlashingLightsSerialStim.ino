@@ -8,9 +8,9 @@ It can also flip the array of flashing lights if desired
  
  The LED array is indexed  as follows:
   _________________________________
- |  2   1   2   1   4   3   4   3  |
- |  2   1   2   1   4   3   4   3  |
- |  2   1   2   1   4   3   4   3  |
+ |  3   4   3   4   1   2   1   2  |
+ |  3   4   3   4   1   2   1   2  |
+ |  3   4   3   4   1   2   1   2  |
  | Crickmore Lab / HMS Instr.      |
  |_________________________________|
  
