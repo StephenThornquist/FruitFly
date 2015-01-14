@@ -351,3 +351,184 @@ TODO:
 
 - ddc>Chrimson 5 hz 5 ms nice phenotype! Not analyzed but looks good, could use for Mike (saved as ddcChrimson5Hz5ms.h264)
 
+11/09/2014
+
+- So much for being a lot more diligent about this thing.
+
+- 10 Hz 1 ms stimulation of NP5270>Chrimson males copulating with Elav females terminates copulation early (n=4). Will repeat experiment multiple times today, try different stimuli (also toying with lighting)
+- 5 Hz 1 ms does the same.
+Data in NP5270ChrimsonCopulation spreadsheet
+-EscapeNewLights.h264 contains responses of GCI stimulation starting with 25 Hz then off, then 1 Hz, 5 Hz, 10 Hz, 25 Hz stimuli. (pw 5 ms)
+
+11/11/2014
+
+-10 Hz 1 ms stimulus causes seizure in TH>Chrimson as before, dialed down to 10 Hz 300 us stimulus for expts. Slightly erratic male behavior but not so bad. No apparent effect on copulation duration!!
+
+-20 Hz 5 ms seemed to tweak them out too much, switched to 1 ms after a few minutes. We'll see... Male courts a dead female with this stimulus though.
+No such luck. Huh. Will dissect TH>Chrimson flies to check expression.
+- Dissection looked good! Even more puzzling... will try again with lower settings after flies have had some time to recover
+
+-10Hz1ms Chrimson/+ flies copulate normally (see video). 
+Side note: Second mating in the same ~1 hour seems to be shorter in duration than the first
+
+-10Hz1ms NP5270>Chrimson flies has mild effect on copulation duration, but hard to say for sure.
+
+-10Hz 1ms NP5270>Chrimson (NO RETINAL) flies: No effect
+
+11/12/2014
+
+- 10Hz 1ms NP5270>Chrimson flies NO retinal: Still no effect
+
+11/21/2014
+
+- Trying TH>Chrimson again. Flies seem a little jumpy and weird even without light stimulation. Constant light stim makes flies much jumpier but does not seem to have experiment-ruining effects yet. Will update with cop. durs. Does dramatically prolong copulation. Will have to try with less intense stim.
+
+- NP5270>Chrimson constant light stim: shortens copulation in 3 out of 4 flies
+
+11/25/2014
+
+- Trying NP5270>Chrimson. video out of focus for some unknown reason? Will adjust after expt. is finished. Stimulus: Constant red light. Flies are a little jumpier but doesn't seem to be devastating yet. Two copulating pairs, one 8 minutes and one 16 minutes. Maybe some adaptation to red light in Chrimson? Will try again with 20 Hz stim after lunch.
+
+- 20 Hz 1 ms: activated on flies which were previously copulating, male fly starts trying to break up. Not sure how long into copulation they were though.
+
+Changing the setup a little at 1:45: I'm going to turn the light off and only pulse it in after I've seen flies starting to mate. Note: Flies seem way more eager to copulate / court without the lights constantly on.
+
+Shit that worked better than expected. Fly terminated immediately (5 minutes into cop.)
+
+11/26/2014
+
+- "Out of focus" problem is actually some weird artifact of backlighting and autoadjusting the white balance. I need to fix that.
+
+12/01/2014
+
+- Attempted to break up copulation at 5 minutes in by activating NP5270. Worked for some flies but not others, which showed the same highly variable cop. dur phenotype as before
+
+- Trying again with new stimulus protocol: Only stimulate for 2 seconds out of every 30 seconds with a preprogrammed (let's go with 20 Hz, 5ms) stimulation during that block. (stored as expt. 2)
+    Caused one to disengage (of two), other acted more erratically but has not stopped copulating yet (as of 3rd block of light stimulation)
+    Fly copulating with dead female also seems unfazed.
+    Third fly starting mating after light stimuli started and is exhibiting apparently normal cop. dur. (possibly longer??)
+
+12/02/2014
+
+- Trying copulationg dur in P1b>Chrimson flies with constant light. Kind of tweaks them out, but they do court pretty aggressively. Cop dur. mildly reduced (down to like 14 minutes) and the flies seem to get stuck more easily.
+
+12/06/2014
+
+- Reanalysis of GABA stim during copulation suggests that stim before ~ 5 min has little effect but after ~ 5 minutes causes dismounting. Will need to test this a little more, but it's encouraging.
+
+TODO:
+-TH-GAL4, Fru-FLP, UAS->STOP>-TrpA1 cop. dur expts., dissection and staining with anti-myc to look at VNC
+-Similar analysis with dsx-FLP
+-Varying stimulus levels with cop. dur termination expts.
+-Calcium imaging
+-Get the IRIS up and running
+
+12/08/2014
+
+- NP5270 stimulation set time into mating again. I didn't realize the Arduino program had been changed so I couldn't control the stimulus the way I wanted. Still, there is a puzzling result: flies which had been copulating for a long time didn't necessarily stop while those which had did.
+
+- Chrimson/+ flies not spooked at all by red light stimulation 5 minutes or more into mating. So that's a plus
+
+12/13/2014
+
+- Attempting TH>Chrimson mating with increased retinal dose. Most flies don't seem super tweaked out, though one is seizing. Forgot to clear out SD card of all the other videos that were on it so now there's some frame skipping (plus I did 30 fps instead of my usual 20, oops). 5 Hz 1 ms stimulus. Seem to have ~ normal copulation duration....
+- upped the intensity of stim to 20 hz, 5 ms, though that is definitely freaking the flies out a lot more. This resulted in one average length copulation bout and one very long copulation bout. Terminated video 90 minutes into copulation but it actually lasted a little longer before they started acting stuck. Will try constant light again, since that seemed to work on 11/21
+
+12/15/2014
+
+- TH>TrpA1 and CS; TrpA1 flies copulationg duration tested at 30 degrees. Only one TH fly copulated but it was for > 2.5 hours. The controls all copulated for ~10 minutes. Will try again soon. The flies also look about as tweaked out as they do on Chrimson, so that's not so bad. (MVI_0191-4)
+
+12/16/2014
+
+- Trying NP5270>Chrimson with the increased retinal dose. Flies are a little more jittery than normal but able to initiate copulation and court just fine. Pulsed a 500 ms light pulse every 30 seconds. 4/8 dismounted immediately upon pulse, 3 continued mating and seemed only somewhat affected by subsequent pulses. They certainly react but do not discontinue mating until several pulses later. Cop. dur is much shorter than usual in the nonterminating flies.
+- Starving the flies overnight, then feeding them retinal the next day. We'll see how that goes
+- Ran NP5270>TrpA1 experiments as well (video says Chrimson but it's TrpA1!) Average cop dur: 8.3 minutes.
+
+12/17/2014
+
+- Two groups of NP5270>Chrimson flies, one which has been on retinal food for a while, one which has been starved and then put on retinal food for 1 hour. Only 3 males present from the starved group (right half). Now testing copulation termination with light. Does not seem significantly improved (only 2 flies copulated, of which 1 terminated on first activation and the second copulated for longer than avergae for NP5270>Chrimson activated flies)
+
+12/18/2014
+- Trying NP5270>Chrimson cop. dur again, this time with stimulation throughout. 20 Hz 10 ms. Surprisingly little courtship. Turning off the lights for a bit then I'll switch the light stim to 2 sec on, 18 sec off. Wow huge effect! Scares the shit out of the males. Also does a great job getting the copulating flies to break up. Like, really great job (100% success rate!)
+
+- Control flies with same stimulus setting (200 second freq, 2000 ms pulse width): absolutely no effect on their copulation! Does not initiate sudden termination. success! Cop. dur. also seems normal
+
+12/20/2014
+- NP5270>Chrimson cop. dur again, 2000 ms pulses every 200 seconds (0.005 Hz). Works like a dream yet again!
+- To confirm it's the GABA line and not generic Chrimson activation, I'm doing dTrpA1>Chrimson in the same experimental prep. The activation certainly bothers the unmating males (have not yet seen successful copulation initiation). These guys are less aggressive courters. Maybe there's some weak tonic Chrimson activation. Red light disconnected until I see some copulation. Okay, uhh so I've been waiting like > 1 hour and got no courtship. These flies are a bunch of
+  wimps. Also the males look really small. Not sure what's up.
+- Trying TH>Chrimson with 2 second pulses of light every 20 seconds (f = 0.05 Hz). Stimulation kind of jerks the males around a bit, but once they mount the females they become their usual semi-zen selves. One pair so far looks "stuck" (of the two copulating pairs I have). I also observe that weird trademark rearing behavior. Phenotype is still variable: one pair copulated for 45 minutes, one for 19, and one for 25.
+
+12/21/2014
+- ddc>Chrimson at .05 Hz 2 s pulses. This seems to tweak the flies out a good deal. I'll dial down the frequency to 0.01 Hz (every 100 seconds). Once they start copulating, light stimulation does not appear to terminate it (at least in the early stages of copulation so far). It does, however, seem to reduce copulation duration in general (closer to 15 minutes), but termination does not coincide necessarily with light onset. Definitely seems like Ddc does not play a role in
+  copulation duration. Couldn't get a decent dissection with fluoresence that showed up on Corey's scope though...
+
+- Trying NP2719 (10x backcrossed) > Chrimson with 0.005 Hz 2 second stimuli. Fortunately it works exactly as well (i.e. 100% of the time) even only seconds into mating, and even 3 minutes out, suggesting it's truly the termination signal. Wait, no, there's one fly (well #2) who continued to copulate through the light signal, but terminated copulation twice on preceding matings. Copulated for 20 minutes. Happened in one other fly, but terminated the second time.
+
+- NP5270 repoGAL80 > Chrimson (1000 ms, every 200 seconds). Even this stimulation thus far has a 100% success rate. Will have to repeat without repo-GAL80. But it is kind of interesting: the dismounting procedure takes a few seconds and outlasts the light stimulus.
+
+12/22/2014
+-Crz>GAL4 (2 seconds, 0.005 Hz). They definitely respond to crz activation. Not seeing very much courtship but I'll wait. Turned off the light so that it would stop interrupting courtship. Stuck finger into video at first flash AFTER I plugged lights back in. Does not terminate copulation. Upped stimulus to constantly on to see if it had any effect, but does not appear to either. The males do seem to be ejaculating the whole time, though, so I feel good about Chrimson working here.
+-NP5270>Chrimson (1 sec, 0.005 Hz). Still sufficient to terminate all copulations. Trying tonic stimulation at 2 Hz 50 ms. i'm at least still seeing some courtship, though it is reduced. Trying it without stimulation for a while. Bringing back the light seems to keep them from copulating much, but if I turn it on after they've started, they stop quickly. The one that started copulating after the lights turned on, however, stayed copulating for a normal amount of time.
+
+01/02/2015
+- w;>STOP>TrpA1;Fru-Flp/TH-GAL4 expts. at 32*. Incubator was actually set to 30* (thermometer read 29 when I checked...)
+- Remember to do antibody staining after (Pecot lab not around, can't do it today)
+- Crz>Chrimson mating followed by IMMEDIATE red light and then heat shock at 41* C. Termination: 0/4 (terminated only a few minutes in though). "100 % termination" according to Vosshall / Crickmore paper, but doesn't quite sit right with me.
+- Performing the same assay with CS / TrpA1 flies gives 0% termination (n = 2), so maybe there's something to it. Further, the control flies mate for a normal amount of time
+
+01/03/2015
+- Anti-myc stain for w;>STOP>TrpA1-myc;TH-GAL4/Fru-FLP brains / VNCs primary incubated tonight
+- Moved over to CLS
+
+01/04/2015
+
+- Anti-myc incubated in donkey anti-mouse AlexaFluor488
+- Crz>Chrimson experiments with .0025 Hz stim and 10 s pulses. Haven't put the indicator light back in yet, so you'll have to just deal with that. These guys also don't seem to court that much, and when they do the females seem really unreceptive. Maybe they have gunk / cva on them and that makes them less appealing? Wow, I waited here for hours and not a single one was able to initiate copulation.
+
+01/06/2015
+
+- TH activation of Chrimson kind of stimulated excessive grooming in males wandering around but did not do anything clear.
+- TH activation in mating males... couldn't get them to court...
+
+01/07/2015
+
+- w;>STOP>TrpA1/+;Fru-FLP/TH-GAL4 at 32* C. Forgot to focus the video, but the copulations I can observe seem normal. Possible the FLP isn't working well
+
+Repeated Crz>Chrimson activation -> heat shock expt. (10 sec Crz activation, 30 sec heat shock, wait 2 min for separation). 0/1 termination
+
+01/09/2015
+
+- NP2719>Chrimson using a 12V power supply instead of 19V. 0.005 Hz, 2000 ms. Terminates some but not all copulations. Switched to high power at 12:34 (33 minutes into recording). Marked by finger. This expt. is to confirm Chrimson is still working in these flies.
+
+- Doing the same expt. again, titled "v2."
+
+01/11/2015
+
+- Trying with 14V power. Adequate to cause early termination every time, stops copulation on the first flash almost every time.
+
+- Now doing 12 V stimulation (only infrequently caused termination when flashed for 2 s every 200 seconds) but 20 ms every second. Animals court normally. They also seem to copulate normally. I guess it takes a prolonged activation of the GABA neurons to get a phenotype. I'll keep trying expts. with different stimulations though.Actually, copulation is considerably longer than normal. If I supply a long strong pulse, though, it makes them all terminate, so it doesn't
+  seem like it's the GABA activity per se, but rather the CHANGE in GABA activity. Will do more expts.
+
+- NP5270>GFP experiments with .005 Hz 2000 ms stim (termination assay) at full power (19.2 V). Obviously, does not cause termination with red light onset.
+
+- NP2719>Chrimson in no light has surprisingly short cop. dur. (mean = 16.33 min), but I only tested 3 flies. I'll keep the camera rolling in case I get more flies. These flies are also pretty old. I think I won't use this data and will try it again next time I do the experiment.
+
+-TH>Chrimson Termination assay (19.2 V, 0.005 Hz, 2000 ms). Yet again pretty hard to get copulation with these flies...
+
+- TH-G'>Chrimson grooming assay. Protocol: 5 minutes no red light, measure fraction of time grooming, then 5 minutes red light, measure fraction of time grooming. LEFT HALF: Chrimson/+ RIGHT HALF: TH-G'>Chrimson all flies are males. Results: hard to say. I'll score the video at some point, but for now it looks like red light promotes grooming in control and TH flies...
+
+- Using the same set-up but with the termination assay looking for cop. dur. phenotypes. TH-G'>Chrimson also doesn't seem to want to court as much as the controls do... wow, the raspi crashed. Never seen that happen before. I wonder what happened. Second video obviously starts a few minutes later. Perhaps the previous experiment depleted a good amount of the dopamine in the TH-G' neurons? Finally got a copulation and the male is acting very spastic, constantly pulling on
+  the female. He did eventually stabilize though
+
+01/12/2015
+
+- No light controls look good. After I got several copulations, I started playing with various light levels. 11.1 V did nothing with a 2 s stimulation, but with 5 s seems to have slightly more success eliciting a response. Still not a super good at it though.
+
+- Crz>Chrimson heat shock expt. again (15 s in red light, 30 sec at 41*, then wait 2 minutes and see if they broke up). 1/1. Corazonin is easier to activate with 20 Hz, 10 ms stim with the power set to 28.1 V, for future reference.
+
+01/13/2015
+
+- Did 1 Hz 20 ms 12 V expt again, cop. dur. looks more like the controls. Guess the high mean before was just by chance. Not broken retinal because I broke up the termination with a prolonged pulse of red light.
+
+- 10 Hz 20 ms 28 V shortens the cop. dur. but the ones on the far right seem less effected for some reason...

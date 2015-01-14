@@ -2,6 +2,8 @@
 
 It can also flip the array of flashing lights if desired
  
+Blocks of stimuli (e.g. flashing lights for 2 seconds out of every 30)
+ 
  For the below code, the following convention is used:
  Frequencies are in Hz
  Pulse widths are in milliseconds
@@ -38,13 +40,19 @@ unsigned long startTime = 00000;
 unsigned long duration = 12000000; // 200 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
+// How long a block of pulses should last
+unsigned long blockDur = 2000;
+// How long between blocks
+unsigned long blockRest = 2000;
+// How long a block lasts in total
+unsigned long blockTime = blockDur + blockRest;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {2,2, 2, 2};
+double freq[numPins] = {1,1, 0, 0};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-double pulseWidth[numPins] = { 100, 100, 100, 100};
+double pulseWidth[numPins] = { 500, 500, 0, 0};
 
 unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
 
@@ -98,7 +106,7 @@ void loop() {
     flip(1);
     flipBit = 1;
   }
-  if(currentTime > startTime && currentTime<endOfDays ) {
+  if(currentTime > startTime && currentTime<endOfDays && ((currentTime-startTime) - blockOn) < blockDur) {
     // Step through each pin, indexed from 0
     for(int pinScan = 0; pinScan < numPins; pinScan++){
       // See if this pin is supposed to be constantly on
@@ -126,7 +134,10 @@ void loop() {
       }
     }
   }
-  if(currentTime > endOfDays) {
+  if (((currentTime-startTime) - blockOn) > blockTime) {
+     blockOn = currentTime;
+  }
+  if(currentTime > endOfDays || ((currentTime-startTime) - blockOn) > blockDur) {
     digitalWrite(indicator, LOW);
     for(int pinScan = 0; pinScan < numPins; pinScan++) {
       digitalWrite(pinScan + pinStart, HIGH);
