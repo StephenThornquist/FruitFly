@@ -21,14 +21,13 @@ It can also flip the array of flashing lights if desired
  well. Anyways, that explains why the digital write commands
  seem backwards.
  
- Stephen Thornquist June 28 2014
+ Stephen Thornquist March 22, 2015
  */
  
  // indicator is the pin corresponding to the indicator LED
 const int indicator = 9;
-const int pinStart = 10;
-const int pinEnd = 14;
-const int numPins = pinEnd - pinStart;
+const int numPins = 9;
+int pin[numPins] = {10,11,12,13};
 // Timescale says how many of our selected timescale are in a second
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
@@ -40,13 +39,13 @@ unsigned long duration = 12000000; // 200 minutes
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {2,2, 2, 2};
+double freq[numPins] = {10,10,10,10};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-double pulseWidth[numPins] = { 100, 100, 100, 100};
+double pulseWidth[numPins] = {1,1,1,1};
 
-unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
+unsigned long lastOn[numPins]={ 0, 0, 0, 0};
 
 // flipTime tells you how long to run a pulse pattern before switching
 // to its inverse (in milliseconds).
@@ -60,9 +59,9 @@ unsigned long blockOn = 0;
 */   
 void setup() {
   Serial.begin(9600);
-  for(int pin = pinStart; pin < pinEnd; pin++){
-    pinMode(pin,OUTPUT);
-    digitalWrite(pin,HIGH);
+  for(int k = 0; k < numPins; k++){
+    pinMode(pin[k],OUTPUT);
+    digitalWrite(pin[k],HIGH);
   }
     blockOn = 0;
     hasStarted = 0;
@@ -85,19 +84,7 @@ void loop() {
     hasStarted = 1;
     Serial.write("Starting expt!");
   }
-  // check to see if it's time to flip
-  if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 0 ) && flipBit == 1 ) {
-    Serial.write("flip!");
-    flip(0);
-    flip(1);
-    flipBit = 0;
-  }
-  if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 1) && flipBit == 0 ) {
-    Serial.write("flip!");
-    flip(0);
-    flip(1);
-    flipBit = 1;
-  }
+  
   if(currentTime > startTime && currentTime<endOfDays ) {
     // Step through each pin, indexed from 0
     for(int pinScan = 0; pinScan < numPins; pinScan++){
@@ -110,7 +97,7 @@ void loop() {
             if(pinScan == 0) {
               digitalWrite(indicator,LOW);
             }
-            digitalWrite(pinScan+pinStart, HIGH);
+            digitalWrite(pin[pinScan], HIGH);
           }
            
           // If it's been timescale/frequency units of time since the LED
@@ -120,34 +107,27 @@ void loop() {
             if(pinScan == 0) {
               digitalWrite(indicator,HIGH);
             } 
-            digitalWrite(pinScan + pinStart, LOW);
+            digitalWrite(pin[pinScan], LOW);
             lastOn[pinScan] = currentTime; 
           }
+      }
+      else {
+        digitalWrite(pin[pinScan],HIGH);
+        if(pinScan == 0) {
+          digitalWrite(indicator, LOW);
+        }
       }
     }
   }
   if(currentTime > endOfDays) {
     digitalWrite(indicator, LOW);
     for(int pinScan = 0; pinScan < numPins; pinScan++) {
-      digitalWrite(pinScan + pinStart, HIGH);
+      digitalWrite(pin[pinScan], HIGH);
     }
   }
 }
 
-/* flip function flips the frequency and pulse width arrays on a chamber-by-chamber basis
-*/
-void flip(int wellNum) {
-  double dummyFreq[2] = {};
-  double dummyPulse[2] = {};
-  dummyFreq[0] = freq[2*wellNum];
-  dummyFreq[1] = freq[2*wellNum + 1];
-  dummyPulse[0] = pulseWidth[2*wellNum];
-  dummyPulse[1] = pulseWidth[2*wellNum + 1];
-  freq[2*wellNum] = dummyFreq[1];
-  freq[2*wellNum + 1] = dummyFreq[0];
-  pulseWidth[2*wellNum] = dummyPulse[1];
-  pulseWidth[2*wellNum + 1] = dummyPulse[0];  
-}
+
 // For when something gets written to serial port
 void serialEvent() {
   char editType = Serial.peek();

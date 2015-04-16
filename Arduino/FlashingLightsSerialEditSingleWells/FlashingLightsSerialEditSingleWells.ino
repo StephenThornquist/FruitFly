@@ -1,20 +1,17 @@
 /* Write an array of firing frequencies and pulse widths and change them with a computer
-
-It can also flip the array of flashing lights if desired
- 
-Blocks of stimuli (e.g. flashing lights for 15 seconds out of every 5 minutes)
  
  For the below code, the following convention is used:
  Frequencies are in Hz
  Pulse widths are in milliseconds
  
  The LED array is indexed as follows:
-  _________________________________
- |  3   4   3   4   1   2   1   2  |
- |  3   4   3   4   1   2   1   2  |
- |  3   4   3   4   1   2   1   2  |
- | Crickmore Lab / HMS Instr.      |
- |_________________________________|
+ -----------------
+||  1     2    3  ||
+||                ||
+||  4     5    6  ||
+||                ||
+||  7     8    9  ||
+||----------------||
  
  
  NOTE: The Buckpuck interpets a high control voltage as
@@ -23,14 +20,20 @@ Blocks of stimuli (e.g. flashing lights for 15 seconds out of every 5 minutes)
  well. Anyways, that explains why the digital write commands
  seem backwards.
  
- Stephen Thornquist June 28 2014
+ Stephen Thornquist March 22, 2015
  */
  
  // indicator is the pin corresponding to the indicator LED
 const int indicator = 9;
-const int pinStart = 10;
-const int pinEnd = 14;
-const int numPins = pinEnd - pinStart;
+const int numPins = 9;
+
+// This line is to map the schematized well number above onto the right entry in the pin array
+// wellMap's nth entry is the index of Well #n in the array pin. It basically
+// exists to make up for my sloppy wiring job. When I make a PCB I can fix this
+// to make it better.
+
+int wellMap[numPins+1] = {9,5,4,7,6,3,8,2,1,0}; 
+int pin[numPins] = {3,4,5,6,7,10,11,12,13};
 // Timescale says how many of our selected timescale are in a second
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
@@ -40,21 +43,15 @@ unsigned long startTime = 00000;
 unsigned long duration = 12000000; // 200 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
-// How long a block of pulses should last
-unsigned long blockDur = 20000;
-// How long between blocks
-unsigned long blockRest = 200000;
-// How long a block lasts in total
-unsigned long blockTime = blockDur + blockRest;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {20,20, 20, 20};
+double freq[numPins] = {0,0,0,0,0,0,0,0,0};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-double pulseWidth[numPins] = { 10, 10, 10, 10};
+double pulseWidth[numPins] = {90,80,70,60,50,40,30,20,10};
 
-unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
+unsigned long lastOn[numPins]={ 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 // flipTime tells you how long to run a pulse pattern before switching
 // to its inverse (in milliseconds).
@@ -68,9 +65,9 @@ unsigned long blockOn = 0;
 */   
 void setup() {
   Serial.begin(9600);
-  for(int pin = pinStart; pin < pinEnd; pin++){
-    pinMode(pin,OUTPUT);
-    digitalWrite(pin,HIGH);
+  for(int k = 0; k < numPins; k++){
+    pinMode(pin[k],OUTPUT);
+    digitalWrite(pin[k],HIGH);
   }
     blockOn = 0;
     hasStarted = 0;
@@ -93,20 +90,8 @@ void loop() {
     hasStarted = 1;
     Serial.write("Starting expt!");
   }
-  // check to see if it's time to flip
-  if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 0 ) && flipBit == 1 ) {
-    Serial.write("flip!");
-    flip(0);
-    flip(1);
-    flipBit = 0;
-  }
-  if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 1) && flipBit == 0 ) {
-    Serial.write("flip!");
-    flip(0);
-    flip(1);
-    flipBit = 1;
-  }
-  if(currentTime > startTime && currentTime<endOfDays && ((currentTime-startTime) - blockOn) < blockDur) {
+ 
+  if(currentTime > startTime && currentTime<endOfDays ) {
     // Step through each pin, indexed from 0
     for(int pinScan = 0; pinScan < numPins; pinScan++){
       // See if this pin is supposed to be constantly on
@@ -118,7 +103,7 @@ void loop() {
             if(pinScan == 0) {
               digitalWrite(indicator,LOW);
             }
-            digitalWrite(pinScan+pinStart, HIGH);
+            digitalWrite(pin[pinScan], HIGH);
           }
            
           // If it's been timescale/frequency units of time since the LED
@@ -128,39 +113,27 @@ void loop() {
             if(pinScan == 0) {
               digitalWrite(indicator,HIGH);
             } 
-            digitalWrite(pinScan + pinStart, LOW);
+            digitalWrite(pin[pinScan], LOW);
             lastOn[pinScan] = currentTime; 
           }
       }
+      else {
+        digitalWrite(pin[pinScan],HIGH);
+      }
     }
   }
-  if (((currentTime-startTime) - blockOn) > blockTime) {
-     blockOn = currentTime;
-  }
-  if(currentTime > endOfDays || ((currentTime-startTime) - blockOn) > blockDur) {
+  if(currentTime > endOfDays) {
     digitalWrite(indicator, LOW);
     for(int pinScan = 0; pinScan < numPins; pinScan++) {
-      digitalWrite(pinScan + pinStart, HIGH);
+      digitalWrite(pin[pinScan], HIGH);
     }
   }
 }
 
-/* flip function flips the frequency and pulse width arrays on a chamber-by-chamber basis
-*/
-void flip(int wellNum) {
-  double dummyFreq[2] = {};
-  double dummyPulse[2] = {};
-  dummyFreq[0] = freq[2*wellNum];
-  dummyFreq[1] = freq[2*wellNum + 1];
-  dummyPulse[0] = pulseWidth[2*wellNum];
-  dummyPulse[1] = pulseWidth[2*wellNum + 1];
-  freq[2*wellNum] = dummyFreq[1];
-  freq[2*wellNum + 1] = dummyFreq[0];
-  pulseWidth[2*wellNum] = dummyPulse[1];
-  pulseWidth[2*wellNum + 1] = dummyPulse[0];  
-}
+
 // For when something gets written to serial port
 void serialEvent() {
+  /* Old code for only adjusting one parameter at a time
   char editType = Serial.peek();
   if(editType == 'f') {
     Serial.println(editType);
@@ -179,4 +152,12 @@ void serialEvent() {
     Serial.println(pulseWidth[0]);
   }
     Serial.read();
+    */
+  int inWell = Serial.parseInt();
+  float inFreq = Serial.parseFloat();
+  int inPW = Serial.parseInt();
+  // Translate the well request into which pin to modify
+  int pinInd = wellMap[inWell];
+  freq[pinInd] = inFreq;
+  pulseWidth[pinInd] = inPW;
 }
