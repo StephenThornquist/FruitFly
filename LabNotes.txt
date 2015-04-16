@@ -532,3 +532,508 @@ Repeated Crz>Chrimson activation -> heat shock expt. (10 sec Crz activation, 30 
 - Did 1 Hz 20 ms 12 V expt again, cop. dur. looks more like the controls. Guess the high mean before was just by chance. Not broken retinal because I broke up the termination with a prolonged pulse of red light.
 
 - 10 Hz 20 ms 28 V shortens the cop. dur. but the ones on the far right seem less effected for some reason...
+
+01/14/2015
+
+- 1 Hz 200 ms 28V. NOTE: FIRST TWO AND LAST TWO COLUMNS HAVE ONLY BEEN ON RETINAL FOR ONE DAY. This stim. does seem to cause early termination of copulation, even in the flies which have only been on retinal for a day or less.
+
+01/18/2015
+
+- Been working on PQE. Experiment idea: TH>TrpA1, look to see if they've ejaculated by 10 minutes into copulating (make sure TH activation isn't acting by simply inhibiting Crz neurons)
+
+01/19/2015
+
+- NP2719 10 hz 20 ms stim (28V). No copulation because the females weren't HS'd virgins... oops.
+
+01/21/2015
+
+- Crz>Chrimson with w-eyed virgins. These flies are still hard to get courting (they've been isolated for two whole days and are probably ~ 3 days old...?)
+
+01/22/2015
+
+- NP5270>Chrimson 2 sec stim every 10 minutes. Trying to see if females remain receptive to courtship after cop. between 5-10 minutes (to see if the remaining 10-15 minutes are how long it takes to activate the ppk pathway etc.). They seem to lose receptivity very quickly after ejaculation.
+
+01/24/2015
+
+- Crz>Chrimson heatshock expts again. The 5-day-old males are much more active in terms of courtship, which is nice. Control did not terminate copulation when heat shocked.
+Cop dur of non-terminating flies:
+1: 3:36 - 3:53 = 17 min
+
+01/25/2015
+
+- TH-G'>Chrimson 0.005 Hz 2000 ms. Short cop. dur?? Only got one fly...
+
+01/27/2015
+
+- BLIZZARD
+
+- Crz>Chrimson early termination expts again. Had one pair that didn't break up during the light stimulation experiment. Mock cop. dur is normal though.
+
+- TH>Chrimson seems relatively ineffective with .005 Hz 2 s stimuli, but 10 Hz 20 ms stimulus did prolong copulation in the one fly I got copulating... (46 min)
+
+01/28/2015
+
+- TH-G>Chrimson 10 Hz 20 ms. The lights kind of tweak the males out and interrupt courtship. The males jerk around more while mating, that's for sure. Much shorter copulation duration, though.
+
+-TH>Chrimson 10 hz 20 ms. Long copulation durations: 70 minutes and 40 minutes. Yay.
+
+01/30/2015
+
+- R40F04>Chrimson 10 Hz 20 ms is sufficient to induce grooming in isolated male flies. Activating these neurons does not stop copulation. It also is sufficient to drive grooming of the eyes during mating. But there's a weird courtship phenotype too.
+
+- R18C11>Chrimson also works with 10 Hz 20 ms
+
+02/03/2015
+
+-Crz>Chrimson no light controls. Mostly normal, but one weird loooong mating pair?? Maybe silenced those neurons...
+
+- TH>Chrimson no light controls. Normal cop. dur.
+
+02/04/2015
+
+- NP2719>Chr 1 Hz 20 ms stimulus. Slightly long cop. dur. than the 10 Hz 20 ms, but shorter than no stimulus.
+
+- NP2719>Chr .01666 Hz 200 ms stim (1 pulse / min). No difference from WT mating! Interesting.
+
+02/05/2015
+
+- R40F04>Chrimson grooming during mating again. Also, weirdly, observe some unilateral wing extension during mating, but not all the time (like one might expect from a CPG).
+
+02/06/2015
+
+-NP2719>Chrimson 1 min 200 ms stim. Weird bimodal result!! Half of the flies terminate within the first 5 minutes or so, and the other half terminate at 20 minutes....
+
+-NP2>Chr 10 Hz 20 ms still the same.
+
+-Trying NP2>Chr 1 Hz 500 ms. Causes termination in every mating immediately except for with a few flies. Only one lasts more than one flash.
+
+- NP2>Chr 1 min 200 ms again. No flies terminated during the first 10 minutes of mating so I switched it up by adding a 1s pulse. None of these guys terminated in response to that, but did respond to a 2s pulse.
+
+02/08/2015
+
+- NP2>Chr .1 Hz 200 ms, termination around 10 min period or at normal interval.
+
+- NP2>Chr 1Hz200ms corroborates previous data
+
+- NP2>Chr no light controls just like before
+
+02/10/2015
+
+- NP2>Chr .1 Hz 200 ms, termination early on, never makes it to normal interval. What went wrong before (or now??). I'll need to repeat these experiments. I would also like to repeat the 1 min 200 ms experiment. Unfortunately, I don't have many NP2 flies right now...
+
+- NP7>Chr 2s pulse causes termination every time.
+
+- NP7>Chr 10Hz 20 ms: Not really getting any courtship. There are just so few flies too.
+
+- NP7,GadGal80>Chr 0.005Hz 2000 ms: Still terminates with light pulse. Does GadGal80 not work or are there other neurons??
+
+- TH-C'>Chrimson 10 Hz 20 ms. The light really makes these guys spazz. I'm just gonna turn off the power supply until a mating starts. Otherwise they display aggression-like behavior. WOW the mating guy FREAKS OUT when you do this. Eventually he starts to display stuck-like behavior (after like 50 minutes) Keeps mating (non-stuck-like) even when I turned off the light though, so I turned it back on. Turned off the light for good after 2 hours of mating to see how long it
+  took to dismount. Took only a couple of minuntes to terminate from there.
+
+02/11/2015
+
+- Np2>Chr 1 min 200 Hz a little confusing. Not so much the bimodal distribution. Looks closer to the 1 hz 200 ms data. I feel like I need to figure out the day-to-day variability.
+
+- Chr/+ 1 min 200 Hz looks normal. Slightly higher cop. dur than average but that's not unreasonable. approximately the same amount of spazzing in response to light as in the Np2 flies, so I can be extra confident that it's not a motor defect
+
+02/12/2015
+
+- NP2,GadGal80 with 2s stimulation once a minute. Left 4 flies are Np2Gadgal80>Chr, right 4 are just np2>Chr. Both cause termination. Seems like the GadGal80 doesn't work.
+
+02/13/2015
+
+- PQE!!
+
+02/17/2015
+
+List of experiments I want to do:
+
+- Calcium imaging in GABA neurons
+- Calcium imaging in dopamine neurons
+- Calcium imaging in Crz neurons
+- Measure red light intensity INSIDE the ventral nerve cord of the fly
+- Demonstrate similar effects of red light on copulation duration of decapitated flies
+- In vivo calcium imaging during Chrimson stimulation
+- Ex vivo calcium imaging or ephys with Chrimson stimulation
+- Characterize sensitivity of GABA neurons to temporal structure of light inputs
+- Characterize dopamine subsets driving copulation / other behaviors
+- Create Crz-LexA
+- Screen grooming driver circuits for neurons which overcome behavioral suppression
+- Automate behavioral analysis
+
+Prioritization:
+
+1) Automate analysis
+2) Calcium imaging in GABA / dopamine / Crz
+3) Measure red light intensity
+4) Dynamics of GABA neuron inputs
+5) Dopamine subsets
+6) Validate Chrimson in decap. flies
+7) Ex vivo calcium imaging + Chrimson
+8) IN vivo Ca imaging + Chrimson
+9) Screen grooming drivers
+
+Screening isn't super hard though so I'll do it where I can fit it.
+
+- R53E05 : Leg grooming during mating??? Hard to tell.
+
+- R50B07 : No wing grooming during mating, but strong wing grooming outside of mating.
+
+02/22/2015
+
+- Okay it's time to get back to work
+
+- Let's do some behavioral controls:
+
+- 10 Hz 20 ms 16 v : Demonstrate that I'm using "saturating" amounts of light, i.e. the photocurrent is probably the same with 16v as with 28v, as validated by similar copulation durations. The data is not looking great though; I've had 3 flies so far, 2 with shorter than the 28v cop dur and 1 in the normal range. Flies are a bit older than normal though. I'll keep watching and see what the overall distribution looks like. Next few flies look pretty normal. Not sure what to make of
+  this. I'll have to repeat it later.
+
+- 0.005 Hz 15000 ms 28v. Demonstrate that mating termination comes from activation of the neurons, rather than a "rebound" phenomenon. All copulations terminate long before the pulse ends. So it's probably not a rebound from a depolarization block or something like that.
+
+02/23/2015
+
+- Trying out Barret Pfeiffer's Chrimson lines #1,2,3,4 with 2s pulses once every 200s. #1 didn't terminate on the first light trial. Instead, terminates around 10 minute mark. #2 terminates every time. #3 also terminates every time. Weaker effect on #4 as well.
+
+02/24/2015
+
+- Redux on yesterday's expts. Pfeiffer lines 1,2,3,4. NOTE: ACCIDENTALLY MIXED UP ORDER. COLUMNS GO 1, 3, 2, 4, AS REFLECTED IN THE NUMBERS SHEET, BUT IT'S HARD TO SEE IN THE VIDEO!!! The 10x ChR88 line is less effective at causing termination (around 10 min in instead of immediately), but the others all seem to work the same, as far as I can tell
+
+02/25/2015
+
+- NP2719 Constant stimulation. I did this experiment before, but with the lower retinal dose. Vivian's lights fall apart after prolonged light stimulus because the solder melts, though, so I'll have to redo this.
+
+- NP2719 0.05 Hz 20 ms. Looks like WT, but expt. is actually invalid. Test 2s pulse failed to cause termination. Will repeat with new flies.
+
+02/26/2015
+
+- Finally got OpenCV and raspicam working together!! It only takes 15 ms to read a frame in OpenCV, but on the Pi it seems to take 2 whole seconds to do the processing. It seems like I will have to unload all the processing to the lab computer. Breakdown:
+15 ms to read frame
+100 ms to resize frame
+~ 200 ms to find well contours
+400 ms to find and sort out flies
+only a few milliseconds to draw contours
+~ 120 ms to write a frame
+
+02/27/2015
+
+- R18C11>Chrimson stimulus elicits antennal grooming in head-ful flies, but no grooming (or possibly a little leg and genital grooming??) in decapitated flies (n=2)
+
+- Did a bunch of TH-G>Chrimson dissections and then turned them into pancakes because the slide coverslips are thinner than the brains!! so the bridge flattened them. Kind of a bummer.
+
+03/02/2015
+
+- NP2719 > Chrimson 0.005 Hz 500 ms. Looking for "lower bound" on instant termination stimulus. (using 28 V) NOTE: Forgot to plug in the power source for the first few minutes. 500 ms appears above threshold
+
+- NP2719 > Chrimson 0.005 Hz 250 ms is sub threshold (also 28 V). Okay cool! So the "threshold" is somewhere in the middle. Exhibits this same "bimodal" behavior I saw in the once-a-minute 200 ms pulses (not super surprising).
+
+03/03/2015
+
+- NP2719 > Chrimson 10 Hz 20 ms stimulus provided in a 10 sec. block every 200s. Looking for a difference between this stimulation condition and the one in which it's constantly 10 Hz 20 ms. Essentially the question is "are the NP2 neurons somehow remembering all of the activity injected during those first ten minutes when they terminate, or is it approximately the instantaneous/within-the-last-few-seconds level of activity that matters?" There IS a marked change: this stimulation
+  terminates the mating! So what seems to matter is the relative change in GABA neuron activity....?
+
+- Same expt. as above but with a 1s block every 200s. Even 1s is enough, though it's not as good (it seems). However, it's unclear if it's only working in that 20-30s window of "low motivation" right at the start of mating, since all of the terminations I've observed have been in that window. Ah, no, it's worked in other flies too near the 3 or 4 minute mark. Some flies seem unaffected, which is weird because they terminated in response to the longer pulse. Am going to repeat this
+  experiment when they terminate using their brothers.
+
+- NP2719 > Chrimson 10 Hz 20 ms 1 s block every 200 s. This one seems to work (almost) every time. Hmmmm... Still a behavioral effect in the non-terminating flies though. Not using the preceding batch of data, for now at least.
+
+03/04/2015
+
+- TH>GCamp6f 2p recording. Got cut off before I figured out how to take a dang video! But I saw fluoresence, and it was definitely in the green band, and it was sensitive to the 2p excitation (went away if I shortened or lengthened the wavelength too much or if I excluded green from the acquired light, but not any other color). It also seemed to be "pulsing" (like Stephen Zhangs's TH neurons). The fly was still mating at the time (~15 minutes in) as far as I could tell (and he
+  had terminated by the time I got back to lab after getting evicted). Hopefully I can get similar images again when I go back
+
+03/09/2015
+
+- NP2719>Chrimson expts. with 10 Hz 20 ms stimulus for 40 minutes, then turning off the light (can I adjust "baseline...?"). Simultaneously recording mating times in those flies which DO mate during the light stim. Ehh looks pretty normal.
+
+- NP2719>GCaMP6f experiments. Didn't see any 2p-sensitive fluoresence... Tried scanning with 488, saw more signal, not clear what came from abd. gang.
+
+- Crz>Chrimson termination expts again. 0/1 termination. These guys just aren't great at courting. Gawd, nothing worked today.
+
+03/11/2015
+
+- Even the dissecting scope light is capable of terminating copulation in np2719>chrimson males, which is going to make the imaging experiments more difficult. Options: do dissection in IR, use ReaChR, use weaker Pfeiffer line, do dissection in ambient light (need to see if opening cuticle will cause termination in this setting)
+
+-Trying cop. dur. in Tph2>Chrimson. They don't seem super excited about courting.... 0.005 Hz, 2000 ms stimulation (28V). They get there though, I'm starting to see some courtship about 10 minutes in. took ~ 20 minutes before I got my first successful copulation. Activation definitely bothers him! Even several seconds after the stimulation, he looks like he's trying to dismount the female. Kind of like the TH phenotype? But it's not a complete dismount like with the
+NP2719 line. He seems to return back to normal after ~ a minute. Shit! I went pee and missed whenever he terminated! Fortunately I have the video. I'll watch to see if he terminated on the light pulse. (Yes, he did) Aborted video so I could download it while I record the next one (called the same thing but with a 2 at the end). Shit! some sort of memory allocation issue... not sure what the eff happened.
+
+-Termination expt. in Tph2>Chrimson flies. 0/2 termination. Acts like he's going to terminate, though! Rears back and pulls away from female.
+
+03/12/2015
+
+- Crz>Chrimson termination expt. 0/6 termination. What the shit? was using different stimulus though: 10 hz 20 ms instead of 20 hz 10 ms. Could that make a difference? I'll try it again. Termination with 20 hz 10 ms: 3/5
+
+- Trying with longer heat stimulation (2 min): 2/2 termination, one in the bath, one not. Mock: 0/5
+
+- Worked on separate wells box. Annoyingly, cut out the wrong pieces so I didn't get a chance to finish it today.
+
+- Crz>Chrimson cop. dur. assay with 20 s of 20 Hz 10 ms pulse stimulus every 200s. Tim Tayler paper predicts this should prolong cop. dur. My other expts. predict this should keep cop. dur. the same.
+
+Things for tomorrow:
+-BUILD BOX
+-Get CrzR null mutant from mike for CrzR / Crz expts.
+
+03/16/2015
+
+-Np2>Chrimson on old food from rogulja lab with retinal in it. Checking to see if 2 s long pulses of activity still terminate the mating. Does not do so. Doesn't seem to have any effect (do I need more retinal? is it too old?)
+
+03/17/2015
+
+- Built box
+
+- Tried to do 2p imaging but the software crashed!!! I lost all of the videos. Ughhh.
+
+03/20/2015
+
+- Still working on box / arduino code for single well control via serial comm.
+
+- Remember to try NP2 > PKC-rnai or PKA inhibitor or whatever.
+
+- Try to make a PCB for making more boxes so that I don't have a mess of wires everywhere.
+
+- Helping SXZ with some expts. Stim. order: 10 hz 20 ms, 1 hz 200 ms, played around a bunch with stim parameters (see indicator light), back to 1 hz 200 ms (file name: 02857Chrimson.h264)
+
+03/22/2015
+
+- The point IR LEDs and diffuser paper don't do a great job of giving a nice even background illumination. I'll try a few more things to improve the situation.
+
+- Activating 10 Hz, 20 ms stimulus immediately after mating begins does not seem to have an effect immediately. Rather, it takes ~ 1 minute to cause termination. They aren't courting very successfully though so I have very few samples.
+
+- Actually, it does seem to cause instantaneous termination in some flies. Yikes.
+
+- 10 Hz 1 ms stimulus, on the other hand, does not cause instant termination. The flies are pretty freaked out by it for the first ~1 minute of stimulation, but then they calm back down and go for a pretty normal time. This is consistent with some of the older results I was getting, where activating the NP2 neurons either caused quite early termination or termination at the normal time. I feel like this might actually be a real effect.
+
+- Surprisingly, the same stimulus (10 hz, 1 ms) seems to cause a shorter cop. dur in the tonic stim. case, when light is supplied before and during mating. Fuck, I accidentally deleted that video though
+
+- Testing the effects of NP2 stimulation 8 minutes into mating (instead of right off the bat) using the same 10 Hz 20 ms stimulation. Causes instant termination.
+
+- Did some 2p imaging:
+    TH>6f non-mating male, saw no signal (could just be dead though)
+    NP2>6m non-mating, no signal
+    2>6f mating, have several time-series of a single plane, but it was hard to see much of anything. Here's what I wrote while taking the time series:
+        Recording starts at 11:00 into mating
+        Switched to 1p after 8 min (couldn't see signal in 2p)
+        Switched to 20x lens after another 2 min
+        Frequently had to adjust focal plane
+        Fluoresence seems to increase as time goes on, but it's hard to say for sure
+        Not confident I was recording from AG after I zoomed out and looked around a bit and found something that looked more AG-like that had some baseline fluoresence
+        Noticed that the ringer evaporated by like 40 min into recording. Will need to be cognizant of this possible issue.
+
+03/23/2015
+
+- Rebuilt box with non-reflective material but it was sized too small. Will have to re-do that...
+
+- TH-G>Chrimson expts, 10 hz 20 ms at start of mating. Also has short copulation duration phenotype in three of five flies tested.
+
+03/24/2015
+
+- TH>Chrimson expt, 10 hz 20 ms at start of mating. The single well prep is so much better! In one experiment I can get more flies than I got total in my other TH experiments. They definitely still perform the spazzy rearing while mating though. The mating duration is much longer than WT flies still, which is encouraging. Saw some frame skipping, which was annoying, so I started a new video. I think the frame skipping came from all the extra processing adjusting
+the video when I was messing with background illumination though
+
+- Crz>Chrimson flies heat responsiveness to 37* after Crz activation (0/3 immediately after Crz activation), (1/2 5 minutes after), (1/1 10 minutes after)
+
+ NP2 > 6f, tried with two mating flies, saw no calcium signal. Really frustrating.
+
+03/25/2015
+
+- NP2>Chrimson mating stim test. Just checking that the flies are still responsive to the same inputs in the new rig, for now. Starting with a single pulse of 500 ms 1 min into mating, terminates every time. A single 250 ms pulse, on the other hand, terminates 15 times out of 23 when applied within a minute of mating initiation.
+
+- NP2>Chrimson 10 minutes into mating. A 250 ms long pulse causes mating 0/5 times! Interesting. These data seem to go along with the previous data in which neurons were far less excitable in the intermediate period. Repeating it gives me one more fly, with the same effect
+
+- NP2>Chrimson 15 minutes into mating, 250 ms single pulse terminates 0/6 times.
+
+03/26/2015
+
+- NP2>Chrimson 10 minutes into mating with a single 500 ms pulse also does not seem to cause termination (1/8 flies) but does increase cop. dur. (5/7 non-interrupted matings)
+
+- NP2>Chrimson 15 minutes into mating with a single 500 ms pulse. Also does not cause termination. Accidentally hit the wrong key on well #1 and caused a long stim though, which did induce termination at 15 min
+
+- NP2>Chrimson no light controls look normal
+
+- NP2>Chrimson 1s stim 10 minutes into mating. Even this isn't strong enough to get termination every time! Jeez.
+
+03/27/2015
+
+- NP2>Chrimson 1 s stim 15 minutes into mating terminates the mating 1/4 times. Wow. Also the cop. dur. seems a little longer yet again.
+
+- Trying Crz>Chrimson heat shock expts (37*) and CS heat shock expts. (41*):
+    Crz   ( 0/3 ) 1 min    ( 0/3 ) 5 min     ( 2/3 ) 10 min     ( 1/1 ) 15 min
+    CS    ( 0/5 ) 5 min    ( 0/8 ) 10 min    ( 3/6 ) 15 min     ( 4/4 ) 20 min
+
+    In the Crz flies, they seem to be much more responsive to the threat even if they don't terminate (in those early time points like 5 or 10 minutes), as opposed to the CS flies which do not care at all
+
+03/29/2015
+
+- NP2>Chrimson 2s stim 10 minutes into mating terminates 8/8 times. However, watch the recording for the fly in well 1; he takes up to 10 s after the stimulus to dismount! Need to think about this a little bit.
+
+- NP2>Chrimson 1s stim 10 minutes into mating again. A few more successes (3/6) than last time I did this experiment, still not 100%. Definitely distinguishable from the 2s stim.
+
+- Crz>Chrimson no light controls at 41 degrees
+
+    Mock   ( 0/5 ) 1 min    ( 1/5 ) 5 min     ( 4/4 ) 10 min     ( 2/2 ) 15 min
+
+    seems more reasonable than those WT expts before. The CS flies had been isolated for a very long time though
+
+- Crz>Chrimson light on (20 hz 10 ms) for 30 s when mating starts, test at 41 degrees 5 minutes into mating. Terminates ( 7/8 )
+
+- NP2>Chrimson 1s stim 15 minutes into mating. Still fairly low termination rate (3/6)
+
+- NP2>Chrimson 500 ms stim 5 minutes into mating. Terminates (almost) every time ( 9/11 ). I think this whole "epoch" idea might be right; plausibly something about the Crz / ejaculation signal (is it through Crz / Tph2+ neurons?)
+
+- NP2>Chrimson 1s stim 5 minutes in. Still doesn't terminate every time (7/12). Collecting females from non-terminating matings to see if they produce larva
+
+- NP2>6s,TdT recordings: 1st one starts at 12 min into mating, 2nd one starts at 21 min into mating
+
+03/30/2015
+
+- NP2>G6s,TdT images show a lot more fluoresence than I'd like
+
+- TH-G>Chrimson-mVenus VNC shows pretty heavy expresion
+
+03/31/2015
+
+- Got NSF!
+
+- NP2>Chr-mVen 1s stim 1 min into mating causes termination almost every time (14/15)
+
+- NP2>Chr-mVen 1s stim 5 min into mating causes termination almost every time as well ( 8/9 )
+
+- NP2>Chr-mVen 1s stim 10 min into mating does not cause termination every time (terminates 2/6 flies). I still see the same slight increase in copulation duration as I observed before.
+
+- NP2>Chr-mVen 1s stim 15 min into mating. Only one mating pair! Responsive to light stimulus, but doesn't seem to break up until like a minute later
+
+- Tried to do 2p with NP2>TdT,G6s, only one successful mating fly. Unfortunately, he dismounted partway through the (beautiful!) dissection so there's no gcamp signal, though the abd. gang. looks really nice.
+
+04/01/2015
+
+- Worked on lab meeting
+
+- Crz>Chrimson experiment where I pulse in 20 Hz 10 ms light for 30s every 5 minutes into mating (so at 5, 10, 15 min etc.). One thing I notice about these flies is that they seem to court just fine, and the females seem receptive, but they have some trouble mounting. The motion looks normal, but they give up on it fairly quickly. Didn't actually get a successful mating!
+
+- Crz>Chrimson tried again and got a mating. Last 25 minutes with this protocol
+
+04/02/2015
+
+- Lab meeting
+
+- Interesting expts:
+    
+    GABA neurons:
+        Is the "adaptation" GABA neuron autonomous? "Paired pulse" expt. isn't perfect but might be suggestive
+        Along the same lines, try superimposing a single pulse over a gradual ramp of input (to show that it relies on the recent history of GABA spiking)
+        Good expt: Show that it's mediated by a specific molecule within the GABA neurons (use a knockdown in just NP2). Possible candidates: ACh receptors, GABAB receptor, CrzR
+
+    Crz neurons:
+        Obviously try to get Ca activity
+        Use ChaT-RNAi or Crz-RNAi, look for effect on persistence (responsiveness to heat)
+        Flesh out controls
+    DA:
+        Work on subpopulations (TH-Gal4, C-Gal80 cop dur. e.g.)
+        Try to do pale knockdown in TH-G to see if cop. dur. shortening is due to DA release in these neurons
+
+- Running TH>Chrimson no light controls
+
+- Also trying to get more flies with the 15 min pulse (NP2719>Chrimson single pulse at 15 minutes into mating). These females are just super duper non-receptive.Both the TH>Chrimson expts and NP2 experiments are getting no copulations
+
+04/04/2015
+
+- Running Crz>CrzRNAi flies to look for cop dur. phenotype. Males have presumably only been isolated for one day so I may have to do this experiment again, but I'll see what cop durs I get. Lots of them mated though so I'm not super worried about their mating drive! Copulation duration seems normal though. Will separate out females and check fecundity.
+
+- Females from pairs which do not separate due to a 1s pulse of red light at 5 minutes into mating with NP2>Chrimson flies are not fertilized (0/2 flies produce larva)
+
+- Crz>CrzRNAi flies heat shock (41 degrees) at 10 minutes (with the 30 s of 20 Hz 10 ms red light stimulation starting at 30 s into mating) Terminates: ( 3 / 3 ) sooooo the Crz neuropeptide seems to have nothing to do with anything. We'll see about the fecundity thing though
+
+- Crz>Chrimson flies heatshock expts. again. Getting more data for 37 degree curve
+
+Light   5 min ( 3/5 )     10 min ( 1/1 )
+Mock    1 min ( 0/2 )      5 min ( 0/3 )     10 min ( 8/8 )    15 min ( / )
+
+surprisingly even the mock treatment seems to terminate at the 10 minute time point every time. Kind of frustrating. I'll do this expt. again in the future
+
+- NP2719>Chrimson 1 s stim at 15 minutes into mating. Terminates ( 2/6 )
+
+- NP2719>Chrimson 2s stim at 15 minutes into mating. Oh shit! I had one not terminate! Uh oh. Terminates ( 1/2 ) Ugh but he's not responsive to any light; maybe this guys have just been kept in the same vial without new retinal for too long. (been like 2 weeks)
+
+- TH>Chrimson no light control looks pretty normal
+
+04/05/2015
+
+- Copied from my notes on the scope today:
+    2>6s,tdt:
+        - Male died during dissection, looking to see if there's signal anyways
+            No apparent 2p signal
+            No apparent 1p signal
+            TdTomato looks good
+            See videos labeled "dead male"
+            Under scope and imaging within ~ 5 minutes of death
+        - Another termination, did not put under scope
+        - 3rd male made it under the scope while mating, but I still couldn't see any GCaMP signal. Hard to find VNC as well, but a little skeptical about gcamp's presence in the cells from this cross.
+
+04/06/2015
+
+- NP2719>Chrimson 10 Hz 20 ms stimulation tonic (during courtship and copulation) to reproduce previous results and increase N. Looks pretty similar, a little more variable.
+
+- NP2719>Chrimson 10 Hz 20ms turned off 5 minutes into mating in single well chambers. No matings.... 
+
+- NP2719 repo-Gal80>35547 (PKI) in left half, NP2719 repo-Gal80>35549 (PKI) in right half. Video is called NP2PKI.h264. 35547 males seem a little bit more finicky during mating, but not exceptionally so (as far as I can tell...). Normal copulation duration in 35547 (20 min, 21 min) and 35549 (20 min).
+
+- Trying NP2719>Chrimson 10 Hz 20 ms turned off 5 minutes into mating again. No mating for an hour, but as soon as I turn off the light they start engaging in a lot more courtship behavior.
+
+- Also doing another tonic stim 10 hz 20 ms expt (NP2719Chrimson10hz20ms2.h264) No mating in this expt or the one above. Super annoying.
+
+- Swapped both of the above expts to 1 hz 20 ms instead (this time turning off the light at 10 min for the single well expt.)
+
+04/08/2015
+
+- Females mated to crz>crz-rnai males do produce larva (9/10 matings) So I guess Crz does nothing...
+
+- Tph2>Chrimson expts, 10 Hz 20 ms stimulation starting at 2 minutes into mating. These flies are reluctant to court... annoying.
+
+- NP2Chrimson no retinal flies 10 hz 20ms. These flies are also not courting much, but I think they're juveniles so that explains that. I can redo these in a few days. Maybe it's my sick-person breath, too, which will also hopefully be better in a few days... Only two matings, lasting 17 min and 13 min. Surprisingly short. Like I said, I'll do more expts tomorrow
+
+04/10/2015
+
+- Happy birthday!
+
+- NP2719>Chrimson no retinal 10 hz 20 ms stim. Normal copulation duration. Excluding data from old set
+
+- dsx40A05>Chrimson turned on 1 min into mating, 2s pulse of light. Flies have trouble mounting the female it seems??? Courtship seems to go prettyw ell but when they to climb on top, they are not successful. holy shit activating the neurons just like... wrecks the males!
+
+- dsx42G02>Chrimson , 2s stim pulses also cause a bit of a freakout / freezeup. These guys are also having trouble mating. Maybe it's something to do with the arena...
+
+- Another NP2719>Chr no ret 10 hz 20 ms control, also normal cop. dur
+
+04/13/2015
+
+- Holy crap why am I still sick...
+
+- NP2719>Chrimson 2s pulse 15 min into mating. Terminates 2/2
+
+- CrzR01 null tested for mating duration
+
+04/15/2015
+
+- Testing out the A2-flp line and the >>ChrimsonTdt line. Only one fly, but will supply a 2s pulse when he starts mating in Well 6. For the sake of efficiency, I'm going to do other genotypes in the other wells (NP2719>Chrimson-mVenus, 2s pulses at the 15 minute time point). A2 line does not terminate in response to a 2s pulse (!!!) though it does react like it wants to terminate (this is in the TH-C'>Chrimson video). The NP2 flies, in contrast, all terminate
+
+- Crz>Chrimson light at 30 s into mating, 37 degrees at 5 minutes (terminates 3/3), no light cntrl (terminates 0/1), 41 degree no light (term 1/1)
+
+- NP2719>Chrimson-mVen no light controls
+
+- Crz>Chrimson no retinal but + light at 10 minutes into mating (terminates 1/1 )
+
+- TH-C'>Chrimson 10 hz 20 ms starting 1 minute into mating. well 6 is still NP2RepoGal80A2Flp>Chrimson-tdT (trying to get that one to mate). Results in long mating, though not as long as when I did it before. Looks more like the regular TH phenotype now
+
+- TH-G>Chrimson-mVenus brains and VNCs dissected out and incubated with anti-GFP antibody
+
+04/16/2015
+
+- Tph2>Chrimson cop. dur., 10 Hz 20 ms activation starting 30s into mating. Only have two ready adult flies though, and they don't seem to be very active courters
+
+- NP2>Chr-mVen no light controls look normal.
+
+- NP2>Chr-mVen, light on during courtship (10 hz 20 ms) but off after 2 minutes of mating. Couldn't get any successful matings to happen.
+
+RE: CAP ANTIBODY FROM HANNAH:::
+    Dilute it to 6 parts in 50 for final incubation. This is a 1:750 mix
+    Incubate it in 1:500 anti-rabbit Alexa488 Lifetec Ref: A21206 lot: 1182675
+
+- NP2>Chr-mVen 1s pulse at 7 min into mating. Acts very bothered by the light pulse, even if it does not terminate. Terminates ( 0/3 ). Continues to look agitated even minutes later. Second pulse at 10 min, (terminates 1/2)
