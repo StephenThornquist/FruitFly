@@ -24,18 +24,17 @@
  */
  
  // indicator is the pin corresponding to the indicator LED
-const int indicator = 1;
+const int indicator = 23;
 const int numPins = 12;
 
 // This line is to map the schematized well number above onto the right entry in the pin array
 // wellMap's nth entry is the index of Well #n in the array pin. It basically
 // exists to make up for my sloppy wiring job. When I make a PCB I can fix this
 // to make it better.
-
-//int wellMap[numPins+1] = {0 ,1, 2,3 ,4,5,6, 7,8,9,10,11,12};
-//int wellMap[numPins+1] = {  12,10,1,11,4,8,5, 9,2,6,3 ,7 ,0};
-int wellMap[numPins+1] = {12,10,8,2,4,6,0,11,5,7,1 ,3 ,9};//
-
+// our input looks like: {0,1,2,3,4,5,6,7,8,9,10,11,12}
+//int wellMap[numPins+1] = {0,1,2,3,4,5 ,6,7,8,9,10,11,12};
+//int wellMap[numPins+1] = {0 ,1,2 ,3 ,4,5,6,7,8,9,10,11,12};
+int wellMap[numPins+1] = {12,4,10,11,5,2,8,9,3,0,6 ,7 ,1};
 int pin[numPins] = {24,25,26,27,28,29,30,31,32,33,34,35};
 // Timescale says how many of our selected timescale are in a second
 // so if we use microseconds, we should switch this to 1000000
@@ -54,7 +53,7 @@ double freq[numPins] = {0,0,0,0,0,0,0,0,0,0,0,0};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-double pulseWidth[numPins] = {90,80,70,60,50,40,30,20,10,90,80,70};
+double pulseWidth[numPins] = {90,80,70,60,50,40,30,20,10,10,10,10};
 
 // This next block is for paired pulses:
 // an array indicating at what time you gave the signal to count down from the delay
@@ -79,7 +78,7 @@ unsigned long blockOn[numPins] = {0,0,0,0,0,0,0,0,0,0,0,0};
 
 // Last on info for light flashing
 
-unsigned long lastOn[numPins]={0,0,0,0,0,0,0,0,0,0,0,0};
+unsigned long lastOn[numPins]={ 0, 0, 0, 0, 0, 0, 0, 0, 0,0,0,0 };
 
 int hasStarted = 0;
 

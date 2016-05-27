@@ -27,7 +27,7 @@ It can also flip the array of flashing lights if desired
  // indicator is the pin corresponding to the indicator LED
 const int indicator = 9;
 const int numPins = 9;
-int pin[numPins] = {10,11,12,13};
+int pin[numPins] = {13,13,13,13};
 // Timescale says how many of our selected timescale are in a second
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
@@ -39,7 +39,7 @@ unsigned long duration = 12000000; // 200 minutes
 unsigned long endOfDays = startTime + duration;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {10,10,10,10};
+double freq[numPins] = {0,0,0,0};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
@@ -130,22 +130,15 @@ void loop() {
 
 // For when something gets written to serial port
 void serialEvent() {
-  char editType = Serial.peek();
-  if(editType == 'f') {
-    Serial.println(editType);
-    double inFloat = Serial.parseFloat();
-    for(int i = 0; i < numPins; i++) {
-      freq[i] = inFloat;
-    }
-    Serial.println(freq[0]);
+  /* Freeze wells in the off state */
+  for(int k = 0; k < numPins; k++){
+    digitalWrite(pin[k],HIGH);
   }
-  if(editType == 'p') {
-    Serial.println(editType);
-    double inFloat = Serial.parseFloat();
-    for(int i = 0; i < numPins; i++) {
-      pulseWidth[i] = inFloat;
-    }
-    Serial.println(pulseWidth[0]);
+  float inFreq = Serial.parseFloat();
+  int inPW = Serial.parseInt();
+  // Translate the well request into which pin to modify
+  for(int i = 0; i < numPins; i++) {
+      freq[i] = inFreq;
+      pulseWidth[i] = inPW;
   }
-    Serial.read();
 }

@@ -26,53 +26,49 @@ Blocks of stimuli (e.g. flashing lights for 15 seconds out of every 5 minutes)
  Stephen Thornquist June 28 2014
  */
  
- // indicator is the pin corresponding to the indicator LED
+  // indicator is the pin corresponding to the indicator LED
 const int indicator = 9;
-const int pinStart = 10;
-const int pinEnd = 14;
-const int numPins = pinEnd - pinStart;
+const int numPins = 9;
+
+// This line is to map the schematized well number above onto the right entry in the pin array
+// wellMap's nth entry is the index of Well #n in the array pin. It basically
+// exists to make up for my sloppy wiring job. When I make a PCB I can fix this
+// to make it better.
+
+int wellMap[numPins+1] = {9,5,4,7,6,3,8,2,1,0}; 
+int pin[numPins] = {3,4,5,6,7,10,11,12,13};
 // Timescale says how many of our selected timescale are in a second
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
 // startTime is how long until it should start
 unsigned long startTime = 00000;
 // duration is how long the Arduino should run its protocol.
-unsigned long duration = 12000000; // 200 minutes
+unsigned long duration = 120000000; // 2000 minutes
 // endOfDays is when the protocol should end
 unsigned long endOfDays = startTime + duration;
-// How long a block of pulses should last
-unsigned long blockDur = 20000;
-// How long between blocks
-unsigned long blockRest = 200000;
-// How long a block lasts in total
-unsigned long blockTime = blockDur + blockRest;
 // Array of frequencies desired (in Hz)
 // To tell a controller to be constantly off, input 0 for frequency
-double freq[numPins] = {20,20, 20, 20};
+double freq[numPins] = {0,0,0,0,0,0,0,0,0};
 // Array of pulse widths desired (in milliseconds)
 // You don't need to worry about pulse width for constant
 // LEDs.
-double pulseWidth[numPins] = { 10, 10, 10, 10};
+double pulseWidth[numPins] = {90,80,70,60,50,40,30,20,10};
 
-unsigned long lastOn[numPins]={ 0, 0, 0, 0 };
-
-// flipTime tells you how long to run a pulse pattern before switching
-// to its inverse (in milliseconds).
-unsigned long flipTime = 300000;
-// the int flip keeps track of whether or not the state is flipped
-int flipBit = 0;
+unsigned long lastOn[numPins]={ 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+int blockDur[numPins] = {0,0,0,0,0,0,0,0,0};
+int blockTime[numPins] = {0,0,0,0,0,0,0,0,0};
 int hasStarted = 0;
-unsigned long blockOn = 0;
+unsigned long blockOn[numPins] = {0,0,0,0,0,0,0,0,0};
+
 /* Load setup and initialize every pin as an output.
    Further, if the pin is set to be constant, initialize that.
 */   
 void setup() {
   Serial.begin(9600);
-  for(int pin = pinStart; pin < pinEnd; pin++){
-    pinMode(pin,OUTPUT);
-    digitalWrite(pin,HIGH);
+  for(int k = 0; k < numPins; k++){
+    pinMode(pin[k],OUTPUT);
+    digitalWrite(pin[k],HIGH);
   }
-    blockOn = 0;
     hasStarted = 0;
     pinMode(indicator,OUTPUT);
     Serial.write("Arduino on");
@@ -93,90 +89,62 @@ void loop() {
     hasStarted = 1;
     Serial.write("Starting expt!");
   }
-  // check to see if it's time to flip
-  if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 0 ) && flipBit == 1 ) {
-    Serial.write("flip!");
-    flip(0);
-    flip(1);
-    flipBit = 0;
-  }
-  if( hasStarted == 1 && ( ((currentTime-startTime)/flipTime)%2 == 1) && flipBit == 0 ) {
-    Serial.write("flip!");
-    flip(0);
-    flip(1);
-    flipBit = 1;
-  }
-  if(currentTime > startTime && currentTime<endOfDays && ((currentTime-startTime) - blockOn) < blockDur) {
+  // The big loop checking whether each light should be on.
+  if(currentTime > startTime && currentTime<endOfDays) {
     // Step through each pin, indexed from 0
     for(int pinScan = 0; pinScan < numPins; pinScan++){
-      // See if this pin is supposed to be constantly on
+      // See if this pin is supposed to be constantly off
       if(freq[pinScan]!=0) {
-        // Now make sure the pin is supposed to be on (not yet implemented, was buggy)
+        // Now make sure the pin is supposed to be on
           // If it has been the pulse width since the last time the LED
-          // was turned on, turn it off.
-          if((currentTime-lastOn[pinScan]) > pulseWidth[pinScan]) {
+          // was turned on, turn it off. Likewise, if it's been more than blockTime
+          // since the block started, turn the light off (but only if blockDur isn't set to 0).
+          if((currentTime-lastOn[pinScan]) > pulseWidth[pinScan] || ((((currentTime-startTime) - blockOn[pinScan]) > blockDur[pinScan]) && blockDur[pinScan] != 0)) {
             if(pinScan == 0) {
               digitalWrite(indicator,LOW);
             }
-            digitalWrite(pinScan+pinStart, HIGH);
+            digitalWrite(pin[pinScan], HIGH);
           }
            
           // If it's been timescale/frequency units of time since the LED
           // was last turned on, turn it on again. Then annotate 
           // having done so by updating the lastOn array.
-          if((double(currentTime - lastOn[pinScan])*freq[pinScan])>=timescale){
+          if((double(currentTime - lastOn[pinScan])*freq[pinScan])>=timescale && ((currentTime-startTime) - blockOn[pinScan]) < blockDur[pinScan]){
             if(pinScan == 0) {
               digitalWrite(indicator,HIGH);
             } 
-            digitalWrite(pinScan + pinStart, LOW);
+            digitalWrite(pin[pinScan], LOW);
             lastOn[pinScan] = currentTime; 
+          }
+          // Update the blockOn
+          if (((currentTime-startTime) - blockOn[pinScan]) > blockTime[pinScan]) {
+            blockOn[pinScan] = currentTime;
           }
       }
     }
   }
-  if (((currentTime-startTime) - blockOn) > blockTime) {
-     blockOn = currentTime;
-  }
-  if(currentTime > endOfDays || ((currentTime-startTime) - blockOn) > blockDur) {
+  if(currentTime > endOfDays) {
     digitalWrite(indicator, LOW);
     for(int pinScan = 0; pinScan < numPins; pinScan++) {
-      digitalWrite(pinScan + pinStart, HIGH);
+      digitalWrite(pin[pinScan], HIGH);
     }
   }
 }
 
-/* flip function flips the frequency and pulse width arrays on a chamber-by-chamber basis
-*/
-void flip(int wellNum) {
-  double dummyFreq[2] = {};
-  double dummyPulse[2] = {};
-  dummyFreq[0] = freq[2*wellNum];
-  dummyFreq[1] = freq[2*wellNum + 1];
-  dummyPulse[0] = pulseWidth[2*wellNum];
-  dummyPulse[1] = pulseWidth[2*wellNum + 1];
-  freq[2*wellNum] = dummyFreq[1];
-  freq[2*wellNum + 1] = dummyFreq[0];
-  pulseWidth[2*wellNum] = dummyPulse[1];
-  pulseWidth[2*wellNum + 1] = dummyPulse[0];  
-}
 // For when something gets written to serial port
 void serialEvent() {
-  char editType = Serial.peek();
-  if(editType == 'f') {
-    Serial.println(editType);
-    double inFloat = Serial.parseFloat();
-    for(int i = 0; i < numPins; i++) {
-      freq[i] = inFloat;
-    }
-    Serial.println(freq[0]);
+  /* Freeze wells in the off state */
+  for(int k = 0; k < numPins; k++){
+    digitalWrite(pin[k],HIGH);
   }
-  if(editType == 'p') {
-    Serial.println(editType);
-    double inFloat = Serial.parseFloat();
-    for(int i = 0; i < numPins; i++) {
-      pulseWidth[i] = inFloat;
-    }
-    Serial.println(pulseWidth[0]);
-  }
-    Serial.read();
+  int inWell = Serial.parseInt();
+  float inFreq = Serial.parseFloat();
+  int inPW = Serial.parseInt();
+  int bd = Serial.parseInt();
+  int br = Serial.parseInt();
+  int pinInd = wellMap[inWell];
+  freq[pinInd] = inFreq;
+  pulseWidth[pinInd] = inPW;
+  blockDur[pinInd] = bd;
+  blockTime[pinInd] = br;
 }

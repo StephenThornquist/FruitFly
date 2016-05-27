@@ -1,0 +1,312 @@
+06/20/2014
+
+- Sent Dragana fly stocks for Chrimson (BSC 55134-9)
+- Practiced dissection of ventral nerve cord in adult males
+- LED and optics under consideration:
+	Luxeon Rebel LED
+	LEDEngin LEDs (Expensive!!)
+	Polymer Optics Collimators 
+	Carclo Lenses
+	Khatod Circular Beam Optic
+
+- Ordered 26 Carclo frosted square optics and 26 Luxeon Rebels
+
+06/23/2014
+
+- Practiced dissection of mating flies
+
+06/24/2014
+
+- Flies are really reluctant to do any mating
+- Returned Carclo frosted square optics in favor of Carclo 20 mm narrow beams
+- Purchased: 5 700 mA non-adjustable BuckPucks, 12"x12" aluminum sheet
+- Made a pretty fruit fly
+
+06/25/2014
+
+- Ordered deep red Luxeon LEDs premounted on Endor Star 1-UP mounts
+- Practiced abdominal ganglion dissection
+
+06/26/2014
+
+- Mounted Luxeon LEDs arrived with Carclo lens holders (no lenses or sink yet)
+- Adjusted LightChamber.svg (.svg file with schematic of optogenetics chamber)
+  to accomodate the Carclo lenses
+- Practiced abdominal ganglion prep
+
+06/27/2014
+
+- Lenses and aluminum arrived from LEDSupply. BuckPucks were not dimmable
+  so I took 4 750 mA dimmable BuckPucks from Ofer and Pavel.
+
+- Cut aluminum heat sink from aluminum sheet, glued mounted lenses to mounted
+  LEDs using Loctite instant adhesive, affixed LEDs/lenses to aluminum heat
+  sink using thermal epoxy after wiring LEDs together.
+
+- LEDs are connected 6 in series to a BuckPuck
+
+- Practiced abdominal ganglion dissection
+
+06/28/2014
+
+- Fly food for UAS-ReaChR stock was wet and I didn't notice any eggs or larva
+  so I transfered most of the surviving flies to a new food vial
+
+- Crossed UAS-mCherry-ReaChR (II) to TH-C'-GAL4, DDC-GAL4, and TH-GAL4 lines
+
+- Wrote code to operate LED array (titled FlashingLights contained in this
+  github repository)
+
+07/01/2014
+
+- Soldered together Buckpuck inputs for LED array (should be completely ready)
+
+- Practiced abd. gang. prep
+
+07/02/2014
+
+- Attempted imaging NP5270 > UAS-GCaMP3.0 - UAS-tdTomato in abd. gangl. of an isolated male glued to a slide. Green visible but
+  no obvious dynamics. Will reattempt
+
+- Two Elav-C155; UAS-Dicer2/Cy0 x UAS-ReaChR offspring placed in optogenetics chamber. No obvious response from very superficial examination. 
+  Notes: Need to change sheet under the doors so that flies can't crawl between chambers. Chambers are maybe too tall (allow flies  climb on walls). Should try again when I receive the higher power supply. Also consider refitting chamber with higher power LED   arrays (e.g. 3UP deep reds from Luxeon). Also keep in mind that ReaChR is less red-shifted than Chrimson and I bought LEDs        spec'd for Chrimson. When I have more than two flies I'll try this experiment again (hopefully tomorrow?? possibly later today)
+
+- Wilson lab has Chrimson flies; maybe I'll try those?
+
+- Reattempted abdominal ganglion imaging in isolated male fly. Expression pattern appeared to be normal. Will re-do with more spec  ific GAL4 driver tomorrow.
+
+07/03/2014
+
+- Reimaged NP5270 > UAS-GCaMP 3.0 male during mating (attempted). Dismounted during prep. Unable to see much fluoresence??? Bizarre
+
+- UAS-ReaChR flies also unsuccessful again. Hard to say, though, since flies could use the aforementioned design flaw to escape the box entirely (and seemed very interested in doing so).
+
+07/04/2014
+
+- Power cable for LED array set up (3 A, >18V are minimum requirements)
+
+- Dissection of NP5270 > UAS-GCaMP 3.0 isolated male. Fluoresence looked fine.
+
+07/08/2014
+
+- Relative dearth of fluorescent male flies lately for abd. gang. prep
+
+- Inspected mCherry fluoresence in ddc-GAL4>UAS-ReaChR-mCherry stocks; some fluorescent cells but not as many as I expect. I'll check the other GAL4-driven ReaChR stocks too
+
+- Chrimson-mVenus lines arrived (UAS and LexAop2)
+
+07/13/2014
+
+- Realized a few days ago that I forgot to feed the ReaChR flies retinal
+
+- ReaChR offspring put on all-trans-retinal on the 11th. Will attempt experiment again on the 14th
+
+- Crossed Chrimson lines to various dopaminergic GAL4 lines (TH-D', TH-C', ddc, TH)
+
+- Elav-Chrimson cross on the 11th
+
+07/14/2014
+
+- No fluoresence visible now in the NP2719 > GCamP3.0 - mCherry males??
+
+- ddc>ReaChR flies tested again under red LEDs. Possible response? Needs to be quantitatively analyzed
+
+- Possible hurdles:
+	Hard to see flies on LEDs in video (change camera settings?? do post-processing?)
+	Not clear if expression is good (will do brain dissection on flies shortly)
+
+- Crossed NP5270 to TH-GAL4. Intend to drive TrpA1 in both sets of neurons simultaneously to see whether they "compete" or if they're organized hierarchically (in DECAPITATED flies; in Crickmore/Vosshall they did this in normal flies and saw that the GABAergic line wins out but the cop. dur. seems to more closely resemble WT than either individually).	
+
+07/15/2014
+
+- Set up crosses of both GABAergic lines to all 3 types of GCaMP6 (F,M,S)
+
+- Try to do simultaneous TrpA1 / Chrimson? Maybe Chrimson + ReaChR (use separable LED spectra)?
+
+- Maybe we can try QuaSaR too??
+
+07/21/2014
+
+- Thorlabs shortpass 550 nm? filter affixed to front of camera, blocks all LED light so we can see the flies moving around
+
+07/22/2014
+
+- TH>Chrimson 20 Hz 30 ms pulse width successfully drives retinal-fed flies into seizures but does not appear to affect non-retinal-fed flies. Video file MVI_0057.MP4 on 07/22/2014
+
+07/23/2014
+
+- ddc>Chrimson 20 Hz 30 ms run (fill in results when done)
+
+08/14/2014
+
+- Finally back from Alaska
+
+- NP5270 > UAS-GCaMP6M produces visible green fluoresence in abd. gang. in dissected non-mating male. Green washes out after a while. Unsuccessful dissections so far trying to get mating males I can image
+
+- Peltier units arrived; will begin prototype heating exp. environment shortly.
+
+08/19/2014
+
+- I've been pretty bad about keeping a good lab notebook. Hopefully I can change that here.
+
+- Remember to keep track of Chrimson + double balancer crosses! Goal: produce Chrimson/Cy0 stock and Chrimson/Sb stock.
+
+- ddc and TH > Chrimson experiments stored in the last several days. 10 Hz 10 ms pulses and 5 Hz 5 ms pulses both seem sufficient to induce behavior without causing seizing. Need to do controls for paralysis!! Behaviors which could be induced during red light to demonstrate lack of paralysis include courtship or a fear response to an aversive stimulus (e.g. heat from Peltier units or a visual loom stimulus).
+
+- ddc > Chrimson induces rapid place preference, apparently. But the memory is not retained when the red light is shut off, so maybe place preference isn't the right word; rather, it's just a sense of enjoying the sensation (10 hz 10 ms)
+
+- TH>Chrimson causes an apparent aversive reaction at both 10 hz 10 ms and 5 hz 5 ms. Flies scuttle about frantically whenever they enter the red light until they manage to exit it (and sometimes continue panicking for a bit). They learn fairly quickly not to stand where the light is.
+
+- Do the flies have a sense of where they are in space? Are there even sufficient visual cues to guide them?
+
+- Apparent green fluoresence in a FEW abd. gang. cells driving GCaMP6M with NP5270 repoGal80 (the driver with more broad expression across the whole VNC)
+
+- Need to work on Peltier device!!
+
+TODO:
+-Peltier + light environment
+-IR cam for monitoring flies (receive with Raspberry Pi, talk to Ofer)
+-ddc and TH subsets driving Chrimson activity
+-tourtship and Chrimson
+-Ttink HARD about the real questions we can ask with these systems
+-Papers (always and forever)
+-ID for Sebastian / MATLAB pay
+
+08/21/2014
+
+- Okay, I guess I forgot yesterday.
+- from 08/20/2014:
+    Fixed IR cam with RasPi, yet to test it though
+    drove TH>Chrimson with 5 hz 5 ms stimulus in the presence of females: not much mating
+
+TODO:
+-Peltier + light environment
+-Fix IR cam
+-ddc > Chrimson + courtship
+-ddc and TH subsets + other neurotransmitters
+-NSF / Hertz / NDSEG
+
+08/22/2014
+
+-MATLAB bootcamp is OVER
+
+-IR cam fried? Or maybe driving raspis with wrong amount of current.
+
+-w;TH-C'/+;UAS-Chrimson-mVenus/+ experiment with 10 Hz 10 ms stimulation, alternating at 10 min (accidentally set the right half to 19 Hz, 10 ms! Let's see how that turns out)
+-Above expt: 19 Hz, 10 ms causes seizures (no surprise). 10 hz 10 ms is still evidently quite negative.
+
+-TH-C' > Chrimson expt. with SAME FLIES at 5 Hz, 5 ms. Light stimulus again alternates. The flies go bonkers!
+
+-TODO:
+-Investigate Tango-trace (e.g. VGAT-FLP > (>DR-Tangotrace>) > UAS-GCaMP6  +  (DA-subset)-LexA > LexAop-Chrimson-mVenus to label GABAergic neurons receiving DA input from cells I care about and control their input)
+-Peltier + light environment
+-Fix IR cam
+-More TH subsets
+-NSF / Hertz / NDSEG
+
+08/25/2014
+
+-w;;TH-F'>Chrimson-mVenus expt. with 5 Hz 5 ms, alternating at 10 min
+-Same genotype as above, 10 Hz 5 ms (NOTE: accidental bug in code I just wrote meant that the startup of the light flashing went a little weird, so I paused the video to fix it. Thus there's a jump at ~10:10 in the video)
+
+08/26/2014
+
+-ddc>Chrimson NO RETINAL 10 hz 5 ms alternating at 10 min. First expt. done by manually turning on lights. Second round done with new Arduino script which turns on lights on its own (so I don't startle the flies) 
+
+TODO:
+-LAB MEETING
+-Crosses
+-NSF/NDSEG/Hertz
+-TEST OTHER TH Subsets (G, etc.)
+-Fix IR Cam
+-Peltier etc.
+
+08/27/2014
+
+-Things for lab meeting:
+    TH seems aversive
+    ddc seems attractive (though expt. has thus far only been done at 10 Hz 10 ms)
+    TH-C' and TH-F' not yet evaluated by me
+    Weak TH stimulus (2 hz 10 ms) seems to induce courtship??
+
+
+- !!!
+    When I did the TH dissection for the most recent TH experiment, I didn't see fluoresence?? Strange. I should investigate this again tomorrow!!
+
+08/28/2014
+
+-Think about the manifolds on which neural networks can live (certainly not linear, Euclidean ones!)
+-don't forget about ddc and th courtship controls
+
+08/29/2014
+
+-Crosses between Chrimson and several GAL4 DA lines
+-IR cam set up in behavior room
+-UAS-GCaMP6M fluoresence in only one abd. gang. neuron (in fluoresence scope)
+
+TODO:
+-Abd. gang. dissections with GCaMP6
+-Peltier device
+-Analyze videos of TH-C' etc.
+-w;TH-D'-Gal80/Cy0;TH would be really useful to try
+-Stephen also gave me some other TH-subset GAL80s
+
+09/02/2014
+
+-Fluoresence imaging of GCaMP6M driven by NP2719 in abd. gang. over the span of ~ 1 minute about 15 minutes into mating. Mostly uninteresting data.
+-TH-F1 line becomes hyperactive in constant red light and minorly averse to 5 Hz 5 ms stimulus (seems to be consistent with Zhihua's 31 degree phenotype)
+-Alterations to MATLAB analysis to try color coding sleep stages using HMMs
+
+TODO:
+-Courtship in TH>Chrimson flies
+-Abd. gang.
+-Make LexAop2-Chrimson, GAL4>UAS-GCaMP flies
+-Analyze remaining TH videos
+-IR cam
+-Peltier
+-NSF / NDSEG / Hertz / NIH F31??
+
+09/03/2014
+
+-Replaced bottom of behavior arena with an opaque white sheet, maybe will improve fly visibility
+-10 Hz, 5 ms TH>Chrimson stimulus in presence of Elav females AFTER > 1 hour of exposure to the females (results difficult to interpret: old cross, possibly non-TH>Chrimson flies in there, WILL REDO)
+
+TODO:
+-Abd. gang.
+-Make LexAop2-Chrimson, GAL4>UAS-GCaMP flies
+-Analyze remaining TH videos
+-IR cam
+-Peltier
+-NSF / NDSEG / Hertz / F31 / PQE
+-Repeat TH>Chrimson and ddc>Chrimson courting expts.
+
+09/04/2014
+
+-TH-D'>Chrimson expts at 10 Hz 5 ms and 5 Hz 5 ms, but I didn't see any clear fluoresence under the scope and they didn't seem to notice the lights being left on, so take it with a grain of salt (REPEAT ME)
+
+09/10/2014
+
+- Ordered thermistors
+- Prepped crosses for TH, ddc, TH-D1, TH-G', TH-F', TH-D1-GAL80 ; TH-GAL4, UAS-GCaMP6 + LexAop2Chrimson lines
+- Table for RasPiCams + IR longpass filter (NEEDS WORK)
+- Set up wireless streaming or wired streaming with static IP on RasPiCams
+
+TODO:
+-Abd. gang.
+-Analyze videos
+-Wait for Peltier stuff to come in, set everything else up!!
+-FELLOWSHIPS!
+
+09/16/2014
+
+-Built heat-regulation circuit sans thermistor
+-2P scope in Enhanced NeuroDiscovery core doesn't do a good job with our fly samples, will try BCH's 2P set-up (if they reply)
+-Wireless streaming of flies in a box using Raspberry Pi
+-Set up Raspberry Pi <--> Arduino USB communication using Nanpy. (NOTE: Arduino code for RasPis should be written in Python using Nanpy; importing other code onto the Arduino will remove the firmware and its ability to communicate with the RasPi via USB)
+
+TODO:
+-Wire up thermistors (when they arrive!)
+-Follow up on BCH imaging facility info
+-Practice abd. gang. dissection so that it's perfect by the time BCH replies
+-FELLOWSHIPS
+-Set up analysis pipeline for RasPi videos

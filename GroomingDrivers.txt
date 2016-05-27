@@ -1,0 +1,5 @@
+R40F04 - Overcomes block
+(Antenna) - Does not overcome block
+R53E05 - Unclear. Possibly grooming, possibly not.
+R50B07- No grooming
+R17F11 - Legs (too much ridiculous activity to be able to tell if grooming even when not mating) Abruptly causes termination, even right after mating has started.

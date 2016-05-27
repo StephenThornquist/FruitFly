@@ -1,0 +1,191 @@
+import time
+import io
+import socket
+import struct
+import cv2
+import numpy as np
+import sklearn as skl
+from collections import deque
+
+# some constants for the image processing
+width = 1280
+#width = 1920
+height = width*9/16
+approxCirc = 8*np.pi
+rescale = float(width*width/(800*800))
+RS = float(width)/float(1920)
+minFly = int(10*rescale)
+maxFly = int(100*rescale)
+approxEllip = 14*np.pi
+minSize = int( 1000*rescale)
+minArena = int( 8000*rescale)
+#bounds to eliminate reflections / other stuff
+topBound = 200*RS
+bottomBound = 900*RS
+leftBound = 400*RS
+rightBound = 1300*RS
+# threshold operations
+wellThreshDist = 261
+flyThreshDist = 15
+
+# integration time to decide if there's a mating or not: longer is more likely to be accurate, shorter is more likely to give you a precise mating duration. Given in seconds
+decisionTime = 20.0
+# cascade path
+casc = cv2.CascadeClassifier('/Users/stephen/Desktop/FlyVideoAnalysis/Cascade/cascade.xml')
+# set up a server socket, tell it all the info it needs
+
+# accept the connection
+startTime = time.time()
+# Dictionaries for mapping the recent history of each well to whether or not we think there's a mating there
+matingHistory = {}
+matingEstimate = {}
+matingTimes = {}
+p = 0
+cap = cv2.VideoCapture('/Users/stephen/Desktop/Data/01-02-2015/MVI_0197.MP4')
+
+try:
+    while True:
+        ret, image = cap.read()
+        # this is the actual image, now we want to do processing. First get rid of colors
+        gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+        grayPic = cv2.cvtColor(gray,cv2.COLOR_GRAY2BGR)
+        # bad style; i'll fix it later. see if an object called bg exists, and if not, make it. otherwise, use it like a bg.
+        #try:
+        #    bg
+        #except NameError:
+            #bg = cv2.morphologyEx(gray,cv2.MORPH_OPEN,np.ones((80*rescale,80*rescale),np.uint8))
+        #    bg = cv2.GaussianBlur(gray,(21,21),0)
+        #else:
+            #bg = .99*bg + 0.01*cv2.morphologyEx(gray,cv2.MORPH_OPEN,np.ones((80*rescale,80*rescale),np.uint8))
+        #    bg = .99*bg + 0.01*cv2.GaussianBlur(gray,(21,21),0)
+        #fg = np.uint8(np.maximum(0,bg-gray))
+        #cv2.imshow('fg',fg)
+        # now do thresholding to make contour detection easier
+        threshForWells = cv2.adaptiveThreshold(gray, 255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,wellThreshDist,0)
+        threshForFlies = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,flyThreshDist,0)
+        _,otherThresh = cv2.threshold(gray,50,255,cv2.THRESH_BINARY)
+        #cv2.imshow('oth',otherThresh)
+        contoursForWells, _ = cv2.findContours(threshForWells, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_NONE)
+        #cv2.imshow('pre',threshForFlies)
+        contoursForFlies, _ = cv2.findContours(threshForFlies,cv2.RETR_CCOMP,cv2.CHAIN_APPROX_NONE)
+        otherCont, _ = cv2.findContours(otherThresh,cv2.RETR_CCOMP,cv2.CHAIN_APPROX_NONE)
+        # arrays for keeping track of the wells
+        wellCnts = []
+        wellOrdered = []
+        isMating = {}
+        # check the contours to see if they're wells, as met by the criteria of being sufficiently large and round
+        for k in range(len(contoursForWells)):
+                cnt = contoursForWells[k]
+                area = cv2.contourArea(cnt)
+                per = cv2.arcLength(cnt,1)
+                if area > minSize:
+                    if per*per/area < approxCirc:
+                        wellCnts.append([cnt])
+        for [cnt] in wellCnts:
+                (x,y), r = cv2.minEnclosingCircle(cnt)
+                # make sure it's not a reflection
+                if y > topBound and y < bottomBound \
+                            and x < rightBound and x > leftBound:
+                  # if wellOrdered is empty, put this in it
+                    if not wellOrdered:
+                        wellOrdered.append([[x,y,r]])
+                    else:
+                        a = 0
+                        for row in wellOrdered:
+                            yCoord = row[0][1]
+                            rad = row[0][2]
+                            b = 0
+                            # check to be sure you're in the right row
+                            if (np.abs(y-yCoord) < 2*rad):
+                                for column in row:
+                                    xCoord = column[0]
+                                    if (x-xCoord < 2*rad):
+                                        wellOrdered[a].insert(b,[x,y,r])
+                                        break
+                                    b = b+1
+                                else:
+                                    wellOrdered[a].insert(b,[x,y,r])
+                                break
+                            # new row?
+                            elif(y - yCoord < 2*rad):
+                                wellOrdered.insert(a,[[x,y,r]])
+                                break
+                            a = a+1
+                        else:
+                            wellOrdered.insert(a,[[x,y,r]])
+        for k in range(len(contoursForFlies)):
+            cnt = contoursForFlies[k]
+            area = cv2.contourArea(cnt)
+            per = cv2.arcLength(cnt,1)
+            # is it a fly?
+            if minFly < area and area < maxFly and per*per/area < approxEllip:
+                M = cv2.moments(cnt)
+                (centroidX,centroidY)= (int(M['m10']/M['m00']), int(M['m01']/M['m00']))
+                #make sure it's in a well
+                rowInd = 0
+                for row in wellOrdered:
+                    colInd = 0
+                    # wellPars means well parameters: the location and size of the well
+                    for wellPars in row:
+                        if (wellPars[0] - centroidX)**2 + (wellPars[1]-centroidY)**2 <= wellPars[2]**2 \
+                                and leftBound < centroidX < rightBound and topBound < centroidY < bottomBound:
+                            # okay you've passed my rigorous criterion. You're a fly
+                            x,y,w,h =cv2.boundingRect(cnt)
+                            #cv2.rectangle(grayPic,(x,y),(x+w,y+h),(255,0,0),1)
+                            
+                            #fileName = '/Users/stephen/Desktop/FlyVideoAnalysis/ims2/'+str(p)
+                            # This line was to collect putative flies for training the classifier
+                            #cv2.imwrite('/Users/stephen/Desktop/FlyVideoAnalysis/ims2/Mating/mate'+str(p)+'.jpg', gray[y:y+h,x:x+w])
+                            #cv2.rectangle(image, (x,y), (x+w,y+h), (255,0,0), 1)
+
+                            matings = casc.detectMultiScale(gray[y-h:y+h,x-w:x+w],1.01,1)
+                            for (xm,ym,wm,hm) in matings:
+                                cv2.rectangle(grayPic,(x,y),(x+w,y+h), (0,0,255),1)
+                                isMating[(rowInd,colInd)] = True
+                            #p = p+1
+                        colInd = colInd+1
+                    rowInd = rowInd+1         
+        # Now draw the wells on the image from wellOrdered and check to see whether there's a mating there
+        rowInd = 0
+        for row in wellOrdered:
+            colInd = 0
+            for wellPars in row:
+                # draw the wells
+                cv2.circle(grayPic, ( int(wellPars[0]), int(wellPars[1]) ), int(wellPars[2]), (0,255,0),1)
+                # Update the history
+                try:
+                    history = matingHistory[(rowInd,colInd)]
+                    now = time.time()
+                    history.append([now,1 if isMating.get((rowInd,colInd)) else 0])
+                    # throw out data older than decisionTime ago
+                    for times in history:
+                        if times[0] < (now - decisionTime):
+                            history.popleft()
+                    # now check the average estimate
+                    avg = 0
+                    for times in history:
+                        avg = avg+times[1]
+                    avg = float(avg)/len(history)
+                    # If the average is over 50% yes, then assume it's still mating
+                    
+                    oldEst = matingEstimate.get((rowInd,colInd))
+                    nowEst = True if avg > 0.5 else False
+                    matingEstimate[(rowInd,colInd)] = nowEst
+                    if not oldEst == nowEst:
+                        print "Mating = " + str(nowEst) + " in well (" +str(rowInd) + ","+str(colInd)+")"
+                        if matingTimes.get((rowInd,colInd)) == None:
+                            matingTimes[(rowInd,colInd)] = [[nowEst,now]]
+                        else:
+                            matingTimes[(rowInd,colInd)].append([nowEst,now])
+                except Exception as e:
+                    matingHistory[(rowInd,colInd)]=deque([[time.time(),1 if isMating.get((rowInd,colInd)) else 0]])
+                colInd = colInd + 1
+            rowInd = rowInd + 1
+        
+        cv2.imshow('frame',grayPic)
+        k = cv2.waitKey(1)
+        if k == 27:
+            break
+finally:
+    connection.close()
+    server_socket.close()

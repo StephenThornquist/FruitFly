@@ -531,7 +531,7 @@ Repeated Crz>Chrimson activation -> heat shock expt. (10 sec Crz activation, 30 
 
 - Did 1 Hz 20 ms 12 V expt again, cop. dur. looks more like the controls. Guess the high mean before was just by chance. Not broken retinal because I broke up the termination with a prolonged pulse of red light.
 
-- 10 Hz 20 ms 28 V shortens the cop. dur. but the ones on the far right seem less effected for some reason...
+- 10 Hz 20 ms 28 V shortens the cop. dur. but the ones on the far right seem less affected for some reason...
 
 01/14/2015
 
@@ -580,6 +580,7 @@ Cop dur of non-terminating flies:
 01/30/2015
 
 - R40F04>Chrimson 10 Hz 20 ms is sufficient to induce grooming in isolated male flies. Activating these neurons does not stop copulation. It also is sufficient to drive grooming of the eyes during mating. But there's a weird courtship phenotype too.
+
 
 - R18C11>Chrimson also works with 10 Hz 20 ms
 
@@ -837,7 +838,7 @@ the video when I was messing with background illumination though
 
 - NP2>Chrimson mating stim test. Just checking that the flies are still responsive to the same inputs in the new rig, for now. Starting with a single pulse of 500 ms 1 min into mating, terminates every time. A single 250 ms pulse, on the other hand, terminates 15 times out of 23 when applied within a minute of mating initiation.
 
-- NP2>Chrimson 10 minutes into mating. A 250 ms long pulse causes mating 0/5 times! Interesting. These data seem to go along with the previous data in which neurons were far less excitable in the intermediate period. Repeating it gives me one more fly, with the same effect
+- NP2>Chrimson 10 minutes into mating. A 250 ms long pulse terminates mating 0/5 times! Interesting. These data seem to go along with the previous data in which neurons were far less excitable in the intermediate period. Repeating it gives me one more fly, with the same effect
 
 - NP2>Chrimson 15 minutes into mating, 250 ms single pulse terminates 0/6 times.
 
@@ -1008,7 +1009,7 @@ surprisingly even the mock treatment seems to terminate at the 10 minute time po
 
 - NP2719>Chrimson 2s pulse 15 min into mating. Terminates 2/2
 
-- CrzR01 null tested for mating duration
+- CrzR01 null tested for mating duration. No matings
 
 04/15/2015
 
@@ -1037,3 +1038,2396 @@ RE: CAP ANTIBODY FROM HANNAH:::
     Incubate it in 1:500 anti-rabbit Alexa488 Lifetec Ref: A21206 lot: 1182675
 
 - NP2>Chr-mVen 1s pulse at 7 min into mating. Acts very bothered by the light pulse, even if it does not terminate. Terminates ( 0/3 ). Continues to look agitated even minutes later. Second pulse at 10 min, (terminates 1/2)
+
+04/17/2015
+
+- TH>Chrimson raised on retinal from before laying. 10 hz 20 ms when they start mating. They seem to court a little more pro-actively than the non-retinal raised flies, maybe. Hard to say. Mating 22 minutes...
+
+- NP2ChrA2Flp>>Chr#5 2s stim every 200 s. Does not cause termination (0/3) Moving stim to 4 s, still no termination (0/8). Clearly causes agitation though. I should do the dissection on these flies to see how many neurons it's expressed in.
+
+- NP2ChrA2Flp>>Chr#6 2s stim every 200s. Does not cause termination (0 / 1)
+
+04/18/2015
+
+- dsx-42G02>Chrimson 10hz 20ms 30s into mating. Yaaayyy these guys are actually courting, unlike last time I tried this. The females are not receptive, though, so I added another one to each well. Stimulation of the neurons causes the fly to freaaak out, but does not terminate. 2s pulses do not cause termination either. Long mating. 10 hz 20ms until termination-like behavior at time = 1hr 57m. I turn off the light then but it doesn't terminate/show exclusively stuck-like behavior for
+  another several minutes.
+
+- 0545,A2Flp>>Chrimson-tdT, 2s pulse every 200s. Causes a reaction but not termination. Switching to a 4s stim, which also does not cause termination. Neither does applying a 10 hz 20ms stim. However they all definitely cause a reaction in the fly... 19 minute mating, termination not sync'd to light
+
+- CrzR01-null flies tested for cop. dur. Seems normal.
+
+- Dissected out NP2RepoGal80 A2-Flp >>Chr-tdTomato VNCs, will go image tdT. No signal whatsoever in brain or VNC
+
+- anti-GFP TH-G>Chr-mVen flies under scope. LOTS of fluoresence. Microscope controller crashed during use though, so most of the brains didn't get imaged. The nervous systems are fixed though so I can (and will, eventually) go back and image them
+
+- Applied secondary (488 anti-Rb) to anti-CAP Crz>Crz-RNAi line
+
+- Applied primaries (rabbit anti-GFP, mouse anti-dopamine) to dsx42G02>Chr-mVen to look for dopamine and Chrimson co-localization.
+
+04/19/2015
+
+- NP2RG>GCamp6s,Chrimson-TdTomato under 2p scope. No calcium signal even with red light stimulation... The tomato signal is definitely there though
+
+- NP2RepoGal80>CsChrimson-TdT using a 1s pulse at 1 min into mating to test how similar it is to mVenus. Terminates ( 2/2 ). Would've liked to get more matings...
+
+- Applying 250 ms pulse at 5 min, followed by a 500 ms pulse at 5 min + 10 s. 500 ms pulse causes termination ( 2/5 ). In those which don't terminate, a follow-up 2s pulse also does not cause termination (2/3 times).
+
+- Apparently the Crz>Crz-RNAi worked really well. See images
+
+04/21/2015
+
+- Oh shit did I accidentally wash away my brains for the dsx stain?? I guess I'll see in a little bit...
+
+- In Tph2Chr10hz20ms video, Tph2>Chr flies are wells 5,6,7,8,9. NP2RG>Chr-tdT flies are wells 1-4. In the Tph2 expt, I turn on the stim 30s into mating. With the NP2RG expt, I turn on a 500 ms pulse of light at 1 min. This is for comparing to Chr-mVen. NP2>Chr-tdT result: Terminates 4/4
+Tph2>Chr males seems very uninterested in courting. Swapped them out for more NP2>Chr-tdT flies
+
+- Crz>Chr 30s stim of 20hz 10 ms light at 30s into mating followed by 1 min heat shock at 41 degrees. Then remove male and measure fertility of female. Ehh but the males are too juvenile to court much (only isolated for 2 days).
+
+- TH>Chr 10hz 20ms because I've kind of run out of other flies... Behavior looks as normal (anxious rearing but not stuck-like behavior), long mating duration, etc. I have to go to dinner so this last fly (at 150 minutes) hasn't terminated yet but I'm going to count it at 150... Sigh.
+
+04/22/2015
+
+- No clear overlap in dsx42G02 and DA, but the dissection is super shitty.
+
+04/28/2015
+
+- Crz>Chrimson-mVen, CrzR01 null mutant, testing termination at t = 5 minutes into mating after 30s of 20 hz 10 ms stimulation starting at t = .5 minutes. Terminates (4/4). Collected females to check fecundity
+
+- A2-LexA,Lexop2-Flp,NP2719-Gal4,Repo-Gal80>>Chrimson-tdTomato week-old males, testing for termination in response to a 2s pulse of light. Terminates (0/11). Using a 10s long blast of 10hz 20ms stimulus, terminates (0/5)
+
+- Crz>Kir, not so excited about courtship.
+
+- TH-Gal4, TH-C-Gal80 (not C'!) > Chrimson-mVenus, 10 hz 20 ms stimulus 30s into mating. Less obvious rearing behavior, if at all, which is nice (suggests the gal80 is working..). Normal-ish copulation duration (maybe a little long...? mean around 24 minutes?)
+
+- Crz>Chrimson mock at 41. Terminates:
+
+5 min (3/7) wow this is very different from before..
+
+- NP2719>Chr-tdT 10 hz, 20 ms, turn off 1 min after mating starts. Confirmed with 2s pulses that it will cause termination (2/2 flies). Seems to give normal copulation duration? Leaving the lights on through mating seems to shorten cop. dur. as per usual. Switching it to turning off the light at ~ 5 minutes. Still normal cop. dur
+
+- Tph2>Chrimson, 0.005 Hz, 2000 ms stim, leaving the stim off until I see one at least successfully mate. Single pulse, at the very least, does not cause a termination. switched to 10 hz 20 ms. Mating is shorter in the switched over fly. Doing it right after initiation of mating in another fly caused a very short copulation (2 min)
+
+- Antibody staining:
+    - Crz>Chrimson-mVenus for: Chk-anti-GFP, Rb-anti-CAP, Mouse anti-ChAt
+    - Crz>D2, Crz-RNAi for: Rb-anti-Crz
+    - TH-Gal4, TH-C-Gal80 > Chrimson-mVenus for Rb-anti-GFP and mouse-anti-TH
+
+04/29/2015
+
+- NP0525-Gal4 A2-Flp >> Chrimson-tdT older than 1 week, 0.005 Hz, 4s pulse does not cause termination. I'm going to assume it didn't flip out the Chr. Mating duration is also normal
+
+- NP2RG80 > Chr-tdT 1s pulse 7 minutes into mating. Terminates (3/7). Causes the same modest increase in cop dur that I've seen before.
+
+- Trying expt. in which I supply a 1 s pulse every minute after the 7th minute of mating. Those which don't terminate after the first pulse seem to survive several.. Kind of interesting. Terminate with the pulse-ish (start doing termination-like behaviors)
+
+- Another paired pulse-like experiment:
+    NP2RG>Chr-tdT, 1s pulse at 7 min, followed by another 1s pulse 20s later.
+
+40/30/2015
+
+- 2s pulse with 15v light in multiwell stim array, with noted copulation duration when I provide the pulse. Does not cause them all to terminate (those later in mating resist). But a 5s pulse does, regardless of time into mating.
+
+- Trying Crz>Kir again inside of spreadsheet with NP2-Gal4, A2-LexA, LexO-Gal80, UAS-Chr-tdT (2s pulses at 1 min into mating)
+
+- Crz>Kir aspirated into vial at 20 minutes into mating, 1 m at 41 degrees: Termination (0/1) Again at 30 minutes: Termination (0/1) Cop dur: 36 min
+
+05/01/2015
+
+- TH-C'>Chr 10 hz 20 ms stim extends cop dur still
+
+- TH-Gal4, TH-C-Gal80 > Chr 10 hz 20 ms stim ... I think too young to court much.
+
+- Crz>Kir heat shock expts (41 degrees) at:
+    10 min (0/1)      20 min (0/1)      30 min (0/2)
+    Cop dur: 155 min, 53 s ; 164 min
+
+- CG17646 mutant: 41 degrees at 10 min (0/3) 15 min (3/6) 20 min (1/1) Normal copulation duration (~ 20 minutes, but I'll have to redo with no heat shocks)
+
+- TH no light control.
+
+- Analysis of images to follow:
+    -A2-Gal80, NP2-Gal4 still has tomato expression in the abdominal ganglion. Looks like the two markers just don't overlap
+    -Crz>Crz-RNAi works beautifully, still no AB signal
+    -Crz>Chr-mVenus Venus signal localizes beautifully with Crz signal, but also is all over the eyes.
+    -TH-Gal4, TH-C-Gal80>Chr-mVenus signal mostly no GFP, but one brain shows signal, and it overlaps with anti-TH really well where there is signal, but there are many DA cells which do not express Venus. So the cross probably was messed up, or Mike picked balancer males
+
+05/02/2015
+
+- Tried to do calcium imaging in the NP2>Chr-tdT, GC6s males, but can't get any gcamp signal! Maybe Mike's recombinant didn't work.
+
+05/03/2015
+
+- NP2719 repo-Gal80 > UAS-Chrimson-tdTomato 500 ms pulse at 10 minutes into mating. Terminates (3/8). Still observe the apparent modest increase in copulation duration
+
+- NP2RG > Chr-tdT 500 ms pulse at 5 minutes into mating. Terminates (8/11). Cop duration totally normal.
+
+- NP0525-Gal4, A2-LexA, Lexop-Gal80 > UAS-Chr-mVen 2 s pulse 1 min into mating (wells 1, 2) Terminates (2/2). Crz>Chrimson 20hz 10 ms starting 1 min into mating (wells 7, 8, 9, no matings). NP2RG>Chr-tdT 500 ms pulse at 15 min (wells 3,4,5,6) Terminates (0/3)
+
+- NP2RG > Chr-tdT 2s pulse at 15 minutes. terminates (8/8)
+
+- NP2RG > Chr-tdT 500 ms pulse at 15 minutes. Terminates (3/5), surprisingly high.
+
+05/04/2015
+
+- Staining for GFP in NP2>GC6s,Chr-tdT flies (couldn't see any calcium signal when I did 2p so this is to make sure). Also checking NP2>GC6s,TM6b brothers. Chk anti-GFP, Rb anti-RFP
+
+- No larva observed from Tph2 mating before...
+
+- Staining VNCs for Hannah's Crz>CD8::GFP to confirm lack of GFP in abd. ganglion.
+
+05/05/2015
+
+- Crz>Chr-mVen, CrzR01 null flies still fertile after stimulation at 1 minute and then separation (so CrzR01 definitely not required for ejaculation)
+
+- Visualized Crz>Chr causing ejaculation. Pretty gross.
+
+- Tph2>Chr doesn't seem to cause ejaculation...? Only had a chance to look at one female from a mating, will do more, but looking at males with Chr stimulation I couldn't see anything.
+
+- NP2RG>Chr-tdT 500 ms pulse at 10 minutes into mating. Terminates (0/4). Fairly normal looking cop-dur.
+
+- NP2RG>Chr-tdT no light controls. Cop. dur looks normal.
+
+- Repeating NP2RG>Chr-tdT 500 ms at 10 minutes. Single 2s pulse looks normal. Terminates (2/7)
+
+- NP2RG>Chr-tdT 500 ms at 15 minutes. Terminates (0/6). Pretty normal cop dur
+
+- NP2RG>Chr-tdT 10hz20ms constant (including courtship). Corroborates results from before
+
+05/06/2015
+
+- NP2RG>Chr-tdT 10hz 20ms pulsed in at 10 minutes. Causes termination really quickly. Switching to 1hz 20ms (normally induces termination at 15 minute mark). Doesn't seem to have tooooo much of an effect.
+
+- Nominal TH-Gal4, TH-C-Gal80 > Chr-tdT at 10 hz 20 ms 1 min into mating (wells 1 and 2) and Tph2>Chr same stimulation in wells 4-9. Still abolishes rearing behavior in TH\C flies, cop dur. shorter than normal? Looks more like TH-G??
+
+- Antibody stains for Gcamp and TdT look normal so I guess it does work.
+
+05/07/2015
+
+- Trying to do 2p Ca imaging in NP2 neurons while turning on Chrimson. I just can't get any 2p signal (though the 488 looks good). Is it just that I'm using too large a pinhole diameter (so the 2p excitation isn't focused enough??)
+
+- NP2RG>Gc6s 1p calcium signal starting at 10 minutes into mating. At 17 minute mark I fiddle with the pinhole diameter for a second. At 19 min I futz with the focal plane. Basically nothing to be said about this time series though, analysis-wise.
+
+- Crz>Gc6s, tdT signal looks pretty negligible starting at 13 min into mating, but it definitely looked stronger when I was first positioning the recordings (at like 10 min)
+
+05/09/2015
+
+- NP2RG>6s,tdT at 15 minutes 45s into mating. Fly came unglued during dissection so there's a good amount of drift (fly seems to roll around) (mating1).
+
+- Mating2 also NP2RG>6s,tdT starting at 7 min 40s. This male is glued down so there seems to be a lot less movement, This male is glued down so there seems to be a lot less movement.
+
+05/10/2015
+
+- Trying to do Crz>Chr-tdT expts. where I stimulate for 30s every 5 minutes into mating, but the flies are fairly young so I'm not seeing as much courtship as I'd like. Still, there's some. One short mating, one long. Repeating same expt. Same result: one short, one long.
+
+- Crz>Chr mock experiments with heat shock (41 C). Terminates:
+    5 min (0/1)       10 min (1/1)
+
+    At 37 C:
+    1 min (0/2)         5 min (1/2)     10 min (0/1)   15 min (1/1)
+
+- NP2RG>Chr-tdT 500 ms pulse at 5 min, collecting mating pair immediately after the pulse to see if there's a correlation between fertilization and terminating in response to the pulse. Terminates (8/8) which is furstrating because I'd have liked some examples of non-terminating, but I can always do the experiment again.
+
+05/11/2015
+
+- NP2719 repo-Gal80 A2-LexA, LexAop2-Gal80 > GFP, Tnt looking for copulation duration. Looks longer (mean = 87 minutes)
+
+- Crz>Chr with light, heat shock at 41 C:
+    1 min (3/4)
+    10 min (5/5) (terminates just from handling 4/4)
+
+- CrzR01 null copulation duration looks pretty normal (mean = 19 min)
+
+- ABCG1 null mutant motivation phenotype. 41 C heat shock terminates:
+    10 min (2/3)
+    
+    looks less convincing than before.... Oh well. Maybe this gene means nothing.
+
+05/12/2015
+
+- Crz>RNAis for GABA (VGat and Gad1) and ACh (Vchat and Cha), screening for copulation duration and fertility defects. Male flies are a liiiitle bit young but I'm seeing some courtship, so I'm not too worried. Copulation duration looks normal in all of the flies though. Bummer. Time to try the rest of the possible neurotransmitters.
+
+- NP2>Chr-tdT provide 500 ms pulse, 500 ms of rest, 500 ms pulse, observe termination probability at 10 min. Terminates (13/17). Much higher than if the pulses were independent.
+
+- NP2>Chr-tdT 500 ms pulse, 1s of rest, 500 ms pulse (in comparison to 2s). Stim at 10 min. Terminates (8/14).
+
+05/13/2015
+
+- NP2RG>Chr-tdT, 500 ms pulse, 500 ms rest, 500 pulse. At 10 minutes. Terminates (6/15)
+
+- NP2RG>Chr-tdT, 500 ms pulse, 1s rest, 500 ms pulse, At 10 minutes. Terminates (11/17)
+
+- NP2RG>Chr-tdT, 500 ms at 10 minutes. Terminates: (0/6)
+
+- NP2RG>Chr-tdT, 1000 ms at 10 minutes. Terminates (2/6)
+
+05/14/2015
+
+- 0/8 of the females in matings which terminated in response to a 500 ms pulse at 5 minutes produced offspring. Still need to do positive expt: test whether those that didn't terminate are fertilized.
+
+- TH-G>Dicer2,pale-RNAi testing cop. dur. No effect. Will stain for TH and see which cells it removed (i.e. are there still abd. gang. TH cells?).
+
+05/15/2015
+
+- Primer design with Xingjie: find gene, examine ~ 1kbp around it, look for enhancer sequences on UCSC broswer to pick where you want to start and end your primer. Open A Plasmid Editor (APE) and try to end your primer on two G's or C's (include flanking sequences) etc.
+
+05/16/2015
+
+- NP2719 repo-Gal80>Chrimson-tdTomato 500 ms pulse, 5 s of rest, 500 ms pulse at 10 minutes. Terminates: (12/22)
+
+- NP2719 repo-Gal80>Chrimson-tdTomato 500 ms pulse at 10 minute at 10 minutes. Terminates: (2/8). This is meant to be a sanity check since these spaced-out experiments use new female genotypes because we ran out of w- virgins for a while. Looks about right.
+
+- TH-G>D2,pale-RNAi anti-TH stain looks.. interesting. Only a few cells remain in the VNC, and a good portion of the brain is taken out too. I'll have to do this again.
+
+05/17/2015
+
+- NP2RG>Chr-tdT 10 hz 20 ms during courtship, off at 2 minutes, on again at 3 minutes (AdaptationTest1). Cop dur = 3 min, 3 min, 6 min, 3 min for the 4 flies tested. One of them mated 4 times total, each of which terminated at the 3 minute mark. By and large they seem to terminate with the reintroduction of Chr activation.
+
+- NP2RG>Chr-tdT 10 hz 20 ms during courtship, 500 ms pulse superimposed at the 1 minute mark (AdaptationTest2). Terminates (1/3) Cop dur (non-terminating flies): around 2.5 min. 2 s pulse still induces termination.
+
+05/21/2015
+
+- R42G02-Gal4 > Chr-mVen 30s of 10hz 20ms stimulus every 10 minutes of mating (3rd column of video). The first two columns are Crz-Chr using the same protocol except with 20 hz 10 ms. Not a lot of courtship out of the R42G02 flies... Maybe I should wait a few more days. Got some matings eventually though. Both seem to prolong copulation duration, though not enough to make it indefinite.
+
+- Elav-Gal4, A2-Flp, >>Chr-tdT doesn't seem to have any effect. Will do dissection for fluoresence
+
+- R42G02-Gal4>Chr-mVen 30s for 10 hz 20ms stimulus every 5 minutes of mating (3rd column). First two columns are every 10 minutes 20 hz 10 ms stim of Crz>Chr. No R42G02 mating.
+
+- Activation of R42G02 induces penis thrusting and ejaculation after ~ 1 minute.
+
+- Crz>Chr no light controls look normal.
+
+- TH-Gal4, A2-Gal80 > Chr 10 hz 20 ms at start of mating. Still seems to exhibit rearing behavior, though certainly to a greatly reduced extent. Cop dur seems shorter (~ 15 min)
+
+- NP2-Gal4, Tsh-Gal80 > Chr, 2s at 1 min into mating. Fortunately for my sanity, this eliminates the termination in response to light.
+
+Antibody labeling I want to do tomorrow:
+    - TH-G>pale-RNAi anti-TH and anti-fru
+    - TH-Gal4, A2-Gal80 > Chr anti-GFP and anti-RFP because I don't know what color Mike gave me...
+
+05/22/2015
+
+- R42G02>Chr-mVen isolated males with 10 hz 5 ms stimulation. Some behavioral response: one becomes pretty much stationary, a few seem mostly unaffected, and a couple seem nervous and move around a lot more.
+
+- Antibody stains:
+    - Crz>GFP anti-GFP (Rb) and anti-Nc82 (Mo) (Hannah's Crz-Gal4)
+    - TH-Gal4, A2-Gal80 > Chr, anti-GFP (Chk), anti-RFP (Rb), anti-Nc82 (Mo)
+    - TH-G>pale-RNAi, anti-TH (Mo), anti-fru (Rb)
+    - Elav-Gal4, A2-Flp > Chr-tdT, anti-RFP (Rb), anti-Nc82 (Mo)
+
+05/23/2015
+
+- TH-Gal4, TH-C-Gal80 > Chr-tdT 10 hz 20 ms at start of mating. No obvious rearing behavior. Matings are shorter than normal though, presumably because the fly is bothered?? About 15 - 20 min.
+
+- Repeated Crz>D2,RNAi lines; still no apparent phenotype w.r.t. copulation duration.
+
+- Tph2>Chr-mVen isolated males exposed to 10 hz 20 ms stimulation. After about 2 min (still flashing the light) the penis emerges and starts thrusting but does not ejaculate. At 9 minutes, he ejaculates.
+
+- R42G02>Chr-mVen constant red for ~ 30 s, then off. Penis emerges and thrusts briefly several seconds later and abdomen and legs continue to twitch slightly, but the penis doesn't come out again. After 4 minutes of constant light, I get the thrusting behavior I observed before.
+
+- R42G02>Chr-mVen 1 min of constant light every 10 minutes of mating. First 3 wells only. Other 6 wells are Tph2>Chr flies, 10 hz 20 ms starting at 1 min. R42G02 seems totally uninterested in courting. One tph2 fly terminates quickly, the other seems pretty normal. Another two matings, same thing: one normal one short.
+
+- ddc-Gal4, TH-Gal80 > Chr-mVen in wells 1-3 (10 hz 20 ms starting at 1 min), Crz>Chr in wells 4-9 (30s of 10 hz 20 ms every 10 minutes). ddc>Chr fly a little tweaked out by light stim but not rearing. These females are very unreceptive though. Rejecting everyone. Mating of ddc\TH>Chr = 24 min.
+
+- Crz>Chr-induced thrusting occurs within seconds.
+
+05/24/2015
+
+- Tph2>Chr tonic light stimulation in isolated males. This seems to kill the fly eventually so it's hard to get ejaculation sometimes.
+    Delay to penis exposure: 85s, 94s
+    Delay to ejaculation:?, ?
+
+- Crz>Chr tonic light stimulation in isolated males.
+    Delay to penis exposure: 25s, 50s,
+    Delay to ejaculation: 80s, 90s
+
+- 42G02>Chr-mVen tonic light stim. in isolated males:
+    Delay to penis exposure: 270 s, 30s
+    Delay to ejaculation: ?, 270s
+
+- Stains from Friday with secondaries:
+    - Crz>GFP anti-GFP (488) anti-Nc82 (Cy3)
+    - TH-Gal4, A2-Gal80 > Chr-(?) anti-GFP (488), anti RFP (647), anti-Nc82 (Cy3)
+    - TH-G>pale-RNAi anti-TH (Cy3), anti-fru (488)
+    - Elav-Gal4, A2-Flp >>Chr-tdT anti-RFP (488), anti-Nc82 (Cy3)
+
+05/25/2015
+
+- Stains:
+    -Crz2>GFP: Hannah's line has some expression in the abd. g. It's a damn beautiful dissection too. There's also some sparse expression in the TG in addition to the usual expression in the brain. Kind of odd.
+    - TH-Gal4, A2-Gal80 > Chr: Didn't get any Chr expression... Awkward. Were these my flies or Mike's? I'll have to redo it.
+    - TH-G > pale-RNAi staining for fruitless and TH. Totally gets rid of all dopaminergic neurons in the thoracic ganglion. Like entirely. Really impressive. Lots of tracts still crisscrossing the VNC though. There are a few cells remaining in the VNC (maybe 12?), a couple of them are fru positive, but they aren't appearing in every brain...
+    - Elav-Gal4, A2-Flp, >>Chr-tdT, one brain has no fluoresence, two have some expression. So the >>Chr seems to work, at least to some extent. I probably just didn't look closely enough at the behavior of these flies when I transiently activated them.
+
+05/26/2015
+
+IMPORTANT NOTE: FROM HERE ON OUT, UNLESS I NOTE IT LATER, I'M SWITCHING ALL VIDEOS TO 30 FPS (instead of 20 fps)
+
+- TH-Gal4, A2-Flp >> Chr-tdT 10hz 20 ms at start of mating. Unclear whether there's a rearing phenotype. Flies seem a little bothered but not as dramatically as in TH>Chr. Definitely nothing clear about it. Mating duration looks normal, mean: 18.5 min
+
+- NP2RG>Chr-tdT 500 ms stim every 1 min starting at 10 min. Flies which survive do seem to have increased "resilience," but when they finally do terminate it's synched to the light.
+
+- NP2RG>Chr-tdT 1 s stim every 1 min starting at 10 min. Same result. Will repeat because I'm slightly suspicious about the fact that none of them terminated on the first pulse.
+
+- Repeat of above 1s pulses expt. Same general phenomenon (if you survive the first pulse, you survive many), but with a more normal termin prob on first stim.
+
+- All of the Crz>D2,RNAi for Cha, VChat, Gad, and Vgat have fertile matings.
+
+- TH>Chr no light controls look normal except one fly
+
+05/27/2015
+
+- R42G02>Chr-mV motivation expts at 41C:
+    - Light for 30s-60s, heat from 60s to 120s. Terminates (0/4)
+    - Light at 10 min time point for 30s, then heat for 1 min. Terminates (4/4)
+    Annoyingly, the light activation induces satiety, so I can't get them to mate with more females after I do an experiment on one fly.
+
+- TH>Chrimson 10 hz 20ms at start of mating, collect females at 10 min to check for fertility. The question here is: do the flies with TH activated resist heat threats because they're in the pre-Crz regime or because the TH acts in opposition to whatever conveys the threat signal. Rearing looks normal so I'm sure Chr is working in these flies.
+
+- TH-Gal4, A2-Gal80 > Chr 10 hz 20 ms at start of mating (plus a few control brothers with CyO instead of A2-Gal80 to make sure the TH-Gal4 is there in the rightmost column). Some rearing behavior observed, like in TH-G or TH-Gal4. Turns out that fly is actually just TH-Gal4. I turned off Chrimson at 29 minutes, mates until 36 min. I should do this expt again when I get more TH flies, I don't know how I haven't thought of it.
+
+- Crz>Shi at 30 C, remove at 10 minutes into mating and record copulation duration. Neither make it much past 10 minutes (one broke up at 9 min, the other broke up at 10 when I tried to aspirate it out of the well). This kind of makes sense; it seems like Crz just acts once. Maybe I could try using Shi and Chr at 30 degrees and just totally deplete the neurons before the mating happens?
+
+- R42G02>Chr:
+    Latency to penis thrusting: 75 s, 133s, 510s
+    Latency to ejaculation: ?, 214s, 520s
+
+05/29/2015
+
+- R8>Chr experiments for Bryan. No super obvious behavior.
+
+- R42G02>Chr drive for 30 minutes, then turn off light and see how long they continue to mate for. Something is up; these flies don't seem to be satiated by the light and it doesn't prolong copulation. I don't trust this data.
+
+- NP2RG>Chr-tdT 500 ms in a 10 s window at 10 minutes. 6/22 terminate.
+
+05/30/2015
+
+- NP2RG>Chr-tdT 500 ms at 15 min. Termination: (0/16) Those which fail to terminate are subjected to a single 2s pulse to verify that Chr still works (as ever, this test is 100% successful). This is a surprisingly small proportion, but it's also quite hard to accurately estimate small proportions. I'm going to try fleshing out the 1s stim sample size as well to see if there's a more clear difference there.
+
+- NP2RG>Chr-tdT 1s at 15 min. Termination (3/13). Same sanity check as usual. Still 100% on the 2s pulse. One thing I've noticed, though, is that flies seem to be harder to break up with GABA as they near 20 minutes. Maybe I should do some expts. testing this.
+
+- NP2RG>GCamp6s,tdTomato. Definitely no signal in isolated male, despite tdTomato signal.
+
+- Crz>GCamp6s,tdT starting at 14 min. There's some pretty obvious z-drift going on for which I occasionally attempt to correct. At about 21 min, 30s into mating I widen the pinhole.
+
+06/01/2015
+
+- R42G02>Chr-tdT, 10 hz 20 ms 30s after mating starts. Noticed that it casued a couple of flies to actually terminate if I turned it on too early?? Turning off the light for a second seems to cause termination... Haven't been getting that long mating phenotype at all. None of them made it to 30 m
+
+- NP2RG>Chr-tdT, A2-Gal80 on the X this time. Turning on 10 hz 20 ms stim shortly after they start mating. Does not cause termination. The 2s pulse does, though.
+
+- Crz>Shi at RT, putting at 37 when they start mating, then I'll check on them at 20 minutes. Terminated by the 20 min mark: (6/7). But  the one fly made it all the way to 30 minutes (after two matings at 37 that in which he terminated fairly early)! Removing him and seeing how long he lasts now. He seems annoyed by my intervention but he's still going. Terminates at 36 min.
+
+- TH-Gal4, A2-Gal80 > Chr-mV retest. Pretty spazzy. Cop dur: ~ 22 min
+
+- TH>Chr matings are fertile.
+
+- NOTE: Cross Hannah's Crz2 to Kir (fewer neurons, see if it has an effect)
+
+- TH-Gal4, A2-Flp >>Chr-tdT, 10 hz 20 ms at start of mating (20 FPS). Only one mating fly, 21:31.
+
+- TH-Gal4, A2-Flp >>TrpA1-myc at 30 degrees. Only one fly, mates for 15 minutes.
+
+06/02/2015
+
+- TH-Gal2, A2-Gal80 > TrpA1 expts with 16 flies. Some of their wings are kind of funny (are these internal controls mike didn't mention?)
+
+- Crz>Shi mated flies at 30 degrees are fertile.
+
+- NP2RG>Chr-tdT 10 s spacer at 15 minutes (500 ms pulses). Terminates (2/6)
+
+- NP2RG>Chr-tdT: Try 500 ms pulse every 1 minute starting at 10 minutes (inspired by slight increase in mating time observed when a single pulse is applied). This seems to be too frequent. Let's do it again with a 5 minute interval.
+
+- NP2RG>Chr-tdT 500 ms pulse every 5 minutes starting at 10 minutes. Doesn't really seem to prolong mating. I'm going to abandon this avenue for now I guess.
+
+06/03/2015
+
+- R42G02>Chr-mVenus : constant light,
+    Time to penis thrusting: ~ 1 min, 4 min, 4min
+    Time to ejaculation: 5 minutes, DIED, 6 min
+
+- NP2RG>Chr-tdT, 10 hz 20 ms at 10 minutes into mating for 5 seconds (equivalent to 1s of light on) in terms of number of photons. Terminates (7/8). The one escaper did terminate in response to a 2s pulse though.
+
+06/04/2015
+
+- R42G02>Kir 41 C at 1 minute. Term (2/5) 1st matings, (1/3) 2nd matings, 3rd (0/2). Not a striking phenotype if any.
+
+- R42G02>Chr-mVen 10 hz 20 ms starting 1 min into mating. Matings seem either shorter or normal. Ughhh...
+
+06/05/2015
+
+- NP2RG>Chr-tdT turning on a 1s burst of 10 hz 20 ms stimulus at 5 minutes into mating (equivalent of 200 ms total). Term (8/25)
+
+- NP2RG>Chr-tdT 2.5 s burst of 10 hz 20ms at 5 minutes (equivalent of 500 ms). Term (11/17)
+
+- Crz>TntG (flies are only a day or so old though). Pretty much 0 courtship. I'll try again on Sunday.
+
+- Elav-Gal4 A2-Flp >>GFP expression is ALL OVER THE PLACE
+
+- TH-Gal4, A2-Gal80 > Chr-mV is still present in the AG. Maybe...
+
+06/06/2015
+
+- NP2RG>Chr-tdt 2.5 s burst of 10 hz 20 ms at 5 minutes (equivalent of 500 ms). Term (7/12). One thing I've been noticing is that if I provide a 2s light pulse about 30-40s after the stimulation, the flies seem less sensitive to it (they don't always break up).
+
+- NP2RG>Chr-tdt 2.5 burst of 10 hz 20 ms at 10 minutes (equivalent of 500 ms). Term (9/15). Fraction of survivors which terminate with a 2s pulse at the 10:40 mark (3/5). I think they "forget" about the preceding pulse after a few minutes though. Wowwwww each of the experiments gave me a radically different fraction though. That's a little disconcerting. Will repeat.
+
+- Crz>Shi mating at 31 C (they've already been at 31 for several days), dunked in 41 C at 8 min for 1 min, put back at 31. These experiments will be so much easier when I have the water chamber working... 
+    1st mating termination (2/2)  2nd mating termination (1/1)    3rd mating termination (/)
+
+06/07/2015
+
+- Crz>TntG again. Still verrryyy little courtship. Probably because the Crz-Gal4 labels cells in the optic lobe, so these flies are likely blind. No matings.
+
+- NP2RG>Chr-tdT 2.5 burst of 10 hz 20 ms at 10 minutes. Term (4/9). With the 2s pulse at 10:40 (3/5)
+
+06/08/2015
+
+- R42G02>Chr-mV 10 hz 20ms at 1 min into mating. No apparent phenotype???? Did they not eat the retinal or something? Except for one fly who is mating for quite a long time.
+
+06/09/2015
+
+- R42G02>Chr-mV 20 hz 10 ms at 30s into mating. Also no courtship or mating phenotype. What the eff.
+
+- TH-Gal4, A2-Flp, >>TnT recombinant #2 cop dur. 
+
+- Tph2>Chr 10 hz 20 ms at 30s into mating. Wells 8 and 9 are NP5,A2-Gal80 > Chr-tdT. Does not block termination in the NP5 line. Now testing NP5,(Tm6b)>Chr-tdT: Blocks 10 hz 20 ms term but not 2s stim
+
+- TH>Chr-tdT 10hz 20 ms turn off at 40 min, see how long they mate for. These guys have been in the same ret vial for a while though so maybe it won't be as effective.. Sure enough, two wildtype matings.. Ugh oh well.
+
+- NP2RG>Chr 1s pulse at 10 minutes, 2s pulse at 10:40. 12/19 terminate on 1s pulse, 4/6 terminate on the 2s pulse.
+
+06/10/2015
+
+- R42G02>Chr-mV flies 10 hz 20 ms again not many long matings... If I turn off the light, they break up almost instantly.
+
+- Crz>Shi in satiety assay to see if sequential matings get longer. They're pretty much all normal length except for one. I'm going to try doing this experiment again except for suddenly moving the flies to 37 once the mating starts. (PS these flies have been housed at 30-32 C for ~ a week)
+
+- A2>Chr-mV 0.005 Hz 2000 ms. The flies don't seem to want to court so this isn't very useful.
+
+- NP2RG 1s pulse at 10 minutes, 2s pulse at 10:40. Term at 10 (2/4) Term at 10:40 (2/2)
+
+500 ms pulse at 10 min, 2s pulse at 10:40. Term at 10 (0/7) Term at 10:40 (7/7)
+
+- NP2RG 1s pulse at 20 minutes. Term (12/14). The nonterminaters end at approximately normal times (25 min and 28 min). The termination happens relatively rapidly after the light pulse, unlike around the 15 minute timepoint.
+
+- NP2RG 500 ms pulse at 20 minutes. Term (7/11)
+
+06/11/2015
+
+- ASK MIKE FOR CRZ>SHI awww it's gone.
+
+06/12/2015
+
+- NP2RG>Chr-tdT 500ms pulse at 20 min. Term (4/8) 2s at 20:40 (2/4). Those which are not terminated by light are still fairly normal in duration though.
+
+- Crz>TnTG still doesn't court. Sigh.
+
+- NP2RG>Chr-tdT no light controls.
+
+- Learning how to PCR with SXZ. Starting from before, where you have your 2x concentrated single primers (one L and one R):
+    1) Make 100 uL each of 1:1 ratio of L and R primers for each reaction
+    2) Make mastermix of Phusion enzyme, dNTPs, and water
+    3) Mix primers with mastermix in a separate tube for each reaction
+    4) Program PCR cycler according to annealing temp of your primers and with the duration of each step according to the length of the primer (and speed of the enzyme)
+    5) Run it again with the attB primers to get the complete elemnt to insert
+    6) Run gel to validate amplification of the correct fragment.
+
+06/13/2015
+
+- Crz>Shi flies at 30 degrees don't seem to have produced fertile offspring (though mating duration appears normal). Leaving vials at RT to see if they can mate and produce offspring now.
+
+- R42G02>Kir (tub-Gal80ts) motivation expts. (dunking in 41C water bath at 1 min into mating) Terminates (3/10) 1 min, (1/1) 10 min
+
+- NP2RG>Chr-tdT 500 ms pulse at 20 min. Term (4/11), 2s at 20:40 (6/8). Nonterminators have cop durs (25, 88 min) Long mating fly is in pre-corazonin like state; very high motivation. This is actually predicted by the model: if you can manipulate the GABA neurons so that you don't quite push the fly under threshold, there's a brief period of increased resolve. If you can make this period outlast the phase where DA input goes to 0, then the cell returns to a pre-Crz-like state because
+  the only input is the tonic GABA.
+
+06/14/2015
+
+- NP2RG>Chr-tdT 500 ms pulse at 20 minutes, followed by a 2s pulse 40s later. Term (1/4) After 2s pulse (3/3)
+
+- NP2RG>Chr-tdT no retinal controls at 20 minutes. 500 ms term: (0/11). 2s Term (1/11)
+
+- R42G02>Chr-mV 10hz 20 ms at start of mating, these are flies which mated for a long time the first time, so we'll see if they're consistent (wells 1,4,7). The other wells are R42G02>Chr-tdt 10 hz 20ms at the start of mating. mVenus fly: 26 minutes. tdT: 77 minutes. The females were not very receptive though.
+
+- Hurray my amplifications worked! Now I have attB primers for Crz from the transcription and translation start sites
+
+06/15/2015
+
+- Spent all day either futzing with plumbing for the IRIS or futzing with code for the Arduino (pro tip: put a delay in between starting the arduino and writing to / reading from the serial bus, because either Arduino hardware or python's serial package makes this a very slow process)
+
+- R42G02>Chr-tdT 10 hz 20 ms at start of mating. One mating was 15 minutes, the other was 98 minutes when I had to stop the clock to go purify my DNA.
+
+06/16/2015
+
+- Various flavors of Crz: Crz#2,#8,#9 30s of 20 hz 10 ms stim starting at 30s into mating, 1 min heat shock at 41 C at 5 min:
+    Crz #2 Term (3/8)
+    Crz #8 Term (2/5) Some interesting cop. durs. I should check this out a little more.
+    Crz #9 Term (2/5) Flies seem spooked, but do not terminate? they definitely don't just sit on top of the female the way other genotypes do
+    Crz Term (9/10)
+
+- Crz-Gal4 activation at 15 minutes for 30s.  One broke up at 18 minutes, the other 23 m. Tim Tayler ain't know what he's talking about.
+
+- R42G02-tdT 10 hz 20 ms at start of mating. Couldn't get any matings. Sigh.
+
+- R17F11 no leg grooming during mating (0/1)
+
+- Concentration of DNA from my PCR is too low! Trying again with more cycles.
+
+06/18/2015
+
+- Crz>Shi mate at RT, put in 37 C at 1 min, check at 5 min, 10 min, 15 min, etc.
+    Termination by:
+    1 min (0/11)   5 min (1/11)   10 min (8/11)  15 min (2/11)  20 min (/)  25 min (/)  30 min (/)
+    Next expt: Put them at 32 in between each mating.
+    Mated pairs are stored in 30 C incubator to see if they can produce offspring
+
+
+- NP2 Flp-out >>Chr-tdT flies. Their food looks super weird though. I'm going to provide a 2s pulse to each fly at ~ 1 min into mating and record the fraction which terminate the mating. Those which fail to terminate will be exposed to a 6s pulse as well (1 minute later). I won't take these results super seriously though given the weird food. One fly which didn't terminate with the 2s or 6s pulse at 1 min did terminate in response to a 2s pulse at 10 min (which is another test I'm running
+  on every fly) Cop dur seems normal though.
+
+- Crz>Chr-mV no retinal controls. Light at 30s, 41 C at noted time.
+    1 min (0/2)   5 min (2/6)   10 min (3/3)  15 min (/)
+
+06/19/2015
+
+- NP2Flpout>>Chr-tdT expts. Again, 2s pulse is far far less effecive. The stimulations elicit some behavior (some shaking / trembling of the male, I guess), but not termination. Nor do 6s pulses, or 2s pulses several minutes later.
+
+- More Crz>Shi no retinal experiments. 41 C, light at 30 s.
+
+    5 min (0/2) 10 min (1/1)
+
+06/21/2015
+
+- TH-Gal4 (?), A2-Flp, >>TnT-G #3 males cop dur. not sure if the TH-Gal4 is really there, not sure if the Flp,>>tnT recombinant is a real recombinant. So this result is only useful if I get a short mating. Mild decrement, if any (sample mean is 16 minutes with 8 flies).
+
+- Crz>Chr-mV 20 hz 10 ms at start of mating gives normal copulation duration.
+
+- R42G02>Chr-tdT 10 hz 20 ms at start of mating. Very little mating. Causes them to terminate very early (within a minute) (3/3 flies)
+
+- Crz#2>Chr-mV 30s activation at 30s, test with 41 C at 5 min. Term (3/13). Looks like mock condition. I'm going to dissect these VNCs and see how many neurons are labeled.
+
+- Crz>Chr-tdT, Kir flies, activate at 7 min. I'm a little concerned about bleedthrough of light but we'll see what the result is. Does not cause termination at a normal time... Activating Crz at the 30 min time point to see what happens (20 hz 10 ms until end of mating). They do terminate before their no-light counterparts. Still takes like an hour though. I'll have to do motivation experiments when I get more of these. Of course, my current model predicts that activating
+  Crz after ~ 5 minutes should have little effect, so I'm not terribly surprised by this result.
+
+- Constant light induces ejaculation in (3/4) flies tested (takes several seconds, 30 to a minute). Maybe I should redo the above experiment but with constant light for ~ 1 minute at the 7 minute point or whatever.
+
+- Collected females from light stimulated flies to see if they were successfully fertilized by the mating.
+
+06/22/2015
+
+- Crz>Chr-tdT,Kir flies, 1 min constant stim at 7 minutes, then another 1 min at 30 minutes (if it makes it). He keeps acting like he's about to terminate, but does not (so far at 25 min). Tapping the well doesn't seem to do anything either. But blowing does cause termination! Huh. Will have to do motivation expts. 2nd mating lasts ~ 35 min. a 3rd mating lasts 21 minutes (2 min current injection)
+
+- CrzTT>Chr-tdT no retinal controls, 41 C (CrzTT is what I'm going to call the Tim Tayler line). Terminates:
+    1 min (0/6)     5 min (1/1)     10 min (1/3)
+
+- Other Crz drivers at 41 C with 5 min shock (on retinal, with 30s light stim at 30s)
+    Crz #8 (/)      Crz #9 (/)
+
+- Doing the same stim with Crz>Chr-mV: 1 min stim at 7 minutes. All 21 minute matings.
+
+06/23/2015
+
+- Crz#9 > Chr-mV no ejaculation (0/1), Crz #8>Chr-mV ejaculates (1/1)
+
+- Tph2>Chr-mV 20 hz 10 ms stim from 30s to 1:30, then 41 heat shock at 5 min. Terminates:
+    1 min (0/4)       5 min (1/4)       10 min (/)
+
+- Tph2>Chr-mV causes ejaculation in 3/3 flies.
+
+- CrzTT>Chr-mV mock at 37 C. Terminates:
+    1 min (0/2)       5 min (0/4)       10 min (5/6)      15 min (/)
+
+- CrzTT>Chr-mV light at 30s-60s (20 hz 10 ms), 37 C heat shock for 1 min. Terminates:
+    1 min (0/2)       5 min (3/5)       10 min (/)      15 min(/)
+
+- A2>D2,pale-RNAi in wells 1 and 2 of chamber, D2, NP2RG>CG6706-RNAi 3-18, TH-C'>D2-paleRNAi in wells 19-22. NP2 line no phenotype, A2 no clear phenotype (28 m and 14m), TH-C' no phenotype.
+
+- Crz#2>Chr-mV stain shows no AG fluoresence. Weird, considering I got that nice image from it before.
+
+- CrzTT>Chr-mV shows typical AG expression.
+
+06/24/2015
+
+- Crz-RNAi/+ cop. dur control. Normal duration.
+
+- NP2RG>D2,K109606 (GABAAR) kd. Two matings, both normal duration.
+
+- Crz#8>Chr-mV 41 C heat shock at 5 min after 30s stim for 30s-60s. Terminates: (0/4)
+
+- Crz#8>Chr-mV test for ejaculation. Ejaculates (0/2)
+
+- CrzTT>Chr-mV vehicle controls after 30s stim for 30s-60s. Terminates:
+    1 min (/)       5 min (/)       10 min (5/10)      15 min (1/1)
+
+- CrzTT>Chr-mV vehicle controls with no Crz stim. Terminates:
+    1 min (/)       5 min (/)       10 min (0/3)      15 min (4/6)
+
+- CrzTT>Chr-mV 37 C mock controls at 10 min. Terminates (1/4)
+
+- Crz>Chr-tdT, Kir expt., 2 min of stimulation at 7 minutes into mating. Fly does wiggle-type behavior around 13 minute mark for a little while. At 17:30, starts to act like he's going to terminate again. Finally ends the mating at 30 minutes. Another fly mates for 26 minutes and another for 24. Nice.
+
+- Crz>Shi-ts still fertile at 30 C (8/9 vials)
+
+- Side note: heat threats early in mating don't seem to affect copdur, but those late in mating do seem to shorten it, even if they don't cause termination.
+
+06/25/2015
+
+- NP2RG>D2,KK108036 wells 1-8, A2>D2,pale-RNAi well 9, wells 10-15 NP2RG>D2,KK109606, A2 fly didn't mate, the other two are pretty unremarkable.
+
+- NP2RG>Chr-tdT paired pulses: one 500 ms at 20 min, one 2s at 20:40. Only 3 matings make it to 20 minutes and they all terminate in response to the 500 ms light.
+
+- Neither R17F11>Chr-tdT nor R48G01>Chr-tdT perform correct grooming movements in red light when decapitated. They do kind of splay their legs out, but it's not clear what behavior that corresponds to.
+
+- Very few males from R41D01 x Chr-mV crosses, and those which do eclose have orange eyes instead of red. May be lethal? I could try raising on retinal but I'll see what the next batch looks like first.
+
+06/26/2015
+
+- NP2RG>Shi-ts at 30C, remove from heat at 30 min. No phenotype.
+
+06/27/2015
+
+- Crz>Chr-tdt,Kir. Activate for 2 minutes at t = 45 min into mating. Little bit of wiggling but the flies both make it to at least the 30 minute mark at the time of writing, which is good. Does not break up with onset of light or by the time the light has turned off. Still going at 1 hour. The real question is "what is their motivational state here?" I would guess "low" (would be responsive to mild threats).
+
+- Purchased a Flea3 1.3 MP Mono USB3 Vision (e2v EV76C560) camera. Whoo. Thing is expensive as shit. Hope it's worth it.
+
+- Also bought a macro zoom from Edmund Optics. (3.3X Macro Zoom Lens (0.3X - 1X Magnification Range)). Also expensive. Guh.
+
+06/28/2015
+
+- NP2>CG10537-KD (1-16), TH,A2-Flp,UAS-Chr-tdT, >>tnTE (17,18), TH,A2-Flp >>tntE (reliable) (19-21), NP2>v108036 (22-24) (all NP2s have D2 and repo-Gal80) (Vid 1)
+
+- NP2>v101633 (1-8), A2-pale (9,10), TH,A2-Flp >>tntE (11) (Vid 2)
+
+- R40F04 activation during mating (wells 1-4). and R53A06 activation during mating (wells 5-9). R53A06 definitely shortens copulation duration. R40F04 does not seem to have an effect (which is strange, because it did before). The flies aren't grooming during mating so much after the first minute or so.
+
+- R40F04>Chr-tdT wells 1-3, C18G01>Chr-tdT wells 4-9. Both stimulations cause very early termination. C18G01 actually just causes a seizure... I also can't find any line called "C18G01" in the paper or flybae.
+
+- Crz>Chr-mV no retinal controls at 37 C. Terminates:
+    1 min (/)       5 min (/)       10 min (2/4) 
+
+- Crz>Chr-mV mock controls at 41 C. Terminates:
+    1 min (/)       5 min (/)       10 min (8/8)
+
+- Crz>Chr-mV mock controls at RT (22 C). Terminates:
+    1 min (/)       5 min (/)       10 min (1/5)      15 min (2/3)
+
+- VT206535-Gal4 using TH locus > Chr-mV. 10 hz 20 ms starting at 30s into mating (wells 1-5). Crz>Chr-mV 2 m activation at t = 7. Have to keep in mind with VT206535 that I get very few males out of these crosses, so the escapers might not have good Chr expression. Either way, I guess I should do the dissections. VT206535 gives normal cop dur
+
+- TH-Gal4>Chr-tdT, 10hz 20 ms until 30 minutes of mating. Then turn it off and see how long they mate for.
+
+06/29/2015
+
+- Crz>Kir mating durations (ugh, there are not many flies)
+
+- Crz>Kir persistence. Heat shock 41 C at times below. Termination:
+    5 min (0/3)   10 min (0/3)  20 min (0/4)  30 min (1/5)  40 min (0/4) 80 min (2/3)
+
+    The 80 minutes result is pretty interesting!
+
+- R53A06>Chr-tdT activation at start of mating. Leaving the light constantly on really seems to freak the flies out, but then when they terminate they don't just groom. I should try other experiments where I turn it on only briefly and at specified times.
+
+06/30/2015
+
+- NP2RG>D2,CG15274-RNAi (1-14), THA2-Flp>>tntE (15), NP2>CREB-dn (16-26). The TH,A2>tntE fly has a short mating phenotype (13 min). The other two have maaaaybe sliiiightly long matings.
+
+- Crz>Kir 41 C heat shock termination:
+    5 min (/)   10 min (/)  20 min (/)  30 min (/)  40 min (/)  80 min (/)
+
+- Crz>Chr,Kir activate at 45 minutes for 2 minutes, wells 1,2. NP2RG, 500 ms pulse at 20 minutes followed by 2s pulse at 40s wells 3-9. Termination with 500 ms: (3/6). Termination with 2s: (3/3). Crz>Kir,Chr flies both terminate around 65 minutes. These are the same flies as before.
+
+- NP2RG>Chr-tdT 500ms at 20 min, 2s at 20:40. Got another fly which resisted the 2s pulse (1/2). Does not give the long mating phenotype though.
+
+- Turn on R53A06 for 30s at 10 minutes into mating vs. 15 minutes vs. 5 minutes.
+    5 minutes doesn't seem to break them up (0/2) nor does 10 minutes (0/3), nor does 15 min (0/1), but they do seem to shorten mating duration slightly?? I should try this again when I have more flies, but with 1 min of grooming drive (to more closely resemble heat shock).
+
+- R41D01>Chr-tdT 10 hz 20ms at start of mating. Causes some spazzy behavior but does not instantly cause termination, at least. No mating duration phenotype, though. (19 min and 22 min). Maybe I should take a look at these guys under the scope; it's plausible these neurons control something else. Also, I'll do the dissections and see what's labeled by Chr-mV.
+
+07/01/2015
+
+- Pt. Grey camera + lens works really nicely.
+
+- Plasmids from tubes #3 and 7 of Crz-ATG primer look good! Yay!
+
+07/02/2015
+
+- Crz>CREB-DN (1-16), A2>pale,D2 (17-23), Crz>D2,dCAPS (24-27). CREB mutant cop dur slightly longer than normal but not huge, dCAPS only one mating (15 min), A2>pale flies all have normal mating durations. Overall pretty disappointing.
+
+- Crz>Chr-mV 2 min of stim at 15 minutes. Totally normal mating durations (19-20 minutes).
+
+- Crz>Chr,Kir stim at various timepoints. at t = 15 minutes: ~ 42 min mating, t = 7 min: ~33 min , no light: 125 min 
+
+- NP2>CREB-dn 41 C for 1 min at 15 minutes. Termation: (10/10). No super overt phenotype.
+
+- Crz>Kir 41 C for 1 min at listed times. Termination:
+    5 min (0/5)   10 min (/)  20 min (/)  30 min (0/3)  80 min (2/6) 150 min (2/2)
+
+- Five second stim of R40F04 at various time points. Termination:
+    1 min (1/1)   5 min (/)   10 min (/)  15 min (/)
+
+- Crz>Chr-mV no retinal with 20 hz 10 ms stim. Not really any matings. Should analyze this later.
+
+07/03/2015
+
+- Crz-Gal4, Tsh-Gal80>Chr-tdT 41 C for 1 minute at 5 minutes. Termination: (2/9). Looks like the control conditions.
+
+- Crz>Chr-tdT,Kir 2 min stim at 15 minutes into mating (wells 1-3). NP2719 repo-Gal80 > Chr-tdT 500 ms stim followed by a 2s pulse (wells 4-9). The activation at 15 minutes results in a termination around 40 minutes, but the fly seems like it's in a low motivation state quite early on. He spends a lot of time rearing and moving around on the female without quite detaching. Leaving the light constantly on gives a ~ 26 min mating.
+
+- Crz>D2,dCAPS-RNAi (1-12), Crz>D2,Burs-RNAi (13-25) (Crz-KDs). No phenotype for either.
+
+- R42G02>CREB-dn (1-14), Crz>CREB-dn (15-32). R42G02 has normal mating duration, Crz>CREB is a little long.
+
+- Crz>Chr-mV 2 min stim at t = 1 min into mating. Normal duration.
+
+- R41D01>Chr-mV activation does not induce ejaculation or extrusion of the penis.
+
+- Tsh-Gal80 also suppresses the Crz>Chr-mV ejaculation phenotype. Yay! Doing stains to confirm loss of AG expression.
+
+07/04/2015
+
+-R40F04>Chr-tdT decapitation in first minute or so of mating, activation of neurons. The pairs keep terminating the mating when I try to decapitate them. The one successful attempt yields a termination
+
+-R41D01>Chr-mV activation for 1 minute at t = 1 min, then hot water bath. Termination (0/2)
+
+07/05/2015
+
+- Crz>Chr-tdT,Kir activation at t=7 min and t = 1 min.
+
+- Crz>D2,dCAPS-RNAi (1-32). Collect females from matings afterwards to assay fertility. Mating duration normal.
+
+- A2>D2,pale-RNAi (1-8), Crz>D2,Burs-RNAi (9-22), Crz>D2,CCAP-RNAi (23-32) No interesting phenotypes from any.
+
+- R41D01 stains hard to say anything about
+
+- CrzTT-Gal4,Tsh-Gal80>Chr-tdT retains expression in AG (!!) even though the behavioral phenotype is gone (ejaculation and motivation)
+
+7/06/2015
+
+-Crz-TT>Chr-mV 41 C heat shock experiments. Termination:
+    1 min (/)       5 min (/)       10 min (/)
+
+-Crz-TT,Tsh-Gal80>Chr-tdT 41 C heat shock experiments. Termination:
+    5 min (1/4)
+
+- NP2RG>Chr-tdT paired pulse, 500 ms at 20 minutes, 2s at 20:40. 500 ms (1/2), 2s (0/1)
+
+- NP2RG>Chr-tdT 2s pulse at 20 minutes. Termination (7/7)
+
+07/07/2015
+
+-Crz-Gal4/+ motivation experiments. Termination:
+    1 min (0/8)   5 min (0/6)
+
+- NP2RG>Chr-tdT 2 s stimulation at 5 minutes. Not all caused termination...????
+
+- R53A06>Chr-tdT 10 hz 20 ms at start of mating. Two ~ 14 minute matings.
+
+- Crz-TSC alignments:
+    1 : 2 mismatches
+    2 : 2 mismathces
+    4 : 2 mismatches
+    5 : 3 mismatches
+    6 : 2 mismatches
+    9 : 2 mismatches
+    10 : 2 mismatches
+
+- Crz-ATG alignments:
+    8 : 2 mismatches
+    7 : 3 mismatches
+    6 : not inserted
+    3 : 3 mismatches
+
+07/09/2015
+
+- CrzTT>Chr-tdT,Kir activate for 2 minutes at t = 45 minutes into mating. Remarkably consistent timing. Holy crap. One fly I activated at 1 minute to get a little more data for that experiment. Two controls: one terminates at 42 min and the other at 
+
+- Chrimson/+ 10 hz 20 ms experiment. Normal mating durations.
+
+- Crz>Kir. I think these flies are 2nd gen and a few are normal length (probably not Crz>Kir). Long matings otherwise though.
+
+07/10/2015
+
+- Crz>Chr,Kir 2 m activation at 45 minutes, then in 41C water bath. Termination: (0/3) but without full power light stimulus. 2m activation at 45 minutes, then 41C water bath at 50 minutes, termination (4/4). 37C water bath at 50 minutes, termination (3/4).
+
+- Crz>Chr constant stim at start of mating. Normal copulation duration.
+
+- Crz>Chr 30s activation starting at 30s, put in room temp. Termination:
+    1 min (/)   5 min (/)   10 min (0/5)  15 min (1/4)  20 min (/)
+
+- Crz>Chr mock 30s stim at 30s, put in room temp water. Termination:
+    1 min (/)   5 min (/)   10 min (/)  15 min (0/1)  20 min (/)
+
+- Crz>Chr 2 min stim at t = 1 min. Only one mating (27 min). The other two matings were fucked up because I guess the arduino got disconnected somehow.
+
+07/11/2015
+
+- If I leave Crz>Chr,Kir flies together in the box (which I bring into and out of the lab light fairly often), a few of the females end up fertilized. Also, a couple of Crz>Chr,Kir-mated females don't seem to have produced larva, though I'll give them a few more days.
+
+- NP2RG>Chr-tdT 2s pulse at 20 min.
+
+- Crz>CCAP-RNAi, D2 (1-11), Crz>Kir (12-18)
+
+- NP2RG>2x-GC6s mating #1 vid 1 starts at 14 min, vid 2 starts at starts at 16:30 minutes, vid 3 starts at 19 min 30s, vid 4 starts at 24:20. The  AG keeps moving around, especially in the z direction. In the future I'll have to sweep out a large z stack in both directions.
+
+- NP2RG>2x-GC6s mating #2 vid 1 starts at 9 min. Vid2 starts at 13 minutes. AG definitely seems to dry out as time goes on.
+
+- REMINDER: w/y-hs-hid; D2; A2-Gal4 stock!!!
+- REMINDER: Crz>D2,Mip-RNAI crosses
+
+07/12/2015
+
+- Crz>Chr-tdT,Kir activated at 80 min. What the eff? Fly #1 terminated at 20 minutes...? Actual experimental fly looks like he wants to terminate during and after stim, but doesn't.
+
+- Next experiment I should do: keep resetting the clock by reactivating crz.
+
+07/14/2015
+
+- Crz>Chr-tdT,Kir activate at 1 min, reactivate at 15 min. Maybe slightly longer compared to the t=1 controls? But I need more data.
+
+- Crz>Chr-tdT,Kir activate at 7 and 15 min. Look like normal matings for the t = 7. All of these mating durations look normal. Could it be that the lights in this new box are brighter and I'm activating Chrimson better now?
+
+- No light control from previous experiment mates for a long itme. Yay!
+
+07/15/2015
+
+- Crz>D2,NP-RNAis: Nplp2 (1-13), NPF (14-28) Vid 1. Normal mating durations.
+
+- Crz>D2,NP-RNAis Vid2: sNPF (1-24), Crz (25-32). Both durations look normal except for one 9 minute mating in sNPF??
+
+- Tph2 (#5)>Kir Gal80-ts flies heat shock of 41C at t = 10. Termination: (2/2). Really inactive courters
+
+- Tph2 (#3)>Kir Gal80-ts flies heat shock of 41 C at t = 10. Termination (4/4)
+
+- Collect mated females from tph2 pairings for fertility evaluation
+
+- Vid3: A2>D2,pale-RNAi (1-14), Crz>D2,Nplp1-RNAi (15-32). A2>pale has weak effect (all like 18 min), Nplp1 matings are either normal or 12 minutes (will follow up)
+
+-TH>Chr-tdT 10 hz 20 ms, off at 40 min. Not really any mating going on here either.
+
+- Crz>Chr-mV ejaculation (6/6)
+
+- Crz>Chr-tdT, Tsh-G80 ejaculation (0/3)
+
+- Crz>Chr-mV no retinal ejaculation (/)
+
+07/16/2015
+
+- SXZ's master recipe for delicious bacteria + attP-promoter-LexA plasmids:
+    1 uL DNA (if ~ 100-200 ng/uL)
+    1 uL pDonor / Lexa
+    2 uL TE buffer
+    1 uL enzyme (at -80C, special L/R enzyme)
+    ------------------------ 25 C in a PCR tube for 1 hour (or 3 days..)
+
+    Add 0.5 uL proteinase K at 37 C for 10 minutes
+
+    Pipette the mixture into cells, wait 20 minutes on ice
+    45 second heat shock
+    Add 250 uL S.O.C. medium
+    Shake for ~ 1 hour
+    Plate on ampicillin plate
+
+- Crz>Chr-tdT, Kir 2 min activation at t = 15. Back to a long mating. womp womp. 
+
+- NP2719 repo-Gal80 > Chr-tdT 500 ms pulse at 20 minutes, 40 s recovery, 2s pulse at 20:40
+
+07/17/2015
+
+- Vid1: Nplp1 (1-13), sNPF (14-20), NPF (21-26). Another short nplp1 mating, the sNPF and NPF matings look normal though
+
+- NP2>Chr-tdT 2s pulse at 15 min. terminates (7/7) 
+
+- R45G01>Chr-tdT grooming line activated during mating. Doesn't cause immediate termination, so that's a plus. Shortens matings to around 14 or 15 minutes. Induces leg grooming outside of mating.
+
+- R17F11>Chr more flies. Data looks like before (~ 17 minute matings)
+
+- Try to get R45G01>Chr stim interpreted as a threat. Activate for 1 min at the 10 minute mark into mating. Awesome, works within only a few seconds (takes about a 6s stim) Term (3/5)
+
+- NP2>Chr-tdT 500 ms // 40s rest // 500 ms stim. Termination (0/1)
+
+- R45G01-LexA>LexO-Chr-mV 6s threat at 1 min. Termination (0/7)
+
+- R45G01-LexA>LexO-Chr-mV 6s threat at 10 min. Termination: (3/6)
+
+- R45G01-LexA>LexO-Chr-mV 6s threat at 15 min. Termination (3/4)
+
+07/18/2015
+
+- R45G01-LexA>LexO-Chr-mV 6s threat at 5 min. Termination (0/17)
+
+- R45G01-LexA>LexO-Chr-mV 6s threat at 15 min. Termination (11/17) Those which don't terminate copulate for a normal amount of time (~20-25 min)
+
+- Crz>Chr-tdT,Kir heat shock experiments. Light from 1 min to 3 min, 1 min exposure to 41 C at 5 minutes. 
+    Termination (10/11)
+
+- Crz>Chr-tdT,Kir heat shock mock controls. No light, 1 min exposure to 41 C at 5 minutes.
+    Termination (4/14)    ( Mock is odd numbered vials, light is even)
+
+- Crz>D2,Chr-tdT,Kir activation at t = 7 vs. Crz>Chr-tdT,Kir activation at t=7 to make sure doesn't make a difference. D2: , No D2: ehhh both have a combination of short and long matings
+
+07/19/2015
+
+- Crz>Chr-mV activation for 2 minutes at 7 minutes into mating. Only one mating, 24 min
+
+- Crz>Chr-mV no retinal 41 C water bath at t = 5 min (with light stim from 30s to 60s). Termination: (0/3)
+
+07/21/2015
+
+- Tph2 (3m) and (5m) > Kir, Tub-Gal80ts (at 30C for several days post-eclosion) do not have productive matings (0/6, 0/4 3m and 0/2 5m) despite the normal motivational phenotype.
+
+- Vid1: Tph2 (3m)>Kir, Tub-Gal80ts wells (1-6), Tph2 (3m)/+ wells (7-20), Tph2 (5m)/+ wells (21-32)
+
+- Short Nplp1 and sNPF matings are productive.
+
+- Tph2 (5m) / + heat shock experiments at 41 C. Termination:
+    5 min (with light stimulation for t =1 to 2) (2/2)        10 min (no light) (10/10)
+
+- KC/+ 2 min stim at t = 7 minutes. Normal mating duration, though with a little bit higher variation.
+
+- R53A06>Chr-tdT activation during mating (10 hz 20 ms until termination from start of mating). Looks like my previous experiments (~12 min cop dur.)
+
+- R53A06>Chr-tdT activation for 10 s at 5, 10, 15 min time points. Termination:
+    5 min (/)   10 min (/)  15 min (/)
+
+- Vid2: Crz>Kir, Tsh-Gal80. Mating duration is half normal, half long (but not as long as Crz>Kir)... So it's an incomplete rescue..
+
+07/22/2015
+
+- Vid1: A2>D2,pale-RNAi (1-7), Crz>D2,Nplp1-RNAi (8-15), Crz>D2,sNPF-RNAi (16-23), Crz>D2,NPF-RNAi (24-31). Totally normal matings
+
+- TH>Chr-tdT 10 hz 20 ms at start of mating. Off at 35 min. What the heck. Recent TH mating have sometimes been short instead of long... One success dismounts nearly instantly.
+
+- Crz>Chr, Kir no light mating. Holy shit super duper long. Have to score it tomorrow but looks like one is at least 5 hours.
+
+- Crz>Chr,Kir no light 41 C at t = 5. Termination (0/6) Looks more reasonable.
+
+- NP2Chr-tdT>Chr-tdT 500 ms, 20 s rest, 500 ms at 10 min. Termination (4/14). Lots of frsutrated males that didn't get to mate in these..
+
+07/24/2015
+
+- Crz/+ 41 C heat shock at 5 minutes into mating (with light stim). Term (/)
+
+- Crz>Crz-RNAi 41C heat shock at 10 minutes. Term (6/6) well that looks about right.
+
+- Crz>reaper?? Not sure if actually reaper. Mating duration looks normal.
+
+- NP2719>Chrimson-tdT 500ms pulse at 10 min followed by 20 s followed by a 2s pulse. This is to try to overcome the fact that the suppression phenotype of two 500 ms pulses is masked by the low termination probability in those flies. Blocked it in at least one fly. Termination (8/13) Control (6/7) Uh oh that one fly...
+
+07/25/2015
+
+- Crz>Chr-tdT, Kir activation for 2 minutes at 15 min into mating. Awww back to looong matings.
+
+- R41D01>Kir cop dur. Kind of odd behavior. Fidgety pretty early on? But totally normal cop dur (19 min, 21 min). Ok soooooooo maybe these neurons do nothing? Except project from the AG to the brain.... I guess the last round of expts I can do with these flies is trying motivation on the 41d01>kir flies. And checking fertility in these flies (maybe it's the Tph2 neurons?)
+
+- Crz-Gal4/+ cop. dur. No matings.
+
+07/26/2015
+
+- Tph2>Chr activation for t = 0 to 1 min. Heat shock at t = 1 min (41 C). Collect females to see if they're fertilized. Ahh, shoot, no matings.
+
+- Crz>Chr-mV 37C t = 15 experiments (mock and activation).
+    Light (7/7)   Mock (7/7)
+
+- Crz>Chr-mV RT t = 15 exerpiments
+    Light (3/4)
+
+07/27/2015
+
+- Crz>Chr-tdT, Kir activation at t = 45 minutes for 120 s.
+
+- Vid1: TH-Gal2, A2-Flp >>tntE#3 (1-11), TH-Gal4,A2-Flp>>Gfp (12-32)
+
+- Vid2: TH-Gal4, A2-Flp>>GFP (1-7), A2-Flp >> tntE#3/+ (8-13)
+
+07/28/2015
+
+- R41D01>Kir flies fertile
+
+- NP2RG>Chr-tdT 500 ms at 10 min, 20s rest, 2s pulse. Term: Control (3/3), Expt (4/5)
+
+- Tph2 looks good, but the A2>pale-RNAi anti-TH stains look kind of crappy. That's annoying.
+
+07/29/2015
+
+- Vid 1: Crz>D2,Mip (1-2), Crz>D2,PDF (3-4), Crz>D2,Tk (5-10), Crz>D2,Pburs (11-15), A2>D2,pale-RNAI (16-22)
+
+- Vid 2: Crz>Kir, Tsh-Gal80 (1-6), Crz>GFP, Tsh-Gal80 (7-20), R41D01>Kir (21-30). All as expected (some Tsh-G80 Kir are long, most are normal, Crz>GFP is normal, R41D01>Kir is normal except one 10 minute mating! Still think it's worth trying to do motivation expts with these flies)
+
+- Crz>Chr,Kir activation at 45 min, heat shock at 47 min.
+    41 C (0/9)
+
+- Crz>Chr, Kir activation at 45 min, heat shock at 55 min
+    41 C (4/4), 37 C (5/5), RT (9/12)
+
+- Crz>Chr, Kir activation at 1 min, then 15 min
+
+08/01/2015
+
+- Vid1: Crz>D2,PDF (1), Crz>D2, FMRFa (B25870) (2-4), Crz>D2,Pburs (5-7), Crz>D2,Dh44 (8-10), A2>D2,pale-RNAi (11-19), Crz>D2,Mip (20-24), Crz>D2,Tk (25-30). The females are suuuuper not receptive though.
+
+- NP2RG>Chr-tdT 1s pulse at t = 5 minutes. Collect females to assess whether or not they've been fertilized. Termination (14/14)
+
+- NP2RG>Chr-tdT 500 ms pulse at t = 7 minutes. Collect females to assess fertilization. Termination: (2/12)
+
+- Crz>Chr,Kir 2 min activation at 15 minutes.
+
+- Tph2>Chr-mV 20hz 10ms activation at t = .5 minutes to 1.5 minutes, heat threat at 5 min (41 C). Termination (1/5). Mock (1/5)
+
+- Collect to see if 1 min of Tph activation causes fertilization.
+
+08/03/2015
+
+- Vid1: Crz>D2,Prot (1-14), Crz>D2,Mip (15-29), Crz>D2,Dh44 (30-32)
+
+- Vid2: Th-Gal4,A2-Flp,>>tntE3 (1-21), TH-Gal4,A2-Flp,>>GFP (22-32) 
+
+08/04/2015
+
+- NP2RG>Chr-tdT 500 ms at 7 min: 1/12. Pretty low.
+
+08/06/2015
+
+- Tph2 (5m)>Kir G80-ts short mating, but no shorter than the WT parental controls
+
+- R45G01-LexA>LexO-Chrimson-mV 10s activation at 15 minutes minutes into mating after decapitation. Termination (1/4), 
+    20 min: (2/5). 
+    25 min: (0/1)
+    Decapitated flies certainly mate much longer in genral.
+
+- Vid1 (L): Crz>D2,CCha1-RNAi (1-26), Crz>D2,FMRFa (58197) (27-30)
+
+- Vid2 (M): Crz>D2,Mip-RNAi (1-18), Crz>D2,Tk-RNAi (19-26), Tph2 (5m)>Kir (27-32)
+
+- Vid3 (N): Tph2 (5m)>Kir (1-9), Crz>D2,Dh44-RNAi(10-15), Crz>D2,Pburs-RNAi (16-32)
+
+- Vid4 (O): Crz>D2,AstC (1-8), Crz>D2,Dsk(9-29)
+
+- Vid5 (K): Crz>D2,FMRFa (B25870) (1-8), TH-G-Gal4>D2,pale-Ri (9-14), A2>D2,pale-Ri (15-26)
+
+- Crz>Chr,Kir activation for 2 minutes at t = 1. No successful courtship
+
+08/07/2015
+
+- Crz>Chr,Kir activation for 2 minutes at t = 1. Short matings (16-20 minutes)
+
+- Crz>D2,Amon-RNAi (29010)
+
+- Crz>Chr-tdt,Kir activate for 2 minutes at 45 min, test with heat at 50 min. Termination at temp:
+    41 (0/4)      37 (/)      RT (0/3)
+
+- Crz>Chr-tdT,Kir no light, heat at 55 min. Termination at temp:
+    41 (2/9)      37 (/)      RT (/)
+
+- Crz>Tsh-Gal80, Chr-tdT activate from 30s to 1m. Test with 41 C at 5 min.
+    Termination (3/5)
+
+- Crz>Chr-tdT, Kir activate for 5 minutes at 45 min, test cop dur. 75 min, just like the 2 min activation
+
+08/08/2015
+
+- NP2719RG>M19-tdT first experiments. Starting with a 2s pulse at 1 min. 2s pulse is unsuccessful in causing termination. So are 10s pulses. So is flashing 10 hz 20 ms stimulus. Let's keep in mind this is 10x UAS before we fraek out too much... 30hz 10 ms stim doesn't have an effect either. Nothing at any time point has been able to terminate a mating.
+
+08/10/2015
+
+
+- R45G01-LexA>LexO-Chrimson-mV 10s activation with decapitated males. Termination when pulse is applied at:
+    15 min (1/2)
+    20 min (/)
+    25 min (/)
+
+- Crz>Chr-tdT,Kir activation at t = 1 min. all normal durations (18-25 min). A couple controls: one no light, one 7 min, two 15 min. No light surprisingly short (~45 min)
+
+- R45G01-LexA>LexO-Chrimson-mV 10s activation NON-decapitated males.
+    10 min (1/3)
+    15 min (2/5)
+
+- Crz>Chr-tdT,Kir activation for 2 minutes at t = 1, then immediately separate and collect female
+
+- Vid (O) : Kir/+,Gal80ts/+ (1-21), Crz>D2,AstA (22-32)
+
+- Vid (K) : Crz>D2,Eh (1-6), Crz>D2,Dh44 (7-10), Crz>D2,Ptth (11-14), Crz>D2,Capa(15-26), 45G01>Kir(27-32)
+
+- Vid (N) : Crz>D2,AstA(1), R45G01>Kir (2-26), Crz>D2,Mip (27-32)
+
+- Vid (M) : Crz>D2,ETH (1-4), A2>D2,paleR (5-7), Crz>D2,Ms (8-14), Crz>D2,Eh (15-26), Crz>D2,Capa (27-32)
+
+- Vid (J) : Crz>D2,Lk (1-10), Crz>D2, Ms(11-23), Crz>D2,Amon (29009) (24-28), Crz>D2,Eh (29-32)
+
+- Vid (L) : Crz>D2,Capa(1-2), Crz>D2,FMRFa B25870 (3-6), Crz>D2,Pburs (7-16)
+
+08/11/2015
+
+- NP2719>Chr-tdT activation for 1s at 7 min into mating, collect female. termination (5/10)
+
+08/12/2015
+
+- Vid (K): Crz>D2,Pburs (1-4), Crz>D2,AstC (5-23), Crz>D2,FMRFa (B58197) (24-29), R45G01>Kir (30-31)
+
+- Vid (L): Crz>D2,Nplp3 (1-11), Crz>D2,Nplp4 (12-21), Crz>D2,CCHa3 (22-32)
+
+- Vid (M): Crz>D2,CCHa3 (1-12), Crz>D2,CCHa2 (13-29), TH-G>D2,pale-RNAi (30-32) One of the TH-G>D2,Pale flies mated 3 times with the same female?? I should check fertility in these flies
+
+- NP@719RG>Chr-tdT activation for 1s at 7 min into mating, collect female. Termination (5/6)
+
+08/13/2015
+
+- NP2719>M19-tdT tests. Can't get termination with consolidated pulses or with flashing lights, yet again (2s pulses, 10s pulses, 1 hz 500 ms, 10 hz 20 ms, 40 hz 10 ms). They seem, at worst, a little bothered by the light. That said, they do terminate a little earlier than normal, I think? Always around 15 min.
+
+- Crz>Chr-tdT,Kir activation from 45 min to 47 min, then 41C heat shock
+
+- Vid (L): Crz>D2,Nplp4 (1-29), A2>D2,pale-RNAi (30-32) (done)
+
+- Vid (M): A2>D2,pale-RNAi (1-2), Crz>D2,Prot (3-14), Crz>D2,Capa (15-29), Crz>D2,Ptth (30-32) (done)
+
+- Vid (N): Crz>D2, Ptth (1-9), Crz>D2,Amon (10) (10-26), Crz>D2,Ms (27-32) (done)
+
+- Vid (O): Crz>D2,Ms (1-11), Crz>D2, Hug (12-30) (done)
+
+- Vid (P): Crz>D2,CCHa1 (1-8), Crz>D2, PDF (9-11), Crz>D2, Tk (12-17), Crz>D2,Ptth (18-32) (done)
+
+- Vid (Q): Crz>D2, Amon (09) (1-14), Crz>D2,Proct (15-24), Crz>D2, Mip (25-32) (done)
+
+- Vid (R): Crz>D2, Mip (1), Crz>D2,Hug (2-12), Crz>D2, Tk (13-27), Crz>D2, ITP (28-31) (HIT!! 68 min)
+
+- Vid (S): Crz>D2,ETH (1-14), Crz>D2, Amon (10) (15-28) (done)
+
+08/15/2015
+
+- Vid (L): Crz>D2,ITP (1-12),  Crz>D2,Lk (13-32). Unfortunately no hits.
+
+- NP2RG>Chr-tdT 1s activation at t = 15 min.
+
+- Crz>Chr-tdT, Kir activation at t = 45, 41 C at t = 47. Termination (1/4)
+
+- Crz>Chr-tdT, Kir activation at t = 45, 41 C at t = 50. Termination (2/4)
+
+- Crz>Chr-tdT, Kir activation at t = 45, RT C at t = 55. Termination (5/5)
+
+- Crz>Chr-tdT, Kir mock activation at t = 45, 41 C at t = 47. Termination (1/8)
+
+- Crz>Chr-tdT, Kir mock activation at t = 45, 41 C at t = 50. Termination (2/5)
+
+- Crz>Chr-tdT, Kir mock activation at t = 45, 41 C at t = 55. Termination (0/1)
+
+08/16/2015
+
+- Vid (L): Crz>D2,ITP (1-9), Tph2>Kir,Gal80ts (10-15)
+
+- R45G01-LexA>Chr-mV activation for 10s at 15 minutes (decapitated). Termination: 1/4
+
+- Kir,Chr-tdT/+ (on retinal) activation from t = 1 to 3, 41 C at t = 5. Termination (5/18)
+
+- Kir,Chr-tdT/+ activation from t = 1 to 3 minutes, cop dur. Looks WT-y
+
+08/18/2015
+
+- NP2RG>Chr-tdT 1s pulse at 1m. Termination (12/12)
+
+- crz>D2,ITP. Not very bold courters
+
+- NP2RG>Chr-tdT, 1s pulse at 20m. Termination (3/5)
+
+- Awkward. NP2>M19-tdT didn't work because there doesn't appear to be any M19 expression... I really goofed these up.
+
+08/19/2015
+
+- CS heat shock. 41 C at (time). Termination:
+  1 min (/)   5 min (/)   10 min (/)    15 min (/) 
+
+- Long Crz>D2,ITP mating was still fertile.
+
+- Sighhh teaching MATLAB eats up so much time
+
+
+08/20/2015
+
+- R42G02>Chr-mV activation at t = 15 minutes for 1 min (constant light). No interesting phenotype
+
+- CS males, 41 C heat shock at time noted below. Termination:
+  1 min (0/5)   5 min (0/5)   10 min (1/8)    15 min (4/7)
+
+  Hardy little fuckers.
+
+- Crz>Chr(2x),Kir activation at 15 minutes produces matings between 30 and 35 minutes. Not sure exactly what to make of that; slightly lower than what I'd been seeing for Chr(1x), but not the ~25 minutes I was hoping for. Going to need to do a lot more experiments with the (2x) to convince myself it means anything.
+
+- Vid (L): Crz>D2,Amon (B29009)(2-31)
+
+- Vid (M): Crz>D2,Nplp3(1-32)
+
+- Vid (N): Crz>D2,Nplp3(1-6), Crz>D2,CCHa3(7-32)
+
+- Vid (O): Crz>D2,Mip (1-9), Crz>D2,PDF (10-15), R45G01>tnTG(16-25), Crz>D2,Ms (26-32)
+
+- Vid (P): Crz>D2,Ms(1-2), R45G01>Kir (3-21), Crz>D2,Lk (22-32)
+
+- Vid (Q): Crz>D2,Lk (1-3), TH-G>D2,pale-RNAi (4), Crz>D2,FMRFa (B58197), Crz>D2,AstC(15-32)
+
+08/23/2015
+
+- NP2RG>Chr-tdT 1s pulse at 7 min. Termination (6/7)
+
+- R42G02>Chr-mV activation while video recording. Ejaculation (0/3)
+
+08/24/2015
+
+- Crz>Chr(2x),Kir activation at t = 15m. All about 35 min
+
+- TH>M19-tdT activation 10 hz 20 ms, normal duration unfortunately.
+
+- CrzR01 mutant 41 C heat threat at t = 10. Termination (6/7). Looks about right.
+
+- CrzR01 mutant 41 C heat threat at t = 5. Termination (0/4) also looks like WT.
+
+- R45G01-LexA>Chr-mV 10s activation at t = 15. Termination (3/4)
+
+08/25/2015
+
+- Kir,Tsh-Gal80/+ controls cop dur.
+
+- Kir,Tsh-Gal80/+ controls heat threat 41 C. Termination at time:
+    5 min (0/6)     10 min (2/2)
+
+- Crz>Chr (2x), Kir, 2 min activation at 45 min. No matings.
+
+08/26/2015
+
+- Tried to do Crz>Chr,Kir heat threat expts but I don't trust the flies, and they were giving weird results. Saved the sheet for posterity.
+
+08/29/2015
+
+- Vid (L): TH-G>D2,pale-Ri (1-4) (collect females), Crz>D2(3x),Amon (5), Crz>D2,ITP-Ri (possibly) (6-7). I say possibly because this vial, unlike the others, doesn't seem to have the issue where I get far fewer males than females..? So we'll see. I'm just concerned that the CyO in the parental stock has gone invisible or something and so I'm getting flies without the gal4.
+
+- R45G05-LexA>Chr-mV decapitation within 1 min, activation for 10 s at 5 min. One weird thing I'm noticing with 45G01-LexA>Chr: many do this weird spinning-to-the-left behavior when activated. I'm going to need to investigate this more.. Holy crap I suck at these experiments they keep separating because the male gets stuck to the vaseline. Termination (0/3)
+
+- Crz>Chr,Kir activation at t = 1 to t = 3, heat threat expts. Nonsense results again; these were from the same vial/cross, I think, so it was probably just bad (2nd gen flies or something)
+
+- NP2>Chr-tdT 1s activation at t = 8 min, collect females. Termination (/) ugh no response to red light either. another bad cross. I was just too lazy when mike was gone and now I have a shitload of F2s
+
+08/30/2015
+
+- Crz-Gal4>Chr-tdT, TrhOA-LexA>Kir activation at t = 30s to 1 min, 41 C at t = 5 min. Termination (2/7)?? That doesn't seem right. Keep to assess fertility. I'll stain them later to confirm Chr, maybe that's the issue. (turns out they're fertile. I think that cross was just not good)
+
+- Crz-Gal4>Chr-tdT (2x), Kir, activation at t=7. Looks pretty similar to only one copy of Chr: 20-30 minute matings.
+
+09/01/2015
+
+- NP2RG>Chr-tdT 1s pulse at 7 min. Termination: (2/9)
+
+- Crz>D2,ITP (?), no phenotype...
+
+09/03/2015
+
+- NP2RG>Chr-tdT 500 ms pulse at 7 min. Termination: (0/4)
+
+09/04/2015
+
+- Crz>D2,ITP? (1-11),Crz>D2(3x),amon(III)(12,13),TrhOA-Lexa>Kir (14-18) Only one ITP mating, others look normal
+
+- 2>M19-tdT test (5s pulses at start of mating). Behavioral responses? Maybe? But not termination that's for sure.
+
+- Crz>Chr,Kir activation at t = 45, RT at t = 50. Termination (1/3)
+
+09/05/2015
+
+- Crz>Chr-mV threat expts. RT controls and with light.
+  Mock:     10 min (0/3)    15 min (/)
+  Light:    10 min (1/1)    15 min (/)
+
+- Trh-LexA>Kir fertility (0/6)
+
+- Fluorescence in female abdomen greatly increased when mated to Trh-LexA>Kir flies as compared to virgins. Should compare to normal matings and to Crz>Kir flies. I guess there's still transfer of non-sperm fluids?
+
+09/06/2015
+
+- Crz>D2,ITP normal mating durations.
+
+09/09/2015
+
+- Vid (L): Crz>hid,tubGal80-ts after 2 1/2 days at 30 C (1-6), Crz>D2,VGlu (bloomington) (7-21), Crz>D2,VAcht (B) (22-32). Glu is normal, Crz-hid are long (but no longer than normal for Crz>Kir), and VAcht doesn't successfully mate once!
+
+- Vid (M): Crz>D2,VGlu (V) (1-14), Crz>D2, Cha (V) (15-19), TrhOA-LexA>Kir (20-22). Not a lot of matings, but they all were normal 
+duration.
+
+09/10/2015
+
+- Vid (L): Crz>D2,Cha(B) (1-3, 11-15), Trh-LexA>Kir (4-10), Crz>PKI (49) (16-21), Crz>D2,Cha(V) (22-24), Crz>PKI (47) (25-26),Crz>D2,VGlu(B) (27-30), Crz>D2,VGlu (V) (31-32)
+
+- Vid (M): Crz>D2, VGlu (V) (1-14), Crz>D2,VAchT(B) (15-26)
+
+09/13/2015
+
+- CrzGal4>Chr, TrhLexA>Kir 41 C after activation at t = .5 to t = 1 (20 hz 10 ms). Termination:
+  5 min (7/7), No light, 5 min: (0/6). Nice.
+  Collecting for fertility
+
+- Crz-Gal4>Chr-mV copulation duration experiments with 20 hz 10 ms stimulus at t = .5 to 1 min. Normal cop. dur.
+  Collection for fertility.
+
+09/14/2015
+
+- NP2>Chr-tdT 1s pulse at 10 minutes into mating. Termination (/). Also measured copulation duration of survivors.
+
+- Crz>Chr-mV heat threat expts.
+
+- Crz>Chr-mV no light copulation duration. Normal as well.
+
+09/15/2015
+
+- TrhOA-LexA>Kir 41 C heat threat at t = 5 minutes into mating, with and without 20 hz 10 ms light from t = 30s to 1 min.
+  Termination : Light (4/4)   No light (5/5) Ugh not so convenient for the story. Guess I should do parental controls.
+
+- Crz-Gal4>Chr-tdT, TrhOA-LexA>Kir 41 C heat threat at t = 5 minutes into mating, with and without 20 hz 10 ms light from t = 30 to 1 m
+  Termination : Light (4/4)   No light (0/4)
+
+- Crz KD fertility: Ach (Cha and VAcht) and PKI knockdowns have normal fertility. VGlu KD looks like it may have reduced fertility (to ~ 50%??). I'll follow this up with more data.
+
+09/18/2015
+
+- Crz>Chr-tdt Kir threat experiments (mock). Look like before: No light, no response to threats.
+
+- Crz>Chr-mV 20 hz 10 ms t = .5 to 1 min cop dur. No matings
+
+09/19/2015
+
+- Crz>Chr-mV 20 hz 10 ms t = .5 to 1 min heat threat expts. Termination:
+  1 min (1/7)   5 min (/)   10 min (5/5)
+Mock:
+  1 min (0/1)   5 min (/)   10 min (8/10)
+
+- NP2>Chr-tdT 1s pulse at time below. Termination:
+  10 min (14/21)    15 min (5/10)
+
+  Copulation duration of surivovrs measured. Longer than normal, plus one guy from the 10 minute group who mated for a SUPER long time (> 1 hour)
+
+09/22/2015
+
+- Crz>Chr,TrhOA-Lexa>Kir activation at t = .5 to 1 min, 41 C at t = 5. Light (7/7), Mock (1/7)
+
+- Crz>Chr,Kir activation from t = 5 to 7 minutes, then heat threat.A
+
+- NP2>Chr-tdT, 500 ms pulse at 20 minutes followed by 30s rest and a 2s pulse to follow. Fraction terminating to 500 ms (5/7), fraction of survivors terminating to 2s (2/2)
+
+- NP2>Chr-tdT, 500 ms pulse at 1 min. Termination (20/20)
+
+- NP2>Chr-tdT, 500 ms pulse at 5 min. Termination (/). May vary from box to box; that's a little worrying.
+
+- Vid (L): Crz>D2(?),ITP (1-12) TrhOA-LexA>Kir (13-20), Crz>D2,VGlu(V) (21-29), Crz>D2,Cha (B) (30-32)
+
+- Vid (M): Crz>D2,Cha(B) (1-12), Crz>D2,VAchT(B) (13-32)
+
+- Vid (N): Crz>D2,VGlu(V) (1-14), Crz>D2,VAchT(B) (15-26), Crz>D2,ITP (27-32)
+
+- Vid (O): Crz>D2,ITP (1-2), Crz>Kir (2x) (3-9), Crz>D2,ITP (10-21), Crz>D2(?),ITP (22-32)
+
+- Vid (P): Crz>D2(?), ITP (1-32)
+
+All of the above durations were normal. Even Crz>Kir (2x) surprisingly. Maybe the Kir (2x) stock isn't good.
+
+09/23/2015
+
+- Crz>Chr-tdT, Kir 2 min activation at t = 15. ~37 min cop. dur
+
+- Crz>Chr-tdT, Kir controls. Looong cop dur 
+
+- TH>M19-tdT 2nd chromosome. 10 hz 20 ms activation at start of mating. No matings!!
+
+- Crz>Chr-mV heat threat mock. 41 C.
+  5 min (0/5)   10 min (1/1)
+
+09/24/2015
+
+- R45G01-Lexa>LexO-Chr-mV 10s stim. Terminates:
+    10 min (/)    15 min (/) No matings, unfortunately.
+
+10/06/2015
+
+- Oh my god I can finally start to do experiments again.
+
+- Crz>Chr,Kir activation from t = 1 to 3, heat threats at t = 3, 5, 10. Threats: 41 C and RT. Looks exactly like the Crz>Chr experiments, which is a huge relief.
+
+- TH>M19-tdT(Chromosome II) 10 hz 20 ms activation at start of mating. I do see the spazzing and rearing that I saw in CsChrimson experiments, which is encouraging. One long mating, one fairly long mating, and 6 normal ones. Bleh
+
+10/07/2015
+
+- R45G01-Lexa>Chr-mV activation during mating (single 10s pulse). Termination at 1 min (0/5), 10 min (3/6), 15 min (2/2). Decap no termination in any stim...
+
+- Crz>Chr-mV no ret 37 C: 1 min (0/5), 5 min (0/4), 10 min (1/3), 15 min (1/1)
+
+10/08/2015
+
+- NP2>Chr-tdT no retinal, 2s pulse. Term: 1 min (0/11), 5 min (0/14), 10 min (/), 15 min (0/5). The 15 min video I did some stimulation during courtship to use in a video for talks
+
+- NP2>Chr-tdT 1s pulse at 15 min. Term (4/7)
+
+- NP2>Chr-tdT 500 ms pulse at 15 min. Term (3/6) wow!
+
+10/09/2015
+
+- I think I have w-;NP2719-Gal4,repo-Gal80,R45G01-LexA;Tm2/Tm6b flies, so that's nice.
+
+- R45G01-Lexa>Chr-mV No light experiments, normal mating dur.
+
+- R45G01-Lexa>Chr-mV 10s stim at 10 min. Unable to elicit any apparent reaction to light. Annoying
+
+10/10/2015
+
+- NP2>Chr no retinal 2s pulses at t = 15. Termination (1/11)
+
+- NP2>Chr no retinal 2s pulses at t = 10. Termination (0/16)
+
+10/11/2015
+
+- R21G03>Chr-tdt activation (10s pulse). Immediate activation causes termination (6/6) in a jumpy non-naturalistic sort of way. Activation in isolation causes them to freeze and curl their abdomens. Definite motor neuron component.
+
+- R19G07>Chr-tdt same expt as above. Activation at the start of mating causes some weird frantic behavior in the pair but does not cause termination (0/5). At 10 minutes, termination (4/5) followed by freezing. In isolation, they freeze, sometimes raise their wings like in aggressive behavior. VNC expression is super minimal, so it'd be awesome to narrow this down to the VNC, but it's rather likely that it has to do with the coverage in the optic lobes. Activation also induces ejaculation (2/3). Does not affect duration
+
+- R14E02>Chr-tdt activation at start of mating can cause termination (1/3). Activation at 10 minutes in: (0/2). Does not affect duration
+
+- Crz>Chr-mV 2 min of activation at t = 7 min. Normal matings (19-22 minutes)
+
+- Crz>Chr-mV RT Threat response.
+  Light:  1 min (0/2)   5 min (0/2)   10 min (0/2)    15 min (1/3)
+  Mock:   1 min (0/5)   5 min (0/3)   10 min (0/4)    15 min (2/3)
+
+10/13/2015
+
+- Crz>Chr, Trh>Kir experiments again. Activation at t = .5 to 1, test 41 C response at t = 5, collect for fertility. Termination:
+  Light (1/1)   Mock (1/4)
+
+- NP2>Chr, 500 ms pulse at t = 5, collect females for fertility assessment. Termination (9/12)
+
+- NP2>Chr, 1s pulse at t = 20. Also, stim during courtship, check well 9 shortly before Well 1 starts mating. (4/11)
+
+- Crz>Chr,Kir activation at t = 7 minutes to 9 minutes. Heat threat at t = 10 minutes. 41C: (14/18)
+  Heat threat at 11 minutes instead. 41 C (9/12)
+
+- Vid (L): Crz>D2,Dh31 (1-9), Crz>D2,dimm B26976 (10-23), Crz>D2,amn (24-32) all normal duration
+
+- Vid (M): Crz>D2, amn (1-12), Crz>D2,ITP (13-32) all normal
+
+- Vid (N): Crz>D2, ITP (1-2), Crz>D2,Akh (3-15) all normal
+
+
+10/15/2015
+
+- Crz>Chr-mV 37 C heat threats. Termination:
+  Light:  5 min (/)   10 min (2/2)
+  Mock:   5 min (0/10)
+
+  RT Mock: 1 min (0/1), 5 min (0/3)
+
+10/16/2015
+
+- NP2>Chr 500 ms pulses at 7 min and collect for fertility. Term: (2/8)
+
+- NP2>Chr 500 ms at t = 10, 20s rest, then 2s pulse. Termination (5/7). Survivors terminate at a normal time (so I know I didn't bust the neurons)
+
+10/17/2015
+
+- ugh can't get any good calcium signal. what a waste of a day.
+
+- NP2>Chr-tdT no light, but decapitate the female at the start of mating. Just to settle an internal debate. Normal seeming matings.
+
+10/19/2015
+
+- R14E02>Chr-tdT, 10 hz 20 ms activation. Unable to get any matings.
+
+- R45G01-Lexa>Chr-mV activation in decap. 15 min (0/1) He then went on to mate for > 1 hour. Not going to count this one.
+
+10/20/2015
+
+- NP2>Chr-tdT 1s pulse at 20 min. Termination (9/12)
+
+- Crz>Chr,Kir no retinal, 2 min pulse at t = 7. Hoooooollllyyyy shit these guys mate FOREVER. Multiple >6 hour matings.
+
+- Crz>Chr-mV no retinal, heat threats. I think there are a couple of flies with the Kir not present because their matings are short (curly could be getting weak).
+  RT:   10 min (0/3)  15 min (2/3)
+  41C (Mock): 5 min (0/1) 10 min (1/5)  15 min (0/5)  30 min (1/5)  45 min (1/4)  47 min (0/4)  55 min (1/6)
+
+- Crz>Chr-tdT,Kir heat threats with activation early. Only did a few flies, looked like other expts.
+
+10/21/2015
+
+- NP2>Chr-tdT 1s pulse at t = 20 minutes. termination (9/15)
+
+10/24/2015
+
+- Crz-LexA>Chr-mV seems to drive ejaculation with both the 2nd chromosome and 3rd chromosome insertions! hurray!
+
+- R20C04-Gal4>Chr-tdT 10 hz 20ms activation during mating. Does not cause termination right off the bat. Weak decrement in copulation duration.
+
+- R65E12>Chr-tdt, 10 hz 20 ms activation. No effect on copulation duration.
+
+10/26/2015
+
+- Crz-LexA (III)> Chr-mV (III) heat threat expts. Seems to drive termination just like Crz-Gal4! Yay!
+
+- Tried to do 45G01L>Chr-mV but couldn't get many matings.
+
+- Vid L: Crz>D2,CNMa(V) (1-26) , Crz>D2,Nplp3 (V) (27-32)
+
+- Vid M: Crz>D2,Nplp3 (V) (1-14), Crz>D2,AKH (V) (15-29), Crz>D2,ITP (V) (30-32)
+
+- Vid N: Crz>D2,ITP (V) (1-17), Crz>D2,Cadps (V) (18-30)
+
+10/27/2015
+
+- Crz-LexA (III) > Chr-mV (III) heat threat expts.
+
+- Crz>GFP, Trh-LexA>Kir heat threat expts.
+
+- Crz>Chr-tdT,Kir two-pulse activation (2 min at t = 1, another 2 min at t = 15). Short matings (17-22 min).
+
+- Crz>Chr-tdT,Kir activation at t = 7.
+
+10/28/2015
+
+- Crz>Chr-tdT,Kir No retinal experiments again. Light at 7 min.
+
+- R61H07>Chr-tdT 10 hz 20 ms. Do not terminate wiht light onset using 10 hz 20ms, but do terminate several mintues early. Single pulses of light at the very start of mating, are sufficient to cause termination. Even longer pulses around 10 minutes do not terminate. Survivor has normal duration.
+
+- Vid (L): Crz>D2,Eh (1-16), Crz>D2,Pburs (17-19), Crz>D2,SP(20-32)
+- Vid (M): Crz>D2,Nplp2(1-32)
+- Vid (N): Crz>D2,Nplp2(1-25), Crz>D2,AstC(26-32)
+- Vid (O): Crz>D2,AstC(1-22), Crz>D2,dimm(23-32)
+- Vid (P): Crz>D2,dimm(1-32)
+- Vid (Q): Crz>D2,dimm (1-4), Crz>D2,Lk(5-28), Crz>D2,Proc(29-32)
+- Vid (R): Crz>D2,Proc(1-32)
+- Vid (S): Crz>D2,Proc(1-6), Crz>D2,CCHa2(7-32)
+- Vid (T): Crz>D2, CCHa2(1-32)
+- Vid (U): Crz>D2,ETH (1-32)
+- Vid (V): Crz>D2, ETH (1-22), Crz>D2, Burs (23-32)
+- Vid (W): Crz>D2, Burs (1-9), Crz>D2, Mip (10-17), Crz>D2,Dsk (18-32)
+- Vid (X): Crz>D2, Dsk (1-4), Crz>D2,CNMa (5-20), Crz>D2,Cadps(21-32)
+- Vid (Y): Crz>D2,Cadps (1-8), Crz>D2,Dh44 (9-32)
+- Vid (Z): Crz>D2,Dh44 (1-20), Crz>D2,Nplp3 (21-32)
+- Vid (LL): Crz>D2,Nplp3 (1-14)
+- Vid (MM): Crz>D2,AstA (1-32)
+- Vid (NN): Crz>D2,AstA(1-9), Crz>D2,FMRFa(10-32)
+- Vid (OO): Crz>D2,FMRFa (1-28), Crz>D2,Nplp2 (29-32)
+- Vid (PP): Crz>D2, Nplp1(1-25), Crz>D2, AKH (26-32)
+- Vid (QQ): Crz>D2,AKH (1-16), Crz>D2,CCHa1 (17-32)
+- Vid (RR): Crz>D2,CCHa1 (1-17)
+
+10/29/2015
+
+- R45G01-LexA>Chr-mV No light expts. Normal dur.
+
+- Crz-LexA>LexO-Kir. Long matings. Definitely works!
+
+- Crz>D2,ITP-RNAi (Bloomington), tub-Gal80ts after 1 week at 30°C. Normal durations. Sad.
+
+11/01/2015
+
+- TH>M19-tdT constant light at start of mating, turn off at 40 minutes, measure delay to terminationA
+
+11/02/2015
+
+- Crz>Chr,Kir no light controls. 41°C Termination:
+  10 min (0/3)    45 min (1/5)    50 min (1/4)
+
+11/05/2015
+
+-NP2,A2-Gal80 seems mostly the same as NP2
+
+-NP2>M19 (II) is very difficult to drive termination in with light.
+
+-R20E04>Chr-tdT activation during mating. Mate for a very long time! No clear motor response during mating. Weird "twerking" behavior in isolation, eventually followed by ejaculation.
+
+11/07/2015
+
+- Crz>GFP, Trh-LexA>LexO-Kir heat with and without light experiments at t = 5.
+
+- Crz-LexA (III)> LexAop2-Chr-mV (III) 41C heat with and without light at t = 5.
+
+- Vid (L): Crz>Kir (1-3), Crz-LexA(III)>Kir (4-11)
+
+- R64A05>Chr-tdT, 2 min activation at t = 15. Despite super broad expression, doesn't seem to bother the flies much. No clear effect on duration
+
+- VID (M): CS (1-32)
+
+11/11/2015
+
+- R20E04>Chr-tdT No light controls.
+
+- Crz>Chr-tdT, Trh>Kir 41 C at t = 5, with and wihtout light pulses. Looks as we'd expect (Light terminates, no light doesn't). Light (3/5), No light (0/2)
+
+- Th-Gal4, A2-Gal80 (direct, not LexA), blocks long duration in 2 out of 3 matings...
+
+- R65E12>Chr-tdT. Activation in isolation induces some amount of head, abdomen, and leg grooming. Neither tonic nor phasic activation dramatically effects duration.
+
+- Crz>Chr-tdT, Kir, activate at t = 1 to 3, RT water at t = 15 min. 10/18 terminate.
+
+- R61H07>Chr-tdt, 10s pulse at 1 min into mating.
+
+- NP2>Chr-tdt 500 ms pulse, 60s rest, 2 s pulse starting at 10 min into mating.
+
+11/14/2015
+
+- dsx-Gal4>D2,pale-RNAi males have trouble initiating the mating (though they do get there, it's just rockier). Duration itself isn't too strongly affected, it seems.
+
+11/15/2015
+
+- Crz>D2,ITP-RNAi, tubGal80ts no mating duration phenotype
+
+- NP2>Chr-tdt 500 ms pulse (at t = 10 min), 60s rest, 2s pulse: termination (5/8). Not as good as I was hoping for.
+
+11/16/2015
+
+- NP2>Chr-tdT 500 ms pulse (at t = 10 min), 120s rest, 2s pulse. Termination (27/31)
+
+- R61G07>Chr-tdT 10s activation at t = 1 min
+
+- R19G07>Chr-tdt, 10s activation at t = 15 min. No strong effect.
+
+- Crz>Chr-tdt,Kir2.1 activation at various times, still consistent with old data
+
+11/18/2015
+
+- R20E04>Kir2.1 matings. Look fairly unsteady? Not sure. Normal duration, successful plug transfer (indicated by fluoresence in female genitalia). Bummer
+
+- w1118 males in food vials, heat threat 37°C at t = 10 minutes, measure cop. dur of survivors.
+
+11/22/2015
+
+- NP2719>Chr-tdT No light controls (cop. dur.)
+
+- Crz>GFP, Trh>Kir copulation duration controls (with and without light)
+
+11/24/2015
+
+- NP2>Chr-tdt, Crz>Kir. No long mating, even in the absence of light. probably just not a good cross (will check for balancers)
+
+- NP2>InR (CA) no phenotype.
+
+- TH-Gal4,A2-Gal80>Chr, normal matings.
+
+11/26/2015
+
+- Ordered Kir2.1 and TdTomato primers. TdTomato primers from ADDGENE: Forward: CTGTTCCTGTACGGCATGG Reverse: TCTTTGATGACGGCCATGT.
+Kir2.1 primers from human sequence on GeneBank. Forward primer: AACCAACCGCTACAGCATC (8th nucleotide) Reverse primer: ACTGCGCCAATGATGAAAGC (536th nucleotide). Length = 529 nucleotides.
+
+11/28/2015
+
+- NP2719>Chr-tdT, Crz-LexA (III)> LexO-Kir2.1 flies. I think the Kir is missing (matings don't go long). Ones that do go long require strong (~4s) red light stimulus to terminate
+
+- R45G01-LexA>Chr-mV (II) 6s pulse at t = 15 min. The phenotype is back, so looks like i have to use chrimson on the 2nd chromosome (though really I'm switching to tdT so hopefully that one will work)
+
+- R20E04>Chr-tdT 10 hz 20 ms at start of mating. Normal duration. Inconsistent with previous experiments; will hold onto the data but will need to repeat with a new cross to be sure.
+
+- Crz>Chr-tdT,Kir activation at t = 1 min and t = 7 min. Pretty much indistinguishable
+
+11/29/2015
+
+- TH-AD, A2-DBD>Chr-tdT, 10 hz 20 ms stimulation at start of mating. Still get some rearing-like behaviors. At least I know there's expression? But I was hoping that would go away. Considerably less pronounced than before. Either way, maybe I should try a reduced stim. Switched to 5 hz 5 ms at 40 minutes into mating. Mates for another 9 minutes or so.
+
+-R20E04>Kir. Normal duration again.
+
+- Dopamine receptor mutants / P-element insertions, tested with 37C at t = 10 min. DopR2 (attP) has little responsiveness. Subsequent duration is normal except for one 40 minute mater. DopR2 mutants are very bad at disengaging their genitalia though: they get stuck together in response to the threats! Then once the vial cools down, they go right back to mating!
+
+- NP2>GFP, Crz-LexA (III)>LexO-Kir2.1 500 ms at t = 45 min. Only one mating, does not terminate, mates for >3hrs
+
+11/30/2015
+
+- NP2>Chr-tdT, Crz>Kir 500 ms at 15 minutes doesn't seem to cause terminations. 2s pulse can. Worried that maybe Kir isn't present? No, they still mate for a long time. The plot thickens...
+
+- TODO:
+  - FEMTOJET, Woolf lab? Stevens lab?
+  - Talk to Tony about the 2p.
+  - Need more LexO-Kir;UAS-Chr flies. Grow the stock. Do PCR to make sure they're all hom-hom, since I've had a few non-long-matings.
+  - NP2>Chr,TH>Trp expts (where did my L-Trp;U-Chr stock go???)
+
+ 
+ 12/02/2015
+
+ - Heiman lab has a microinjector, hurray!
+
+ - Tony and I squared away the 2p issue. Will do expts. shortly.
+
+ - NP2>Chr,Crz>Kir experiments, this time with 2 s stim. Still not 100% termination probability. That's surprising. I guess I just need to shift the scale for this genotype (lower Chr expression?). The Crz>Kir,NP2>GFP controls look good though.
+
+ 12/03/2015
+
+ - R20E04>Kir heat threat expts. (41C and RT). 41 at 5 and 10 minutes, RT at 10 minutes (to test for particularly low or high motivation) No obvious phenotype.
+
+ 12/05/2015
+
+ - NP2>Chr-tdT, 500 ms pulse at t = 15 min.
+
+ - Hurray!! 2p signal! it's working! Pretty nice looking too. Using NP2719>UAS-OPGCamp6s. At frame 215 I spritz on a small amount of 1 uM Crz.
+
+ 12/06/2015
+
+ - More attempts at 2p with 2>OPGC6s. Still get flies that break up when I tear off the legs and apply saline. Will need to practice more.
+
+ 12/07/2015
+
+ - <TH|A2> > M19-tdT 10 hz 20 ms at start of mating. Long matings, but I think I should use a less intense stimulus. Maybe in the future I'll do 5 hz 5 ms. This intensity leaves them lying on the floor curling their abdomens when isolated.
+
+ - Crz>Kir, NP2>GFP no light. Long mating, no surprise. 
+
+ - Crz>Chr, Trh>GFP no light matings. Normal duration.
+
+ 12/12/2015
+
+ - Testing out the ENIAC. NP2>Chr-tdT flies (though no top to shield from background light). 41°C at t = 1 vs. 10 min 
+
+ 12/13/2015
+
+ - NP2>Chr-tdT, 1s pulse at t = 10 min into mating at RT. 1s pulse seems a lot less effective in this box; perhaps the light scatters a good amount off the water?
+
+ 12/14/2015
+
+ - R20E04>Kir cop dur. Still a normal - looking mating duration, but the mating still looks unsteady as well. Maybe we'll just have to watch it under a scope. Certainly seems to have trouble initating a mating (see video)
+
+ 12/15/2015
+
+ - NP2>Chr-tdT, Crz-L(III)>Kir 500 ms pulse at t = 5 min. Very low termination probability (0/4). Ugh.
+
+ - NP2>Chr-tdT with 37°C (with and without light pulses). Light pulses are weaker, I'll need to calibrate light intensity (and get new buckpucks with higher capacity)
+
+12/17/2015
+
+- NP2>Chr-tdT, Crz>Kir 2s pulse at t = 10 min. Yeah, still not 100% termination; seems like a background issue.
+
+- NP2>GFP, R45G01-LexA>Chr-tdT (attP2) 6 s pulse at various times in the mating. Terminates at 10 but not at 1. Hurrah!
+
+12/19/2015
+
+- Movie L: Crz>D2,tubgal80ts,IFamide raised at 30C (1-9), Elav>D2,IFAmide (10-16). No phenotype in Crz. EDV matings are all really short!
+
+- NP2>Chr-tdT, Crz>Kir 2s pulse at t = 1 min., NP2>Chr-tdT, +>LexAop2-Kir 2s pulse at t = 1 min. Both not as responsive as the NP2>Chr by itself
+
+- NP2>Chr-tdT, Crz>Kir no light mating duration. Very long.
+
+- NP2>Chr-tdT, Crz>GFP pulses during mating (500 ms at t = 1 min). Looks just like NP2>Chr-tdT. Ugh, probably a background issue in the LexO-Kir then.
+
+- NP2>Chr-tdT 37°C heat threats during mating. About 50% responsiveness at t = 10 min.
+
+- NP2>TntG, R45G01>Chr-tdT. Does not block grooming behavior
+
+- Injected Crz neuropeptide into mating decapitated Crz>Kir male. Latency to terminate the mating ~ 30 min
+
+- Crz injected into solo CS males. Ejaculation (4/5). Vs. buffer alone (1/5)
+
+12/20/2015
+
+- NP2Repo-Gal80, Crz-LexA>GRASP staining looks pretty weird. Stains against some regions that do not have Crz projections.
+
+- R20E04>Chr-tdT 41°C heat shocks (in opto chamber). They're surprisingly not so bothered by 41°C, considering it worked really well in the vials.
+
+- R20E04>TntG,Kir2.1. No phenotype. Also did Kir, still no phenotype
+
+- NP2>GFP, Crz>Kir no light mating.
+
+- R45G01-Lexa>Chr-tdT 6s at various times into mating. As expected, they are unresponsive during the first several minutes of mating, and begin to respond around 10 minutes.
+
+- R45G01-Lexa>Chr-tdT 6s at t = 15 in decapitated males. Struggling to even get a clear decap, but those which were succesful did not terminate either.
+
+01/04/2016
+
+- Crz>Kir cop dur. expts.
+
+- TH-AD,A2-DBD>Kir2.1 cop dur. No phenotype.
+
+- NP2RG>D2,GFP,Syt7-RNAi cop. dur. Normal. Poo.
+
+- Crz>Kir injection of Crz neuropeptide after initiation of mating vs saline. Flies separate at when I remove the lower legs and expose the abdominal ganglion if I don't remove the head, which is annoying.
+
+01/05/2016
+
+- Crz>Lex-O-Chr-tdT, NP2RG>OPGCamp6s ex vivo abd. ganglion 2p calcium imaging. Collecting 3 minutes of baseline, then 2 minutes with red light on, then 1.5 minutes with light off, then plane adjustment, then light on after several seconds, then several more minutes of baseline. Just kind of a mess of a recording. Just figuring stuff out.
+
+01/06/2016
+
+- Crz>Kir, Trh>Chr-tdT, 30s activation from t = .5 to 1 min. 41 °C heat threat at t = 5 min. Save females for fertility.
+
+- NP2>Chr-tdt, Crz>Kir 500 ms pulses at t = 1 min. Still not responsive, though they do terminate in response to long (4s) pulses.
+
+- R45G01-LexA>Lexo-Chr-tdT 6s pulses. Do not terminate at t = 5 min.
+
+- NP2>Chr-tdT, +>LexO-Kir, 500 ms pulses at t = 1 min. Again, low responsiveness.
+
+- NP2>Chr-tdT, +>LexO-Kir no light mating duration. Looks a little shorter than normal, maybe?
+
+- NP2>Chr-tdT, +>LexO-Kir, 2s pulse at t = 1 min. Causes termination every time.
+
+- NP2>Chr-tdT, 41°C heat pulse at t = 5 min into mating
+
+- R45G01-LexA>LexO-Chr-tdT, NP2719>tntG or GFP 6s pulse at 15 minutes into mating.
+
+01/07/2016
+
+- NP2>GFP, Crz>Kir matings. Long duration, unsurprisingly.
+
+01/08/2016
+
+- NP2>Chr-tdT, Crz>GFP cop dur.
+
+- NP2>Chr-tdT, Crz>GFP 500 ms pulses at t = 1 and 5 minutes, not that effective (surprisingly)
+
+- Crz>Chr-tdT, Kir activation at t = 1 to 3 min with 41°C heat shock at t = 5 and 10 min. Consistent with previous results (70% at 5 min, close to 100% at 10 min)
+
+- R20E04>Chr-tdT activation until 30 min, then turn off.
+
+01/09/2016
+
+- NP2RG,Crz>GRASP doesn't look great. Some puncta-like expression but kind of sporadic.
+
+- Crz,Trh>GRASP is also not so pretty.
+
+- Crz>Syt-GFP, Denmark seems to reveal that Crz neurons have broad dendritic arbors covering most of the AG but Syt is only present in special regions.
+
+01/10/2016
+
+- NP2>Chr, Crz>Kir 2s at t = 10 min. Causes termination, just like I'd expect.
+
+- R45G01-LexA>Chr-tdT 6s pulse is like 50% termination at t = 10 min. Decapitated flies do not terminate however. Sad
+
+- NP2>Chr, +>Kir 2s at t= 10 min also causes termination frequently, in contrast to prior expts. Annoying. Just gonna need more data to see how it all shakes out.
+
+01/11/2016
+
+- R42G02>Kir,Gal80ts flies still leave posterior mating plug (4/4 matings).
+
+- CS males mated to Elav>Shi-ts females at 30°C seem to mate for the normal time. Also retain threat response
+
+01/13/2016
+
+- Crz>Chr-tdT,Kir controls at 41°C, RT no light controls, some 41°C threat controls. Looked as before.
+
+- NP2>Chr-tdt, Crz>Kir 1s pulses at 10 min and 1 min. All cause termination.
+
+- NP2RG>Chr-tdT, Crz-L>L-GFP for some reason has no Chr signal!
+
+- Same with TH>Chr-tdT, Crz-L>L-GFP
+
+- Did I mess up the antibody? Or the cross?? (EDIT 03/12/2016: Turns out the stock I got from mike used Chrimson-mVenus, not td-Tomato. Oof.)
+
+01/14/2016
+
+- CS mating in UV chamber. Still kind of reeks of glue so none of them seem that into courtship.
+
+- 2p calcium imaging in isolated NP2 fly looks pretty flat. Collected data from Tph2>OPGC6s , Crz>LexO-Chr-tdT flies. Hard to say if there are changes in fluoresence by eye, but I'll analyze it.
+
+- I guess there's like a 6% dF/F in the serotonin neurons? Could be anything. The isolated NP2RT>OPGC flies look totally flat though.
+
+01/16/2016
+
+- CS mated to Elav>Shi-ts vs. Elav females. Took notes this time. Cop dur is the same. Cool!
+
+- Getting good at this calcium imaging. Took only a couple of minutes to get Trh>OPGC6s, Crz>Chr-tdT under the scope. Still getting super strong calcium signals. Still not sure if I'm getting responses from Chrimson activation...
+
+- NP2719RG>OPGC6s,tdT during a mating. Starts at 7:15 min. Not even certain this is the AG...
+
+01/18/2016
+
+- NP2RG stains with Crz never seem to have GABA signal. I guess there's probably just no NP2 in there. I'll remake it.
+
+- NP2RG>sytGFP, Denmark kind of funny looking. Denmark is mostly concentrated in the posterior-most part of the AG. SytGFP is pretty much all over.
+
+- NP2RG>OPGC6s recording starts at 18 minutes because I spent the first 15 minutes looking at the wrong piece of tissue. Hopefully this is the right one.
+
+01/19/2016
+
+- NP2>Chr-tdT 37°C heat threat for one minute at t = 10 minutes. Not a ton of termination, but some.
+
+- Trh>OPGC6s, Crz>LCT calcium imaging. Some neurons appear to have reduced calcium in response to Crz, others increase. See Fly 1 (especially seesaw)
+
+- Fly 2 uses longer frames. High gain 100 off 200 on 100 off 100 on 100 off etc.
+
+01/23/2016
+
+- Trh and Crz silencing / activation experiments. Unsurprisingly, Trh activation in a silenced Crz background does not induce increased responsiveness, and the Trh>Kir, Crz>GFP controls are not changed by light. Chr>Chr, Trh>GFP controls have lower responsiveness in general, but it's still inducible at 5 minutes by light
+
+- NP2>Chr-tdT, Crz>Kir 1s pulses at 1 min and 10 min. Both work.
+
+- Crz>Chr-mV no retinal heat threats of 37°C (with light). 15 min timepoint always results in termination, 10 minute time point is like 75%.
+
+01/24/2016
+
+-NP2>Chr, Crz>Kir flies, 1s pulse at 10 minutes. Not all of them terminate at this time; that's frustrating. Perhaps our model is wrong.
+
+- Crz>Chr,Kir 2 min pulses at 15 and 80 minutes. Both have the same phenotype of producing durations centered about 20 minutes after the light comes on.
+
+01/25/2016
+
+- NP2>Chr-tdT, Crz>Kir 1s pulse at 10 minutes. Terminates 80% of the time (8/10)
+
+- Crz>GFP, Trh>Chr-tdT heat threats (41°C at 5 min). Normal rate of termination (0/3)
+
+- Tph2>OPGC6s, Crz>Chr-tdT calcium imaging. First video is 2s pulses every 20 s, except for a gimmicky fuckup due to a keyboard. In video #3, around the 2500th frame I change focal planes a bunch, so just truncate the video there.
+
+- Tph2>GFP, Crz>Chr-tdT "calcium" imaging. 2s pulses every 20s. Didn't even realize this was a GFP control until I was puzzled by the lack of dynamics. That's relieving.
+
+01/26/2016
+
+- R19G07>Kir matings all between 15 and 25 minutes. Not so interesting.
+
+01/27/2016
+
+- Crz>Kir, Trh>Chr-tdT experiments. Neither light nor mock conditions have much termination in response to a 41°C heat threat at t = 5 min.
+
+- Crz>GFP, Trh>Chr-tdT are also fairly low responsiveness (~1/5 flies)
+
+01/29/2016
+
+- Crz>Kir, NP2>Chr-tdT 1s pulses at t = 5 and 10 minutes. Both cases looks like about 75% termination. Hurrah!
+
+01/30/2016
+
+- Crz>Chr-mV no retinal, RT threats
+
+- NP2>Chr-tdT, +>L-Kir 1s pulses at t = 1 or 10 minutes. High responsivesness at t = 1, low at t = 10
+
+02/01/2016
+
+-R64A11>Kir no duration phenotype.
+
+- R61H07>Kir no duration phenotype
+
+- R64A05>Kir no duration phenotype.
+
+- R19B07>Kir no duration phenotype.
+
+- R21G03>Kir maybe like 30 minute mating?
+
+- R65E12>Kir no duration phenotype
+
+- NP2>Chr-tdT, Crz>Kir 1s pulses at various times. About 50% termination in all conditions.
+
+- CS mated to Elav and Elav>Shi-ts females, dunked at 41°C at t=10 minutes. In both cases, 4/5 matings terminated.
+
+02/02/2016
+
+- Crz>Chr-mV 20 hz 10 ms light stim at start of mating. All completely normal durations.
+
+- Crz>Chr-mV 30s stim at 15 minutes into mating. All completely normal duration
+
+02/03/2016
+
+- Crz>Chr-tdT, Kir no light matings.
+
+- NP2>Chr,+>Kir flies show high responsiveness at t = 1, low at t = 10 (to 1s pulse) (8 matings)
+
+- NP2>Chr, Crz>Kir flies show high responsiveness at both timepoints (9 matings), though perhaps lower at t = 10?
+
+02/05/2016
+
+- NP2>Chr,Crz>Kir expts at t = 5, 10, 15 min. Highly responsive at t = 5, seeingly less so at 10 and 15. Annoying.
+
+- NP2>Chr-tdT 500 ms expts on Kirill's rig. Seems WAY more potent: doing stim at 15 min and a huge fraction of them break up (17/20)!!. Doing 500 ms, 5s waiting, 500 ms was 15/19...
+
+02/06/2016
+
+- NP2>Chr,Crz>Kir 1s at t = 15. (3/7) terminate. at t = 1 (1/3), at t = 5 (3/3)
+
+- NP2RG>OPGC6s, Crz>LCT leave the fly alone for ~20 minutes. Recorded for a few seconds, applied a 5s pulse, waited about 6 minutes, applied a 10s pulse around frame 1900, then again every 1 minute thereafter.
+
+- Fly2: NP2RG>OPGC6s, Crz>LCT, 15 minutes recovery time, then 2 minutes recording, then 10s pulse every two minutes.
+
+- Crz>OPGC6s, Trh>LCT Fly 1: 1s pulse of red every 10 s. Definitely some plane shifting going on. But doesn't appear to have any real effect on fluoresence. Vid2 is about 900 frames of no stim, then a 4s stim, then no stim thereafter.
+
+- Fly 2 Vid 1: same as above, a few minutes of no stim and then 1s pulse every 10s (starts around frame 250), after a few of those I switch to one every 30s
+
+- Fly 2 Vid 2: 1s pulse every 10s
+
+02/09/2016
+
+- NP2>TntG, Crz>LCT 20 hz 10 ms stim for t = .5 min to t = 1 min, 41°C heat bath for 1 minute at t = 5. 0/4 terminate
+
+- NP2>GFP, Crz>LCT same protocol, all of the light exposed ones terminate except one (7/8), and only one of the mock ones do (1/6)
+
+- NP2>tntG, R45G01-LexA>Chr-tdT 6s light pulse at t = 25, blocked (0/1 terminate)
+
+- NP2>Chr-tdT, Crz>Kir 1s pulse at t = 15. Termination probability is pretty reasonable (high probability). At t = 20, of two matings, 1 terminated. t = 5 minutes had a 60% success (5 matings)
+
+- Does eya2 mutant have a slight duration phenotype? Tried 3, all matings were 25+ (25 min, 27 min, 28 min). I guess I'll keep testing it?
+
+02/10/2016
+
+- NP2>tntG, Crz>LCT 20 hz 10 ms for t = .5 to 1 min, 41°C water bath at t = 5 min for 1 minute. No controls terminate (0/3), only one light terminates (1/4)
+
+- NP2>Chr, +>Kir 1s light pulse at t = 1 min. (7/9) terminate
+
+- NP2>Chr, Crz>Kir 1s light pulse at t = 15 min. (5/6) terminate.
+
+02/13/2016
+
+- TrpA1>Chr-tdT 30s pulse at t = 15 min. Still doesn't cause termination.
+
+- NP2>GFP, Crz>LCT 30s light pulses (20 hz 10 ms) at t = .5 to t = 1 min. 41°C water at t = 5 min for 1 min. (1/7) mock controls terminate, (3/7) light.
+
+02/15/2016
+
+- NP2>Chr, Crz>Kir 1s pulse at t = 1 (4/6 terminate) and t = 5 (3/8 terminate)
+
+- NP2>Chr, +>Kir 1s pulse at t = 5 (not a lot of matings, 2/2 terminations)
+
+- NP2>GFP, Crz>LCT 30s of 20 hz 10 ms stim from t = .5 to t = 1 min. 41°C at t = 5 min (5/10 terminate). (0/5 controls)
+
+- NP2>Chr, Crz>Kir 1s pulse at t = 15 min (0/3 terminate)
+
+- NP2>tntG, Crz>LCT 30 s of 20 hz 10 ms stim from t = .5 to t = 1 min. 41°C at t = 5 for 1 min (0/5 terminate). (0/11 controls)
+
+- Tph2>Kir, Crz>LCT 20s of 20 hz 10 ms stim from t = 30s to t = 50s (trying to avoid ejaculation). 41°C at t = 5 for 1 min
+
+02/16/2016
+
+- Crz>D2, Crz-RNAi and (Vgat (normal matings, 4 total), VGlu (slightly short matings: like 12-16 minutes 11 flies))
+
+- NP2>Chr-tdT, Crz>TrpA1, 30°C from t = .5s to 1 min, 1s pulse at t = 5 min. 4/6 terminate.
+
+- NP2>Chr-tdT, Crz>Kir 1s pulse at t = 30 minutes. 1/3 terminate.
+
+02/18/2016
+
+- Crz>D2, Syt-beta, Syt12, Syt14 no phenotype
+
+- NP2>tntG, Crz>LCT activation from t = .5 to t = 1 min, 41°C heat threat at t = 10 min. (0/9 terminate)
+
+- Tph2>Kir, Crz>LCT activation from t = .5 to t = .75 min. 41°C heat threat at t = 5 min. (1/1 terminate)
+
+- NP2>Chr, Crz>TrpA1 heat from t = .5 to 1 min, NP2>Chr at t = 5 min (1s pulse, 2/2 terminate)
+
+- NP2>Chr, Crz>TrpA1 heat from t = .5 to 1 min, NP2>Chr at t = 5 min (500 ms pulse 0/2 terminate)
+
+02/20/2016
+
+- Crz>Chr-mV no retinal, RT threats (with 20 hz 10 ms light stim at t = .5 to 1 min). At t = 1 min, 0/6 terminate. At t = 5 min, 0/4 terminate. At t = 10 min, 3/13 terminate. At t = 15 min, 2/2
+
+- Crz>D2, Syt1 doesn't court. I should redo it.
+
+02/22/2016
+
+- All of the Crz>LCT, Tph2>Kir flies that are exposed to 30s of red light during the mating sire progeny (6/6). All of the Crz>LCT, Tph2>Kir flies that are not do not (0/?). Hmm.
+
+- 10s of Crz>LCT with Tph2>Kir is insufficient to evoke motivational phenotype through 41°C heat threat at t = 5 min
+
+- NP2RG>OPGC6s, Crz>LCT, no retinal, acquire 1000 frames (~ 300s) then apply retinal solution. Not an obvious shift.
+
+- Fly 2, more careful. 300 frames of no ret, then applied at ~ 300 frames in
+
+- Fly 3, faster acquisition rate, no retinal until 600 frames
+
+03/01/2016
+
+- Cosyne was pretty cool
+
+- NP2>Chr, +>L-Kir 1s at t = 5 min. Only about 40% of flies terminate (13/28), much like at t = 10. Collecting some of the pairs to see if the female is fertilized at 5 minutes with this male genotype (unlike most others, which are at closer to t = 7 min)
+
+- NP2>Chr, Crz>Kir 1s at t = 15 min. 5/5 terminate. Cool.
+
+- NP2>tntG, Crz>LCT 41°C at t = 10 min (no light). (0/18) terminate
+
+- NP2>GFP, Crz>LCT no light mating duration. Kind of short: 15-21 minutes
+
+- NP2>tntG, Crz>LCT no light mating duration. Between 45 minutes and 3 hours, except for one guy who never stopped.
+
+03/02/2016
+
+- R20D09>Kir2.1 no matings that I can see. There were some attempts, then they just gave up. Pretty young though; I'll try it again
+
+- NP2>Chr, Crz>TrpA1, 500 ms pulse at t = 5 min, 37°C pulse from t = .5 min to 1 min. Terminate (2/5)
+
+03/03/2016
+
+- Crz>D2, Syt4 / GABABR2 (B27609) / HisCl / Cha / DAT (KK) / DopR2 (GD) / GABABR3 (B26729) / GABABR2 (B27693) no phenotype
+
+03/04/2016
+
+- Some long mating stuff (come back and fill this in!)
+
+- R20D09>Chr-tdT, 10 hz 20 ms no long mating (20 min, 14 min, 18 min, )
+
+- NP2>Chr-tdT, Crz>Kir 1 s stim at t = 5 min. Still surprisingly low termination (11/18)
+
+- NP2>Chr-tdT, +>L-Kir 1s stim at t = 5 & 15 min. At t = 5, 3/7 terminate. At t = 15, 3/6 terminate.
+
+03/05/2016
+
+- Tph2>UCT, Crz>Kir mating durations. Most light stimuli seem to cause spasms and eventual termination in Kirill's rig. I should do the light expts. in mine.
+
+03/08/2016
+
+- NP2>Chr-tdT, +>Kir fertility measured from above. 4/13 females fertilized. Not as high as I expected, but it was also a higher fraction terminating than typical
+
+- NP2>tntG, Crz>LCT light at t = .5 to 1 min (or mock) and then 41°C at t = 30 min. Light (0/8), Mock (2/9)
+
+- NP2>tntG, Crz>LCT light at t = 7 min for 2 minutes. Measure duration. Most are the same as the no light condition. Again, there was a flight that mated forever... Weird
+
+- NP2>Chr-tdT, Crz>GFP 1 s pulse at t = 20 min. (2/5) terminate. Again, some survivors have a much longer duration than non-survivors (one had a normal duration, one had 42 minutes, one had 84 minute, one had 40 minute)
+
+- NP2>Chr-tdT 1s pulse at t = 20 min. Termination (10/14) Survivors normal durations
+
+- NP2>Chr-tdT 1s pulse at t = 15 min. Mating durations around 20-23 minutes. Not so exciting.
+
+- NP2>Chr-tdT, Crz>TrpA1, 1 min heat pulse from t = .5 min to t = 1.5 min, then 500 ms light pulse at t = 5 min Termination: (1/7). Control (7/8)
+
+- NP2>Chr-tdT, +>L-Kir 1s pulses at t = 5 min. Again, low termination (2/8). Collected for fertility.
+
+- NP2>Chr-tdT, +>L-Kir 1s pulses at t = 15 min. Term: 2/3
+
+- NP2>Chr-tdT, Crz>Kir 1s pulses at t = 1 min (3/6)
+
+03/10/2016
+
+- R50B07>UCT 1s pulse at t = 1 min (0/4) and t = 10 min (4/11) t = 15 min (1/3)
+
+- NP2>Chr-tdT, Crz>TrpA1 500 ms pulse at 5 min. No heat (3/3). With heat (0/2)
+
+- NP2>Chr-tdT, 1s pulse at t = 23 min. No flies made it that far
+
+- NP2>Chr-tdT, +>Kir cop duration measurements. Maybe slightly short? (average ~20 min)
+
+- NP2>Chr-tdT, +>Kir 1s pulse at t = 15 min. (1/7)
+
+- NP2>Chr-tdT, 1s pulse at t = 1 min. Just filling in control data to get the N higher... Terminates (9/9).
+t = 5 min (10/10)  t = 15 min (13/13)
+
+03/12/2016
+
+- NP2>Chr,Crz>Kir 1s pulse at t = 5 min. Surprising number of flies have no chr (don't respond to even 8s pulses!). Guess I have some F2s. Of those who ARE chr responsive, I get term = 12/18
+
+- Tph2>Kir, Crz>LCT 20 hz 10 ms at t = .5 to t = 1 min, 41°C heat shocks at t = 5 min for 1 min. Mock (0/8) terminate; Light (5/11). Collected for fertility.
+
+- NP2>GFP, Crz>LCT 20 hz 10 ms for t = .5 to t = 1 min, // mock: normal durations except one fly > 40 min...
+
+03/13/2016
+
+- NP2>Chr-tdT, Crz>TrpA1 no heat 500 ms pulses at t = 1 min. Terminates (4/4) Yay
+
+03/14/2016
+
+- NP2>Chr-tdT in water bath, 500 ms pulses at t= 5 min. Terminates (2/6)
+
+03/15/2016
+
+- Elav>D2,IFamide, 2 flies mate for 50 minutes, the rest are between 18 and 30 (16 flies). Huh.
+
+- Looking at Gabe's, I only see a few matings with Crz>D2,IFamide but they look normal. 
+
+03/16/2016
+
+- E>D,IFamide all normal matings
+
+- More MCFO experiments. The 488 reporter and 590 reporter seem not to be so great. Should look in to figuring out how to improve them. Probably just concentration, right?
+
+03/17/2016
+
+- NP2>Chr-tdT, Crz>TrpA1 500 ms pulse at t = 10 min, no heat. Term: (3/6)
+
+- NP2>Chr-tdT, Crz>GFP. Certain days' vials didn't have Chr in any flies. Probably F2s? Anyways, of the ones who did terminate in response to a 5s light pulse, 3/10 terminated in response to a 1s light pulse at t = 7 min. Looks like this is ~ when these flies ej.
+
+- NP2>Chr-tdT, Crz>LK 1s pulse at t = 7 min. Termination: 12/19 ~ 63%, looks consistent with everything else.
+
+03/19/2016
+
+- NP2>GFP, Crz>LCT 2 min pulse starting at t = 7 min, also no light controls. Unsurprisingly, everything's normal
+
+03/21/2016
+
+- NP2>Chr-tdt, Crz>Kir 1s pulse at t = 7 min. Termination (6/10)
+
+03/22/2016
+
+- Pde1c>Kir flies didn't really court
+
+- ED>IFamide flies which had previously mated for 50 minutes now mated for 35 + 36 minutes
+
+- R20D09>Kir flies have no duration phenotype
+
+- R20D04>Kir flies all have normalish durations (18-30 minutes) except one guy who mates for a very long time.
+
+- NP2>Chr-tdT, terminate mating at 10 minutes in water bath with 6s pulse of red light, then apply 41°C heat 1 min after next mating starts if within 10 minutes of termination. Couldn't get any of these flies to mate twice in succession.
+
+- NP2>Chr-tdT, 1s pulse, measure duration of those who persist. Termination (15/16) super high, wow. Duration of survivor: 23 min.
+
+- NP2>Chr-tdT, 1s pulse at t = 5 min. Termination (3/4)
+
+- NP2>Chr-tdT, 2s pulse at 10 minutes into mating, then if he starts within 9 minutes, provide a 500 ms pulse at 1 min into mating (to test the switch resetting). Flies terminating in response to 500 ms pulse: (10/10)
+
+- NP2>Chr-tdT, 2s pulse at 10 minutes into mating, then if he starts within 9 minutes, provide a 500 ms pulse at 10 min into mating (to test the switch resetting). Flies terminating in response to 500 ms pulse: (2/4)
+
+03/24/2016
+
+- TH-AD, A2-DBD, UAS-Chr-tdt, UAS-Dicer2, UAS-pale-RNAi 5 hz 5 ms stim at start of mating. Doesn't seem to cause rearing (0/4). Still causes long matings though.
+
+- TH-AD, A2-DBD, UAS-Chr-tdT 5 hz 5 ms stim at start of mating. Does cause rearing(10/10).
+
+03/25/2016
+
+- NP>Chr, +>LexO-Kir, 1s pulse at t = 3 min and collect females. Termination (18/25)
+
+03/26/2016
+
+- Crz>Jaws (II) in the normal chrimson box. Light on the whole time. Normal mating duration. That's a bummer.
+
+- NP2>Chr, Crz>GFP in the water bath with 500 ms pulses at t= 1 min.
+
+03/27/2016
+
+- NP2>Jaws and Crz>Jaws in Kirill's Chrimson box. I get short matings with all of them  when the light is on(like 14-15 min) Presuumably the constant light is bothering them. Guess I gotta use brighter/less-red lights.
+
+03/30/2016
+
+- Still no Crz>Jaws phenotype in Kirill's box. (Tried constant stim and tried 5 min from t = 5 to 10 min). Definitely will try to put together the amber box soon.
+
+- Crz>Kir 41°C for 1 min at various timepoints. (0/1 10 min, 1/3 20 min, 6/9 40 min, 2/4 60 min, 1/1 80 min)
+
+- NP2>Chr, Crz>Kir 1s pulse at t = 7 min. Terminates (9/12)
+
+- NP2>Chr, +>LKir 1s pulse at t = 5 min. Terminates (7/16)
+
+- NP2>Chr, +>LKir 1s pulse at t = 7 min. Terminates (3/14)
+
+03/31/2016
+
+- GABA and Crz co-silencing expts. Most mate for only the crz>kir time, but one 7>tnt crz>kir fly has gone for 5+ so far.
+
+- R20E04>Chr-tdT with elav-Gal80 (wells 2, 5, 6) or fru-gal80 (using lexa, wells, 3,7,8,9) or no Gal80s (wells 1 and 4). elav-Gal80 has a normal duration (15 min, 17 min), fru-gal80 has long matings, however.
+
+- NP2>Chr, Crz>GFP 500 ms pulse at t = 1 min at RT in the water bath. Terminates (/)
+
+04/07/2016
+
+- Crz>Chr,Kir activation for 2 minutes, then count duration if they mate within 10 minutes of the light. All matings are very long.
+
+- Crz>Chr, Kir activate from t = 5 to 7, then use a heat threat to prematurely end the mating, then test responsiveness at the start of second mating (if it happens within ~15 minutes of the first)
+
+- ED>dsf no duration phenotype.
+
+- ED>lig no mating
+
+- CrzR01 mutant 10x backcross does not mate
+
+04/09/2016
+
+- NP2>Chr, Crz>GFP in new water bath. 500 ms pulses at t = 1 min. Terminate: 11/12
+
+- NP2>Chr, Crz>GFP, 500 ms pulses at t = 1 min, some with 37°C water from t = .5 min to t = 1.5 min. With heat: 3/3, Without: 6/13
+
+- NP2>Chr, Crz>GFP 500 ms pulses at t = 3 min, again some with heat. With heat: /, Without: 9/11
+
+- NP2>Chr, +>L-Kir 1s pulses at t = 7 min. Terminate: 2/17
+
+- NP2>Chr, +>L-Kir 1s pulses at t = 15 min. terminate: 5/9
+
+- TH/A2-Splt > Chr-tdT, D2, pale-RNAi, 5 hz 5 ms pulses. Shortish, but not normal duration
+
+- R20E04>Fru-Gal80, Chr-tdT again long mating (2 hrs). Cool, I guess
+
+- NP2>Chr, Crz>TrpA1 500 ms pulses at t = 3. With heat: 2/11 , Without heat: 8/10
+
+- Crz>D2,Crz-RNAi, Gad-RNAi has normal mating durations (17-20 minutes)
+
+- NP2>Chr, Crz>Kir 1s pulse at t = 20 min. Terminates: 3/6
+
+04/11/2016
+
+- NP2>Chr, Crz>GFP in water bath at RT, 500 ms pulse at t = 10 min. Terminates (0/6)
+
+04/12/2016
+
+-Crz>Chr-mV 30s stim then allow to mate, 41C heat threat at 5 min if they've been stim. within the last 10 min. Terminates (0/4)
+
+- NP2>Jaws 5 min of light starting at t = 18.
+
+- NP2>Jaws on at 10 minutes with 41C heat threat, then off at 11.5 min (heat threat off at 11). With Jaws on 2, I get 2/4 terminate. With Jaws on 3, I get 6/6. Hmmm. I should do more with Jaws 2
+
+- Crz>D2,Crz-RNAi, IFamide-RNAi, only two matings (18 and 21 minutes), but they mostly didn't court. Maybe I should try more.
+
+04/13/2016
+
+- crz>chr-mv stim for 30s, then allow to mate. If they mate within 5 min, apply a 41C heat pulse at t = 5 min. Terminates: (0/2)
+
+- R42G02>chr-tdt, 5 hz 5ms stim throughout the mating. Produces long matings (1 hour and 2 hours)
+
+04/14/2016
+
+- R42G02>Chr-tdT, 5 hz 5 ms stim throughout the mating. Durations range between 1.5 hours and 4 hours
+
+- R42G02>Chr-tdT, 5 hz 5 ms stim until 15 minutes. Duration: 36 min
+
+- CS in water bath, 37°C at t = 10 minutes. Termination: (1/3) Duration of non-terminaters: short. Odd.
+
+04/16/2016
+
+- NP2>Chr-tdT, Crz>kir 1 s at t = 20 min. Terminates (6/11)
+
+- R42G02>Chr-tdT, 5 hz 5 ms off at 30 min. Mate for 5-12 minutes after. Meh
+
+04/17/2016
+
+- NP2>Chr-tdT, +>LKir 1s pulse at t = 20 min. Term (1/3). Survivors mate for a looong time again
+
+- NP2>Chr-tdT, +>LKir 1s pulse at t = 5 min. Term (3/10)
+
+- NP2>Chr-tdT, Crz>TrpA1 1s pulse at t = 5, with and without heat from t = .5 to 1.5. Without heat: Term 5/7, With heat: 4/12
+
+- NP2>Chr-tdT, Crz>GFP 1s pulse at t = 5 min, with and without heat from t = .5 to 1.5. With heat: 
+
+05/06/2016
+
+Holy crap I've been so sick for so long. Also I think I accidentally deleted a chunk of notebook and didn't notice. Yikes. Data is still in my directories though
+
+TH>M19 (II) 5 hz 5 ms pretty much no phenotype
+
+05/11/2016
+
+- Crz>Kir 41°C heat threats at 60 min (4/9) and 120 min (5/7)
+
+- NP2>Chr-tdT, Crz>TrpA1 500 ms pulse at t = 5 min with or without 1 min of 37°C heat at t = .5 to 1.5. With heat: (0/1) Without heat (4/6)
+
+- R41D01>Kir, tub-Gal80ts after having spent > 3 days at 30°C, exposed to 41°C heat threat t = 10 min (using IRIS). (/) No matings!
+
+- R42G02>Chr-tdT no light. 22 min mating
+
+- R42G02>Chr-tdT, Kir, tubGal80ts, raised at 23, no light: matings between 14 and 17 min
+
+05/12/2016
+
+- Crz>Kir 37°C heat threat at t = 60 min. Terminates (3/7)
+
+- NP2>Chr, Crz>Trpa 500 ms pulse at t = 10 min, RT the whole time (1/7). Heat at t = .5 to 1.5 min (1/5)
+
+05/13/2016
+
+- NP2>Chr, TH>GFP duration with constant 30°C. 32 minutes and 13 minutes. Huh. Weird spread. I guess we'll see how it all distributes.
+
+- NP2>Chr, TH>TrpA1 duration with constant 30°C. No matings.
+
+- R20E04, Tsh-Gal80>Chr-tdT duration. Doesn't seem to block the long duration. I should stain.
+
+05/15/2016
+
+- R41D01>Kir,TubGal80ts 41°C at t= 10 min. this genotype reaaaallly struggles to get a mating going, though they do court pretty actively. The two flies that mated did not terminate in response to a heat threat, though he did terminate only a few minutes later.
+
+- R41D01>Kir,TubGal80ts multiple matings (attempted). None of them mated more than once, despite courting for hours.
+
+-R42G02>Kir,TubGal80ts duration: distributed between 11 minutes and ~40. Such a weird genotype.
+
+05/17/2016
+
+- R41D01>Kir,Tubgal80ts 41°C at t = 10 min. Terminates (0/4) but mating durations between 13 and 15 min yet again. Wow. Now I reaaaaallly need to do the controls that haven't had the tub-gal80ts inactivated. Sometimes accompanied by stuck phenotype.
+
+- TH-AD, A2-DBD > Kir, tubgal80ts duration expts. 1 fly mates for 4 min, the rest for about 20 min, which is weird for the kir tubgal80ts genotype in general
+
+- Crz-LexA (III) > LexO-Kir, LexO-TrpA1 recombinant, stimulate at t = 30 min for 2 min with 30°C water (in ENIAC). Mates for 40 min and one for like 80. Huh.
+
+05/22/2016
+
+- NP2>Chr, Crz>TrpA1 500 ms pulse. 5 min with heat (1/6) without (1/1) 15 min without heat (1/7)
+
+05/23/2016
+
+- PanR8>Chr 30s pulse at t = 1 (Wells 1-4). Did another at t = 10 min. No clear effect on duration, nor do flies terminate in response to the red light
+
+- R24B01>Chr 30s pulse at t = 1 (Wells 5-10) t = 10 (11-15) t = 15 (16-21). None of the genotypes terminate in response to the red light. It seems like it might have a short background duration? Several pairs (e.g. lots of the 15 min expt) broke up before the light even came on. I should try out more with this line. Tonic stim gets stuck I think.
+
+- NP0525>D2,Pyk naive males almost all have normal durations on the first mating (10/11), by the second a few are long (3/8), and the third had (2/4). Hm not quite what I was hoping for.
+
+05/24/2016
+
+- R42G02>Chr-tdT elavGal80 5hz 5ms duration: 18 min, 19 min, 22 min. Hurrah!
+
+- NP2>Chr-tdT, Crz-L>TrpA1 37°C from t = .5 to t = 1.5 min, 500 ms pulse at t=1 (/), t = 3 (2/7), and t = 10 (/)

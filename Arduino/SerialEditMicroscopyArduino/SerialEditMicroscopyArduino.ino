@@ -36,7 +36,7 @@ const int numPins = 12;
 //int wellMap[numPins+1] = {  12,10,1,11,4,8,5, 9,2,6,3 ,7 ,0};
 int wellMap[numPins+1] = {12,10,8,2,4,6,0,11,5,7,1 ,3 ,9};//
 
-int pin[numPins] = {24,25,26,27,28,29,30,31,32,33,34,35};
+int pin[numPins] = {24,24,24,24,24,24,24,24,24,24,24,24};
 // Timescale says how many of our selected timescale are in a second
 // so if we use microseconds, we should switch this to 1000000
 const int timescale = 1000;
